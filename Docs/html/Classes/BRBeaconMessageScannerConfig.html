@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BRBeaconMessageScannerConfig Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BlueRange SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">M-Way Solutions GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addMessageGenerator:">- addMessageGenerator:</option>
+		
+		<option value="//api/name/addMessageGeneratorAndRestartScannerIfNeccessary:">- addMessageGeneratorAndRestartScannerIfNeccessary:</option>
+		
+		<option value="//api/name/addMessageGeneratorsAndRestartScannerIfNeccessary:">- addMessageGeneratorsAndRestartScannerIfNeccessary:</option>
+		
+		<option value="//api/name/betweenScanPeriodInMs">- betweenScanPeriodInMs</option>
+		
+		<option value="//api/name/blacklistNamespaceInEddystoneMessageGeneratorIfMatches:namespaceUid:">- blacklistNamespaceInEddystoneMessageGeneratorIfMatches:namespaceUid:</option>
+		
+		<option value="//api/name/ensureMessageGeneratorDisjunction">- ensureMessageGeneratorDisjunction</option>
+		
+		<option value="//api/name/getDefaultScannerMessageGenerators">- getDefaultScannerMessageGenerators</option>
+		
+		<option value="//api/name/getEddystoneMessageGenerators">- getEddystoneMessageGenerators</option>
+		
+		<option value="//api/name/getIBeaconMessageGenerators">- getIBeaconMessageGenerators</option>
+		
+		<option value="//api/name/getRelutionTagMessageGenerators">- getRelutionTagMessageGenerators</option>
+		
+		<option value="//api/name/initWithScanner:">- initWithScanner:</option>
+		
+		<option value="//api/name/scanEddystoneUid">- scanEddystoneUid</option>
+		
+		<option value="//api/name/scanEddystoneUidWithNamespace:">- scanEddystoneUidWithNamespace:</option>
+		
+		<option value="//api/name/scanEddystoneUidWithNamespace:andInstanceId:">- scanEddystoneUidWithNamespace:andInstanceId:</option>
+		
+		<option value="//api/name/scanEddystoneUidWithNamespace:andInstanceIds:">- scanEddystoneUidWithNamespace:andInstanceIds:</option>
+		
+		<option value="//api/name/scanEddystoneUidWithNamespaces:">- scanEddystoneUidWithNamespaces:</option>
+		
+		<option value="//api/name/scanEddystoneUrl:">- scanEddystoneUrl:</option>
+		
+		<option value="//api/name/scanEddystoneUrls">- scanEddystoneUrls</option>
+		
+		<option value="//api/name/scanEddystoneUrls:">- scanEddystoneUrls:</option>
+		
+		<option value="//api/name/scanIBeacon:">- scanIBeacon:</option>
+		
+		<option value="//api/name/scanIBeacon:major:">- scanIBeacon:major:</option>
+		
+		<option value="//api/name/scanIBeacon:major:minor:">- scanIBeacon:major:minor:</option>
+		
+		<option value="//api/name/scanIBeaconUuids:">- scanIBeaconUuids:</option>
+		
+		<option value="//api/name/scanIBeacons:">- scanIBeacons:</option>
+		
+		<option value="//api/name/scanJoinMeMessages">- scanJoinMeMessages</option>
+		
+		<option value="//api/name/scanPeriodInMs">- scanPeriodInMs</option>
+		
+		<option value="//api/name/scanRelutionTags:">- scanRelutionTags:</option>
+		
+		<option value="//api/name/scanRelutionTags:andTags:">- scanRelutionTags:andTags:</option>
+		
+		<option value="//api/name/scanRelutionTagsV1">- scanRelutionTagsV1</option>
+		
+		<option value="//api/name/scanRelutionTagsV1:">- scanRelutionTagsV1:</option>
+		
+		<option value="//api/name/setBetweenScanPeriodInMs:">- setBetweenScanPeriodInMs:</option>
+		
+		<option value="//api/name/setScanPeriodInMs:">- setScanPeriodInMs:</option>
+		
+		<option value="//api/name/startScannerIfDidRunBefore:">- startScannerIfDidRunBefore:</option>
+		
+		<option value="//api/name/stopScannerIfIsRunning:">- stopScannerIfIsRunning:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BRBeaconMessageScannerConfig Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BRBeaconMessageScannerConfig.h<br />BRBeaconMessageScannerConfig.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class encapsulates the {@link BRBeaconMessageScanner}&rsquo;s configuration. If the configuration
+is changed, while the scanner is running, the scanner will be restarted automatically with the
+updated configuration. To add messages the scanner should scan for, call the methods that
+start with &lsquo;scan&rsquo;. The scanPeriod defines the interval duration of each scan cycle. The lower
+this value is, the more messages can be processed in a certain time. However setting this
+value too low, might decrease the overall performance of your application, since all
+components of the message processing architecture, might depend on the duration of a scan
+cycle. Moreover, you should consider, that a low value will increase the battery consumption
+due to the increased CPU utilization.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithScanner:" title="initWithScanner:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithScanner:">&ndash;&nbsp;initWithScanner:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new beacon scanner configuration.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithScanner:(BRIBeaconMessageScanner *)<em>scanner</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scanner</code></th>
+						<td><p>The scanner which the configuration is bound to.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The newly created scanner configuration</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a new beacon scanner configuration.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanIBeacon:major:minor:" title="scanIBeacon:major:minor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanIBeacon:major:minor:">&ndash;&nbsp;scanIBeacon:major:minor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for iBeacon messages containing
+the given @code{uuid}, @code{major} and @code{minor}.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanIBeacon:(NSString *)<em>uuid</em> major:(int)<em>major</em> minor:(int)<em>minor</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>The iBeacon&rsquo;s UUID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>major</code></th>
+						<td><p>The iBeacon&rsquo;s major</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>minor</code></th>
+						<td><p>The iBeacon&rsquo;s minor</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for iBeacon messages containing
+the given @code{uuid}, @code{major} and @code{minor}.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanIBeacon:major:" title="scanIBeacon:major:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanIBeacon:major:">&ndash;&nbsp;scanIBeacon:major:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for iBeacon messages with the given
+UUID and major neglecting the minor.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanIBeacon:(NSString *)<em>uuid</em> major:(int)<em>major</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>The iBeacon&rsquo;s UUID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>major</code></th>
+						<td><p>The iBeacon&rsquo;s major</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for iBeacon messages with the given
+UUID and major neglecting the minor.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanIBeacon:" title="scanIBeacon:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanIBeacon:">&ndash;&nbsp;scanIBeacon:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for iBeacon messages with the given UUID.
+Major and minor will be neglected.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanIBeacon:(NSString *)<em>uuid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>The iBeacon&rsquo;s UUID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for iBeacon messages with the given UUID.
+Major and minor will be neglected.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanIBeaconUuids:" title="scanIBeaconUuids:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanIBeaconUuids:">&ndash;&nbsp;scanIBeaconUuids:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for iBeacon messages matching one
+of the given UUIDs.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanIBeaconUuids:(NSArray *)<em>uuidStrings</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuidStrings</code></th>
+						<td><p>An array containing the iBeacon UUIDs as @code{NSString}</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for iBeacon messages matching one
+of the given UUIDs.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanIBeacons:" title="scanIBeacons:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanIBeacons:">&ndash;&nbsp;scanIBeacons:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for iBeacon messages matching one
+of the given iBeacon regions.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanIBeacons:(NSArray *)<em>iBeacons</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>iBeacons</code></th>
+						<td><p>An array containing iBeacon regions (UUID, major, minor).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for iBeacon messages matching one
+of the given iBeacon regions.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanRelutionTagsV1:" title="scanRelutionTagsV1:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanRelutionTagsV1:">&ndash;&nbsp;scanRelutionTagsV1:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for Relution Tag messages (V1) containing
+at least on of the given tags. @link{RelutionTagMessageV1} is deprecated
+and should not be used anymore.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanRelutionTagsV1:(NSArray *)<em>tags</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tags</code></th>
+						<td><p>An array of @link{NSNumber} objects containing the Relution tag IDs.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for Relution Tag messages (V1) containing
+at least on of the given tags. @link{RelutionTagMessageV1} is deprecated
+and should not be used anymore.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanRelutionTagsV1" title="scanRelutionTagsV1"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanRelutionTagsV1">&ndash;&nbsp;scanRelutionTagsV1</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for all Relution Tag messages (V1).
+@link{RelutionTagMessageV1} is deprecated and should not be used anymore.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanRelutionTagsV1</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for all Relution Tag messages (V1).
+@link{RelutionTagMessageV1} is deprecated and should not be used anymore.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanRelutionTags:" title="scanRelutionTags:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanRelutionTags:">&ndash;&nbsp;scanRelutionTags:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for Relution Tag messages (V2).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanRelutionTags:(NSString *)<em>namespaceUid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>namespaceUid</code></th>
+						<td><p>The namespaceUID (is determined by the Relution Organization UUID).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for Relution Tag messages (V2).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanRelutionTags:andTags:" title="scanRelutionTags:andTags:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanRelutionTags:andTags:">&ndash;&nbsp;scanRelutionTags:andTags:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for Relution Tag messages (V2) containing
+at least one of the given tags.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanRelutionTags:(NSString *)<em>namespaceUid</em> andTags:(NSArray *)<em>tags</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>namespaceUid</code></th>
+						<td><p>The namespaceUID (is determined by the Relution Organization UUID).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tags</code></th>
+						<td><p>An array of @link{NSNumber} objects containing the Relution Tag IDs.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for Relution Tag messages (V2) containing
+at least one of the given tags.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanEddystoneUid" title="scanEddystoneUid"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanEddystoneUid">&ndash;&nbsp;scanEddystoneUid</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for all Eddystone UID messages.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanEddystoneUid</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for all Eddystone UID messages.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanEddystoneUidWithNamespace:" title="scanEddystoneUidWithNamespace:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanEddystoneUidWithNamespace:">&ndash;&nbsp;scanEddystoneUidWithNamespace:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for Eddystone UID messages matching the
+given Namespace UID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanEddystoneUidWithNamespace:(NSString *)<em>namespaceUid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>namespaceUid</code></th>
+						<td><p>The namespace UID given as @link{NSString}.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for Eddystone UID messages matching the
+given Namespace UID.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanEddystoneUidWithNamespaces:" title="scanEddystoneUidWithNamespaces:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanEddystoneUidWithNamespaces:">&ndash;&nbsp;scanEddystoneUidWithNamespaces:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for Eddystone UID messages matching one
+of the given Namespace UIDs.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanEddystoneUidWithNamespaces:(NSArray *)<em>namespaceUids</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>namespaceUids</code></th>
+						<td><p>An array containing the Namespace UIDs (@link{NSString}).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for Eddystone UID messages matching one
+of the given Namespace UIDs.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanEddystoneUidWithNamespace:andInstanceId:" title="scanEddystoneUidWithNamespace:andInstanceId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanEddystoneUidWithNamespace:andInstanceId:">&ndash;&nbsp;scanEddystoneUidWithNamespace:andInstanceId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for Eddystone UID messages matching the
+given Namespace UID and Instance ID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanEddystoneUidWithNamespace:(NSString *)<em>namespaceUid</em> andInstanceId:(NSString *)<em>instanceId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>namespaceUid</code></th>
+						<td><p>The namespace UID given as @link{NSString}.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>instanceId</code></th>
+						<td><p>The Eddystone UID instance identifier.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for Eddystone UID messages matching the
+given Namespace UID and Instance ID.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanEddystoneUidWithNamespace:andInstanceIds:" title="scanEddystoneUidWithNamespace:andInstanceIds:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanEddystoneUidWithNamespace:andInstanceIds:">&ndash;&nbsp;scanEddystoneUidWithNamespace:andInstanceIds:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for Eddystone UID messages matching the
+given Namespace UID and one of the Instance IDs.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanEddystoneUidWithNamespace:(NSString *)<em>namespaceUid</em> andInstanceIds:(NSArray *)<em>instanceIds</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>namespaceUid</code></th>
+						<td><p>The namespace UID given as @link{NSString}.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>instanceIds</code></th>
+						<td><p>An array containing the Eddystone Instance IDs (@link{NSString}).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for Eddystone UID messages matching the
+given Namespace UID and one of the Instance IDs.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanEddystoneUrls" title="scanEddystoneUrls"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanEddystoneUrls">&ndash;&nbsp;scanEddystoneUrls</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for all Eddystone URL messages.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanEddystoneUrls</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for all Eddystone URL messages.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanEddystoneUrl:" title="scanEddystoneUrl:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanEddystoneUrl:">&ndash;&nbsp;scanEddystoneUrl:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for Eddystone URL messages matching
+the given URL.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanEddystoneUrl:(NSString *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The Eddystone URL.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for Eddystone URL messages matching
+the given URL.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanEddystoneUrls:" title="scanEddystoneUrls:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanEddystoneUrls:">&ndash;&nbsp;scanEddystoneUrls:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for Eddystone URL messages matching
+one of the given URLs.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanEddystoneUrls:(NSArray *)<em>urls</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>urls</code></th>
+						<td><p>An array containt the Eddystone URLs (@link{NSString}).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for Eddystone URL messages matching
+one of the given URLs.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanJoinMeMessages" title="scanJoinMeMessages"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanJoinMeMessages">&ndash;&nbsp;scanJoinMeMessages</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the scanner to scan for JoinMe messages. JoinMe messages
+can be used to detect and analyze Relution SmartBeacons.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanJoinMeMessages</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the scanner to scan for JoinMe messages. JoinMe messages
+can be used to detect and analyze Relution SmartBeacons.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setScanPeriodInMs:" title="setScanPeriodInMs:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setScanPeriodInMs:">&ndash;&nbsp;setScanPeriodInMs:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the duration of one scan cycle.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setScanPeriodInMs:(long)<em>scanPeriodInMs</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scanPeriodInMs</code></th>
+						<td><p>The scan cycle in milliseconds.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the duration of one scan cycle.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanPeriodInMs" title="scanPeriodInMs"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanPeriodInMs">&ndash;&nbsp;scanPeriodInMs</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the scanner&rsquo;s scan cycle duration.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (long)scanPeriodInMs</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The scan cycle duration in milliseconds.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the scanner&rsquo;s scan cycle duration.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setBetweenScanPeriodInMs:" title="setBetweenScanPeriodInMs:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setBetweenScanPeriodInMs:">&ndash;&nbsp;setBetweenScanPeriodInMs:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the sleep duration between each scan cycle.
+The higher this value is the more energy can be saved.
+However a high value will result in a higher beacon detection delay!</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setBetweenScanPeriodInMs:(long)<em>betweenScanPeriodInMs</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>betweenScanPeriodInMs</code></th>
+						<td><p>the sleep duration between each scan cycle in milliseconds.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the sleep duration between each scan cycle.
+The higher this value is the more energy can be saved.
+However a high value will result in a higher beacon detection delay!</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/betweenScanPeriodInMs" title="betweenScanPeriodInMs"></a>
+	<h3 class="method-title"><code><a href="#//api/name/betweenScanPeriodInMs">&ndash;&nbsp;betweenScanPeriodInMs</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the sleep duration between each scan cycle.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (long)betweenScanPeriodInMs</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The sleep duration in milliseconds.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the sleep duration between each scan cycle.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScannerConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getIBeaconMessageGenerators" title="getIBeaconMessageGenerators"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getIBeaconMessageGenerators">&ndash;&nbsp;getIBeaconMessageGenerators</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)getIBeaconMessageGenerators</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDefaultScannerMessageGenerators" title="getDefaultScannerMessageGenerators"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDefaultScannerMessageGenerators">&ndash;&nbsp;getDefaultScannerMessageGenerators</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)getDefaultScannerMessageGenerators</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/addMessageGeneratorAndRestartScannerIfNeccessary:" title="addMessageGeneratorAndRestartScannerIfNeccessary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMessageGeneratorAndRestartScannerIfNeccessary:">&ndash;&nbsp;addMessageGeneratorAndRestartScannerIfNeccessary:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addMessageGeneratorAndRestartScannerIfNeccessary:(NSObject&lt;BRBeaconMessageGenerator&gt; *)<em>messageGenerator</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMessageGeneratorsAndRestartScannerIfNeccessary:" title="addMessageGeneratorsAndRestartScannerIfNeccessary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMessageGeneratorsAndRestartScannerIfNeccessary:">&ndash;&nbsp;addMessageGeneratorsAndRestartScannerIfNeccessary:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addMessageGeneratorsAndRestartScannerIfNeccessary:(NSArray *)<em>messageGenerators</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMessageGenerator:" title="addMessageGenerator:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMessageGenerator:">&ndash;&nbsp;addMessageGenerator:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addMessageGenerator:(NSObject&lt;BRBeaconMessageGenerator&gt; *)<em>messageGenerator</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ensureMessageGeneratorDisjunction" title="ensureMessageGeneratorDisjunction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ensureMessageGeneratorDisjunction">&ndash;&nbsp;ensureMessageGeneratorDisjunction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)ensureMessageGeneratorDisjunction</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRelutionTagMessageGenerators" title="getRelutionTagMessageGenerators"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRelutionTagMessageGenerators">&ndash;&nbsp;getRelutionTagMessageGenerators</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)getRelutionTagMessageGenerators</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getEddystoneMessageGenerators" title="getEddystoneMessageGenerators"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getEddystoneMessageGenerators">&ndash;&nbsp;getEddystoneMessageGenerators</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)getEddystoneMessageGenerators</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/blacklistNamespaceInEddystoneMessageGeneratorIfMatches:namespaceUid:" title="blacklistNamespaceInEddystoneMessageGeneratorIfMatches:namespaceUid:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/blacklistNamespaceInEddystoneMessageGeneratorIfMatches:namespaceUid:">&ndash;&nbsp;blacklistNamespaceInEddystoneMessageGeneratorIfMatches:namespaceUid:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)blacklistNamespaceInEddystoneMessageGeneratorIfMatches:(BREddystoneMessageGenerator *)<em>eddystoneMessageGenerator</em> namespaceUid:(NSString *)<em>namespaceUid</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopScannerIfIsRunning:" title="stopScannerIfIsRunning:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopScannerIfIsRunning:">&ndash;&nbsp;stopScannerIfIsRunning:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopScannerIfIsRunning:(BOOL)<em>restart</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startScannerIfDidRunBefore:" title="startScannerIfDidRunBefore:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startScannerIfDidRunBefore:">&ndash;&nbsp;startScannerIfDidRunBefore:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startScannerIfDidRunBefore:(BOOL)<em>restart</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 M-Way Solutions GmbH. All rights reserved. Updated: 2017-09-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

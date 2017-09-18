@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BRBeaconTrigger Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BlueRange SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">M-Way Solutions GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/activationDistanceInMeter">activationDistanceInMeter</option>
+		
+		<option value="//api/name/inactivationDistanceInMeter">inactivationDistanceInMeter</option>
+		
+		<option value="//api/name/inactivationDurationInMs">inactivationDurationInMs</option>
+		
+		<option value="//api/name/minDistanceDifferenceToActivateInM">minDistanceDifferenceToActivateInM</option>
+		
+		<option value="//api/name/multiBeaconMode">multiBeaconMode</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/activateBeacon:">- activateBeacon:</option>
+		
+		<option value="//api/name/addIBeaconTrigger:andMajor:andMinor:">- addIBeaconTrigger:andMajor:andMinor:</option>
+		
+		<option value="//api/name/addIBeaconTriggers:">- addIBeaconTriggers:</option>
+		
+		<option value="//api/name/addObserver:">- addObserver:</option>
+		
+		<option value="//api/name/addRelutionTagTrigger:">- addRelutionTagTrigger:</option>
+		
+		<option value="//api/name/addRelutionTagTriggers:">- addRelutionTagTriggers:</option>
+		
+		<option value="//api/name/beaconWinsRace:andDistance:">- beaconWinsRace:andDistance:</option>
+		
+		<option value="//api/name/estimateDistanceInMeters:">- estimateDistanceInMeters:</option>
+		
+		<option value="//api/name/existsTriggeringIBeacon:allowedIBeacons:">- existsTriggeringIBeacon:allowedIBeacons:</option>
+		
+		<option value="//api/name/getReactionMode">- getReactionMode</option>
+		
+		<option value="//api/name/getReactionTimeInMs">- getReactionTimeInMs</option>
+		
+		<option value="//api/name/inactivateBeacon:">- inactivateBeacon:</option>
+		
+		<option value="//api/name/initAggregator">- initAggregator</option>
+		
+		<option value="//api/name/initScanner:">- initScanner:</option>
+		
+		<option value="//api/name/initWithTracer:andScanner:">- initWithTracer:andScanner:</option>
+		
+		<option value="//api/name/initWithTracer:andScanner:andDistanceEstimator:">- initWithTracer:andScanner:andDistanceEstimator:</option>
+		
+		<option value="//api/name/isBeaconActive:">- isBeaconActive:</option>
+		
+		<option value="//api/name/isNoBeaconActive:">- isNoBeaconActive:</option>
+		
+		<option value="//api/name/notifyObserversAboutBeaconActivation:">- notifyObserversAboutBeaconActivation:</option>
+		
+		<option value="//api/name/notifyObserversAboutBeaconInactivation:">- notifyObserversAboutBeaconInactivation:</option>
+		
+		<option value="//api/name/onReceivedMessage:withMessage:">- onReceivedMessage:withMessage:</option>
+		
+		<option value="//api/name/onTimerElapsed:">- onTimerElapsed:</option>
+		
+		<option value="//api/name/onUpdateMessage:">- onUpdateMessage:</option>
+		
+		<option value="//api/name/refreshTimer:">- refreshTimer:</option>
+		
+		<option value="//api/name/relutionTagMessageContainsAtLeastOneMatchingTag:tagList:">- relutionTagMessageContainsAtLeastOneMatchingTag:tagList:</option>
+		
+		<option value="//api/name/setReactionDurationInMs:">- setReactionDurationInMs:</option>
+		
+		<option value="//api/name/setReactionMode:">- setReactionMode:</option>
+		
+		<option value="//api/name/stop">- stop</option>
+		
+		<option value="//api/name/updateDistance:distance:">- updateDistance:distance:</option>
+		
+		<option value="//api/name/updateMessage:">- updateMessage:</option>
+		
+		<option value="//api/name/updateTimestamp:">- updateTimestamp:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BRBeaconTrigger Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/BRBeaconMessageStreamNodeDefaultReceiver.html">BRBeaconMessageStreamNodeDefaultReceiver</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BRBeaconTrigger.h<br />BRBeaconTrigger.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/multiBeaconMode" title="multiBeaconMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/multiBeaconMode">&nbsp;&nbsp;multiBeaconMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property BOOL multiBeaconMode</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minDistanceDifferenceToActivateInM" title="minDistanceDifferenceToActivateInM"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minDistanceDifferenceToActivateInM">&nbsp;&nbsp;minDistanceDifferenceToActivateInM</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property float minDistanceDifferenceToActivateInM</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/activationDistanceInMeter" title="activationDistanceInMeter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/activationDistanceInMeter">&nbsp;&nbsp;activationDistanceInMeter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property float activationDistanceInMeter</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/inactivationDistanceInMeter" title="inactivationDistanceInMeter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/inactivationDistanceInMeter">&nbsp;&nbsp;inactivationDistanceInMeter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property float inactivationDistanceInMeter</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/inactivationDurationInMs" title="inactivationDurationInMs"></a>
+	<h3 class="method-title"><code><a href="#//api/name/inactivationDurationInMs">&nbsp;&nbsp;inactivationDurationInMs</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property float inactivationDurationInMs</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithTracer:andScanner:" title="initWithTracer:andScanner:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithTracer:andScanner:">&ndash;&nbsp;initWithTracer:andScanner:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithTracer:(id&lt;BRITracer&gt;)<em>tracer</em> andScanner:(BRIBeaconMessageScanner *)<em>scanner</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithTracer:andScanner:andDistanceEstimator:" title="initWithTracer:andScanner:andDistanceEstimator:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithTracer:andScanner:andDistanceEstimator:">&ndash;&nbsp;initWithTracer:andScanner:andDistanceEstimator:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithTracer:(id&lt;BRITracer&gt;)<em>tracer</em> andScanner:(BRIBeaconMessageScanner *)<em>scanner</em> andDistanceEstimator:(id&lt;BRDistanceEstimator&gt;)<em>distanceEstimator</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addRelutionTagTrigger:" title="addRelutionTagTrigger:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addRelutionTagTrigger:">&ndash;&nbsp;addRelutionTagTrigger:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addRelutionTagTrigger:(long)<em>tag</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addRelutionTagTriggers:" title="addRelutionTagTriggers:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addRelutionTagTriggers:">&ndash;&nbsp;addRelutionTagTriggers:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addRelutionTagTriggers:(NSArray *)<em>tags</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addIBeaconTrigger:andMajor:andMinor:" title="addIBeaconTrigger:andMajor:andMinor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addIBeaconTrigger:andMajor:andMinor:">&ndash;&nbsp;addIBeaconTrigger:andMajor:andMinor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addIBeaconTrigger:(NSUUID *)<em>uuid</em> andMajor:(int)<em>major</em> andMinor:(int)<em>minor</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addIBeaconTriggers:" title="addIBeaconTriggers:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addIBeaconTriggers:">&ndash;&nbsp;addIBeaconTriggers:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addIBeaconTriggers:(NSArray *)<em>iBeacons</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addObserver:" title="addObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addObserver:">&ndash;&nbsp;addObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addObserver:(id&lt;BRBeaconTriggerObserver&gt;)<em>observer</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setReactionDurationInMs:" title="setReactionDurationInMs:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setReactionDurationInMs:">&ndash;&nbsp;setReactionDurationInMs:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)setReactionDurationInMs:(long)<em>reflectionTimeInMs</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getReactionTimeInMs" title="getReactionTimeInMs"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getReactionTimeInMs">&ndash;&nbsp;getReactionTimeInMs</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (long)getReactionTimeInMs</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setReactionMode:" title="setReactionMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setReactionMode:">&ndash;&nbsp;setReactionMode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)setReactionMode:(ReactionMode)<em>reactionMode</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getReactionMode" title="getReactionMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getReactionMode">&ndash;&nbsp;getReactionMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (ReactionMode)getReactionMode</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/onReceivedMessage:withMessage:" title="onReceivedMessage:withMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onReceivedMessage:withMessage:">&ndash;&nbsp;onReceivedMessage:withMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onReceivedMessage:(BRBeaconMessageStreamNode *)<em>senderNode</em> withMessage:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initScanner:" title="initScanner:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initScanner:">&ndash;&nbsp;initScanner:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initScanner:(BRIBeaconMessageScanner *)<em>scanner</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initAggregator" title="initAggregator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initAggregator">&ndash;&nbsp;initAggregator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initAggregator</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onUpdateMessage:" title="onUpdateMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onUpdateMessage:">&ndash;&nbsp;onUpdateMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onUpdateMessage:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/relutionTagMessageContainsAtLeastOneMatchingTag:tagList:" title="relutionTagMessageContainsAtLeastOneMatchingTag:tagList:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/relutionTagMessageContainsAtLeastOneMatchingTag:tagList:">&ndash;&nbsp;relutionTagMessageContainsAtLeastOneMatchingTag:tagList:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)relutionTagMessageContainsAtLeastOneMatchingTag:(BRRelutionTagMessageV1 *)<em>relutionTagMessage</em> tagList:(NSArray *)<em>tags</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/existsTriggeringIBeacon:allowedIBeacons:" title="existsTriggeringIBeacon:allowedIBeacons:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/existsTriggeringIBeacon:allowedIBeacons:">&ndash;&nbsp;existsTriggeringIBeacon:allowedIBeacons:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)existsTriggeringIBeacon:(BRIBeaconMessage *)<em>iBeaconMessage</em> allowedIBeacons:(NSArray *)<em>allowedIBeacons</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateMessage:" title="updateMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateMessage:">&ndash;&nbsp;updateMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)updateMessage:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/estimateDistanceInMeters:" title="estimateDistanceInMeters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/estimateDistanceInMeters:">&ndash;&nbsp;estimateDistanceInMeters:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (float)estimateDistanceInMeters:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateDistance:distance:" title="updateDistance:distance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateDistance:distance:">&ndash;&nbsp;updateDistance:distance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)updateDistance:(BRBeaconMessage *)<em>message</em> distance:(float)<em>distanceInMeter</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateTimestamp:" title="updateTimestamp:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateTimestamp:">&ndash;&nbsp;updateTimestamp:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)updateTimestamp:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isNoBeaconActive:" title="isNoBeaconActive:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isNoBeaconActive:">&ndash;&nbsp;isNoBeaconActive:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isNoBeaconActive:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/beaconWinsRace:andDistance:" title="beaconWinsRace:andDistance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beaconWinsRace:andDistance:">&ndash;&nbsp;beaconWinsRace:andDistance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)beaconWinsRace:(BRBeaconMessage *)<em>message</em> andDistance:(float)<em>distance</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isBeaconActive:" title="isBeaconActive:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isBeaconActive:">&ndash;&nbsp;isBeaconActive:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isBeaconActive:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/activateBeacon:" title="activateBeacon:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/activateBeacon:">&ndash;&nbsp;activateBeacon:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)activateBeacon:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifyObserversAboutBeaconActivation:" title="notifyObserversAboutBeaconActivation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifyObserversAboutBeaconActivation:">&ndash;&nbsp;notifyObserversAboutBeaconActivation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)notifyObserversAboutBeaconActivation:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refreshTimer:" title="refreshTimer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refreshTimer:">&ndash;&nbsp;refreshTimer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)refreshTimer:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onTimerElapsed:" title="onTimerElapsed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onTimerElapsed:">&ndash;&nbsp;onTimerElapsed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onTimerElapsed:(NSTimer *)<em>timer</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifyObserversAboutBeaconInactivation:" title="notifyObserversAboutBeaconInactivation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifyObserversAboutBeaconInactivation:">&ndash;&nbsp;notifyObserversAboutBeaconInactivation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)notifyObserversAboutBeaconInactivation:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/inactivateBeacon:" title="inactivateBeacon:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/inactivateBeacon:">&ndash;&nbsp;inactivateBeacon:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)inactivateBeacon:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 M-Way Solutions GmbH. All rights reserved. Updated: 2017-09-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

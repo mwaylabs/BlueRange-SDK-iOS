@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BRRelutionIoTService Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BlueRange SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">M-Way Solutions GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/addBeaconContentActionDebugObserver:">+ addBeaconContentActionDebugObserver:</option>
+		
+		<option value="//api/name/addBeaconContentActionObserver:">+ addBeaconContentActionObserver:</option>
+		
+		<option value="//api/name/addBeaconMessageObserver:">+ addBeaconMessageObserver:</option>
+		
+		<option value="//api/name/addBeaconNotificationActionDebugObserver:">+ addBeaconNotificationActionDebugObserver:</option>
+		
+		<option value="//api/name/addBeaconNotificationActionObserver:">+ addBeaconNotificationActionObserver:</option>
+		
+		<option value="//api/name/addBeaconTagActionDebugObserver:">+ addBeaconTagActionDebugObserver:</option>
+		
+		<option value="//api/name/addBeaconTagActionObserver:">+ addBeaconTagActionObserver:</option>
+		
+		<option value="//api/name/addLoginObserver:">+ addLoginObserver:</option>
+		
+		<option value="//api/name/addPolicyTriggerObserver:">+ addPolicyTriggerObserver:</option>
+		
+		<option value="//api/name/addRelutionTagObserver:">+ addRelutionTagObserver:</option>
+		
+		<option value="//api/name/calibrateIBeacon:withTxPower:">+ calibrateIBeacon:withTxPower:</option>
+		
+		<option value="//api/name/getHostname">+ getHostname</option>
+		
+		<option value="//api/name/getOrganizationUuid">+ getOrganizationUuid</option>
+		
+		<option value="//api/name/getTagInfoForTag:">+ getTagInfoForTag:</option>
+		
+		<option value="//api/name/getUsername">+ getUsername</option>
+		
+		<option value="//api/name/isRunning">+ isRunning</option>
+		
+		<option value="//api/name/publishBeaconActive">+ publishBeaconActive</option>
+		
+		<option value="//api/name/publishBeaconInactive">+ publishBeaconInactive</option>
+		
+		<option value="//api/name/publishBeacons:">+ publishBeacons:</option>
+		
+		<option value="//api/name/publishContentAction:">+ publishContentAction:</option>
+		
+		<option value="//api/name/publishContentActionExecuted:">+ publishContentActionExecuted:</option>
+		
+		<option value="//api/name/publishDistance:">+ publishDistance:</option>
+		
+		<option value="//api/name/publishLoginFailed">+ publishLoginFailed</option>
+		
+		<option value="//api/name/publishLoginRelutionError">+ publishLoginRelutionError</option>
+		
+		<option value="//api/name/publishLoginSucceeded">+ publishLoginSucceeded</option>
+		
+		<option value="//api/name/publishNotificationAction:">+ publishNotificationAction:</option>
+		
+		<option value="//api/name/publishNotificationActionExecuted:">+ publishNotificationActionExecuted:</option>
+		
+		<option value="//api/name/publishRelutionTag:andMessage:">+ publishRelutionTag:andMessage:</option>
+		
+		<option value="//api/name/publishTagAction:">+ publishTagAction:</option>
+		
+		<option value="//api/name/publishTagActionExecuted:">+ publishTagActionExecuted:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/createScanner">- createScanner</option>
+		
+		<option value="//api/name/createScannerSimulator">- createScannerSimulator</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/initRelutionTagRegistry:">- initRelutionTagRegistry:</option>
+		
+		<option value="//api/name/initTracing">- initTracing</option>
+		
+		<option value="//api/name/login">- login</option>
+		
+		<option value="//api/name/onActionExecutionStarted:">- onActionExecutionStarted:</option>
+		
+		<option value="//api/name/onActionTriggered:">- onActionTriggered:</option>
+		
+		<option value="//api/name/onBeaconActive:">- onBeaconActive:</option>
+		
+		<option value="//api/name/onBeaconInactive:">- onBeaconInactive:</option>
+		
+		<option value="//api/name/onMeshActive:">- onMeshActive:</option>
+		
+		<option value="//api/name/onMeshInactive:">- onMeshInactive:</option>
+		
+		<option value="//api/name/onNewDistance:distance:">- onNewDistance:distance:</option>
+		
+		<option value="//api/name/onNotificationActionTriggered:">- onNotificationActionTriggered:</option>
+		
+		<option value="//api/name/onReceivedMessage:withMessage:">- onReceivedMessage:withMessage:</option>
+		
+		<option value="//api/name/onTagVisited:">- onTagVisited:</option>
+		
+		<option value="//api/name/setCampaignActionTriggerEnabled:">- setCampaignActionTriggerEnabled:</option>
+		
+		<option value="//api/name/setHeatmapGenerationEnabled:">- setHeatmapGenerationEnabled:</option>
+		
+		<option value="//api/name/setHeatmapReportingEnabled:">- setHeatmapReportingEnabled:</option>
+		
+		<option value="//api/name/setLoggingEnabled:">- setLoggingEnabled:</option>
+		
+		<option value="//api/name/setLoginData:andUsername:andPassword:andLoginObserver:">- setLoginData:andUsername:andPassword:andLoginObserver:</option>
+		
+		<option value="//api/name/setPolicyTriggerEnabled:">- setPolicyTriggerEnabled:</option>
+		
+		<option value="//api/name/start">- start</option>
+		
+		<option value="//api/name/startAdvertiser">- startAdvertiser</option>
+		
+		<option value="//api/name/startPolicyTrigger:">- startPolicyTrigger:</option>
+		
+		<option value="//api/name/startReporter:">- startReporter:</option>
+		
+		<option value="//api/name/startScanConfigLoader">- startScanConfigLoader</option>
+		
+		<option value="//api/name/startScanner:">- startScanner:</option>
+		
+		<option value="//api/name/startTrigger:">- startTrigger:</option>
+		
+		<option value="//api/name/stop">- stop</option>
+		
+		<option value="//api/name/stopAdvertiser">- stopAdvertiser</option>
+		
+		<option value="//api/name/stopPolicyTrigger">- stopPolicyTrigger</option>
+		
+		<option value="//api/name/stopRelutionTagRegistry">- stopRelutionTagRegistry</option>
+		
+		<option value="//api/name/stopReporter">- stopReporter</option>
+		
+		<option value="//api/name/stopScanConfigLoader">- stopScanConfigLoader</option>
+		
+		<option value="//api/name/stopScanner">- stopScanner</option>
+		
+		<option value="//api/name/stopTrigger">- stopTrigger</option>
+		
+		<option value="//api/name/stopWithoutRemovingObservers">- stopWithoutRemovingObservers</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BRRelutionIoTService Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/BRBeaconActionDebugListener.html">BRBeaconActionDebugListener</a><br /><a href="../Protocols/BRBeaconContentActionListener.html">BRBeaconContentActionListener</a><br /><a href="../Protocols/BRBeaconMessageStreamNodeReceiver.html">BRBeaconMessageStreamNodeReceiver</a><br /><a href="../Protocols/BRBeaconNotificationListener.html">BRBeaconNotificationListener</a><br /><a href="../Protocols/BRBeaconTagActionListener.html">BRBeaconTagActionListener</a><br /><a href="../Protocols/BRBeaconTriggerObserver.html">BRBeaconTriggerObserver</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BRRelutionIoTService.h<br />BRRelutionIoTService.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This service class unites all features that are currently supported by the SDK and provides an
+easy to use interface, so that it is not necessary to know all the details of the underlying
+message processing architecture. Before starting this service with one of the <a href="#//api/name/start">start</a> methods
+defined in the base class, you must call the {@link #setConfig} method, where you pass the
+Relution server URL, the organization UUID and the <a href="#//api/name/login">login</a> data. After the service has been
+started, you can register different observers to get informed about incoming beacon messages,
+Relution tags or executed actions. Moreover, you can use this class to calibrate iBeacon
+messages.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/addLoginObserver:" title="addLoginObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addLoginObserver:">+&nbsp;addLoginObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds an observer for Relution <a href="#//api/name/login">login</a> events.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addLoginObserver:(id&lt;BRLoginObserver&gt;)<em>loginObserver</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds an observer for Relution <a href="#//api/name/login">login</a> events.</p>
+
+<p>@param loginObserver</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addBeaconMessageObserver:" title="addBeaconMessageObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addBeaconMessageObserver:">+&nbsp;addBeaconMessageObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds an observer for incoming beacon messages. Notice: Only
+beacon as configured in Relution will be detected and considered
+by this observer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addBeaconMessageObserver:(id&lt;BRBeaconMessageObserver&gt;)<em>observer</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds an observer for incoming beacon messages. Notice: Only
+beacon as configured in Relution will be detected and considered
+by this observer.</p>
+
+<p>@param observer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addBeaconTagActionObserver:" title="addBeaconTagActionObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addBeaconTagActionObserver:">+&nbsp;addBeaconTagActionObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds an observer for &ldquo;Tag&rdquo; actions as defined in Relution (Campaigns).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addBeaconTagActionObserver:(id&lt;BRBeaconTagActionObserver&gt;)<em>observer</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds an observer for &ldquo;Tag&rdquo; actions as defined in Relution (Campaigns).</p>
+
+<p>@param observer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addBeaconContentActionObserver:" title="addBeaconContentActionObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addBeaconContentActionObserver:">+&nbsp;addBeaconContentActionObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds an observer for &ldquo;Content&rdquo; actions as defined in Relution (Campaigns).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addBeaconContentActionObserver:(id&lt;BRBeaconContentActionObserver&gt;)<em>observer</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds an observer for &ldquo;Content&rdquo; actions as defined in Relution (Campaigns).</p>
+
+<p>@param observer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addBeaconNotificationActionObserver:" title="addBeaconNotificationActionObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addBeaconNotificationActionObserver:">+&nbsp;addBeaconNotificationActionObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds an observer for &ldquo;Notification&rdquo; actions as defined in Relution (Campaigns).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addBeaconNotificationActionObserver:(id&lt;BRBeaconNotificationActionObserver&gt;)<em>observer</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds an observer for &ldquo;Notification&rdquo; actions as defined in Relution (Campaigns).</p>
+
+<p>@param observer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addBeaconTagActionDebugObserver:" title="addBeaconTagActionDebugObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addBeaconTagActionDebugObserver:">+&nbsp;addBeaconTagActionDebugObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Should only be used when debugging Relution Proximity Messaging.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addBeaconTagActionDebugObserver:(id&lt;BRBeaconTagActionDebugObserver&gt;)<em>observer</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Should only be used when debugging Relution Proximity Messaging.</p>
+
+<p>@param observer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addBeaconContentActionDebugObserver:" title="addBeaconContentActionDebugObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addBeaconContentActionDebugObserver:">+&nbsp;addBeaconContentActionDebugObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Should only be used when debugging Relution Proximity Messaging.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addBeaconContentActionDebugObserver:(id&lt;BRBeaconContentActionDebugObserver&gt;)<em>observer</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Should only be used when debugging Relution Proximity Messaging.</p>
+
+<p>@param observer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addBeaconNotificationActionDebugObserver:" title="addBeaconNotificationActionDebugObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addBeaconNotificationActionDebugObserver:">+&nbsp;addBeaconNotificationActionDebugObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Should only be used when debugging Relution Proximity Messaging.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addBeaconNotificationActionDebugObserver:(id&lt;BRBeaconNotificationActionDebugObserver&gt;)<em>observer</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Should only be used when debugging Relution Proximity Messaging.</p>
+
+<p>@param observer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addRelutionTagObserver:" title="addRelutionTagObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addRelutionTagObserver:">+&nbsp;addRelutionTagObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Should only be used when debugging Relution Proximity Messaging.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addRelutionTagObserver:(id&lt;BRPolicyTriggerObserver&gt;)<em>observer</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Should only be used when debugging Relution Proximity Messaging.</p>
+
+<p>@param observer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addPolicyTriggerObserver:" title="addPolicyTriggerObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addPolicyTriggerObserver:">+&nbsp;addPolicyTriggerObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Should only be used when debugging Relution Proximity Messaging.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addPolicyTriggerObserver:(id&lt;BRPolicyTriggerObserver&gt;)<em>observer</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Should only be used when debugging Relution Proximity Messaging.</p>
+
+<p>@param observer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new Relution IoT service instance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The newly created Relution IoT service instance.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a new Relution IoT service instance.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLoginData:andUsername:andPassword:andLoginObserver:" title="setLoginData:andUsername:andPassword:andLoginObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLoginData:andUsername:andPassword:andLoginObserver:">&ndash;&nbsp;setLoginData:andUsername:andPassword:andLoginObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the <a href="#//api/name/login">login</a> data of the Relution IoT service. This method must
+be called before starting the service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BRRelutionIoTService *)setLoginData:(NSString *)<em>baseUrl</em> andUsername:(NSString *)<em>username</em> andPassword:(NSString *)<em>password</em> andLoginObserver:(id&lt;BRLoginObserver&gt;)<em>loginObserver</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>baseUrl</code></th>
+						<td><p>The Relution base URL (e.g. <a href="https://iot2.relution.io">https://iot2.relution.io</a>)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>The Relution username</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>The Relution password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>loginObserver</code></th>
+						<td><p>The <a href="#//api/name/login">login</a> observer. It will be informed about a successfull/unsuccessful <a href="#//api/name/login">login</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The Relution IoT service object.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the <a href="#//api/name/login">login</a> data of the Relution IoT service. This method must
+be called before starting the service.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLoggingEnabled:" title="setLoggingEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLoggingEnabled:">&ndash;&nbsp;setLoggingEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures whether logging should be enabled. Disable logging in production
+because logging can affect the app performance dramatically.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BRRelutionIoTService *)setLoggingEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><p>true, if logging should be enabled.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The Relution IoT service object.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures whether logging should be enabled. Disable logging in production
+because logging can affect the app performance dramatically.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCampaignActionTriggerEnabled:" title="setCampaignActionTriggerEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCampaignActionTriggerEnabled:">&ndash;&nbsp;setCampaignActionTriggerEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures whether Relution IoT proximity messaging should be enabled.
+If true, a beacon action trigger will execute actions based on the time and location
+specific parameters as configured in Relution IoT.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BRRelutionIoTService *)setCampaignActionTriggerEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><p>true, if Proximity messaging should be enabled.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The Relution IoT service object.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures whether Relution IoT proximity messaging should be enabled.
+If true, a beacon action trigger will execute actions based on the time and location
+specific parameters as configured in Relution IoT.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setHeatmapGenerationEnabled:" title="setHeatmapGenerationEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setHeatmapGenerationEnabled:">&ndash;&nbsp;setHeatmapGenerationEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures whether Relution Heatmap should be enabled.
+If true, the app will send specific Bluetooth LE advertising messages in background.
+These messages will be collected by the beacons and upstreamed to the cloud.
+This service can be used for heatmap generation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BRRelutionIoTService *)setHeatmapGenerationEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><p>true, if Relution Heatmap feature should be enabled.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The Relution IoT service object</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures whether Relution Heatmap should be enabled.
+If true, the app will send specific Bluetooth LE advertising messages in background.
+These messages will be collected by the beacons and upstreamed to the cloud.
+This service can be used for heatmap generation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setHeatmapReportingEnabled:" title="setHeatmapReportingEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setHeatmapReportingEnabled:">&ndash;&nbsp;setHeatmapReportingEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures, whether Relution Analytics should be enabled.
+If true, Relution SmartBeacon IDs and their estimated distances will
+regularly be send to Relution for analytics. This information could
+be used also for server based indoor localization.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BRRelutionIoTService *)setHeatmapReportingEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><p>true, if Relution Analytics should be enabled.
+@returnThe Relution IoT service object</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures, whether Relution Analytics should be enabled.
+If true, Relution SmartBeacon IDs and their estimated distances will
+regularly be send to Relution for analytics. This information could
+be used also for server based indoor localization.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPolicyTriggerEnabled:" title="setPolicyTriggerEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPolicyTriggerEnabled:">&ndash;&nbsp;setPolicyTriggerEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BRRelutionIoTService *)setPolicyTriggerEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="method-title"><code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the Relution IoT service. After a successful <a href="#//api/name/login">login</a>, all
+service components will be started as configured.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)start</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Starts the Relution IoT service. After a successful <a href="#//api/name/login">login</a>, all
+service components will be started as configured.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stops the Relution IoT service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Stops the Relution IoT service.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isRunning" title="isRunning"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isRunning">+&nbsp;isRunning</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns true, when the service has been started and not stopped yet.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isRunning</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns true, when the service has been started and not stopped yet.</p>
+
+<p>@return</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTagInfoForTag:" title="getTagInfoForTag:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTagInfoForTag:">+&nbsp;getTagInfoForTag:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches informations about the Relution Tags from the Relution server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BRRelutionTagInfo *)getTagInfoForTag:(long)<em>tag</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tag</code></th>
+						<td><p>The Relution Tag ID.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>@link{BRRelutionTagInfo}</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetches informations about the Relution Tags from the Relution server.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/calibrateIBeacon:withTxPower:" title="calibrateIBeacon:withTxPower:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/calibrateIBeacon:withTxPower:">+&nbsp;calibrateIBeacon:withTxPower:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends an iBeacon txPower calibration to Relution. This will affect
+the distance estimation which will both consider the received signal
+strength of the beacon message (RSSI) and this calibrated RSSI (txPower).
+The txPower should be the mean RSSI measured at one meter distance to the beacon.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)calibrateIBeacon:(BRIBeacon *)<em>iBeacon</em> withTxPower:(float)<em>txPower</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>iBeacon</code></th>
+						<td><p>The iBeacon to be calibrated.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>txPower</code></th>
+						<td><p>The calibrated RSSI (txPower) (e.g -55 dBm).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sends an iBeacon txPower calibration to Relution. This will affect
+the distance estimation which will both consider the received signal
+strength of the beacon message (RSSI) and this calibrated RSSI (txPower).
+The txPower should be the mean RSSI measured at one meter distance to the beacon.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getOrganizationUuid" title="getOrganizationUuid"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getOrganizationUuid">+&nbsp;getOrganizationUuid</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The Relution organization UUID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getOrganizationUuid</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The Relution organization UUID</p>
+
+<p>@return</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUsername" title="getUsername"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUsername">+&nbsp;getUsername</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The Relution username</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getUsername</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Relution username</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The Relution username</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getHostname" title="getHostname"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getHostname">+&nbsp;getHostname</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The Relution hostname (e.g. <a href="https://iot2.relution.io">https://iot2.relution.io</a>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getHostname</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The Relution hostname</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The Relution hostname (e.g. <a href="https://iot2.relution.io">https://iot2.relution.io</a>)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRRelutionIoTService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/login" title="login"></a>
+	<h3 class="method-title"><code><a href="#//api/name/login">&ndash;&nbsp;login</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)login</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initTracing" title="initTracing"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initTracing">&ndash;&nbsp;initTracing</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initTracing</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createScannerSimulator" title="createScannerSimulator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createScannerSimulator">&ndash;&nbsp;createScannerSimulator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BRIBeaconMessageScanner *)createScannerSimulator</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createScanner" title="createScanner"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createScanner">&ndash;&nbsp;createScanner</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BRIBeaconMessageScanner *)createScanner</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startScanConfigLoader" title="startScanConfigLoader"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startScanConfigLoader">&ndash;&nbsp;startScanConfigLoader</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startScanConfigLoader</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startReporter:" title="startReporter:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startReporter:">&ndash;&nbsp;startReporter:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startReporter:(BRIBeaconMessageScanner *)<em>scanner</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startTrigger:" title="startTrigger:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startTrigger:">&ndash;&nbsp;startTrigger:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startTrigger:(BRIBeaconMessageScanner *)<em>scanner</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startPolicyTrigger:" title="startPolicyTrigger:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startPolicyTrigger:">&ndash;&nbsp;startPolicyTrigger:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startPolicyTrigger:(BRIBeaconMessageScanner *)<em>scanner</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onBeaconActive:" title="onBeaconActive:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onBeaconActive:">&ndash;&nbsp;onBeaconActive:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onBeaconActive:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onBeaconInactive:" title="onBeaconInactive:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onBeaconInactive:">&ndash;&nbsp;onBeaconInactive:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onBeaconInactive:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onNewDistance:distance:" title="onNewDistance:distance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onNewDistance:distance:">&ndash;&nbsp;onNewDistance:distance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onNewDistance:(BRBeaconMessage *)<em>message</em> distance:(float)<em>distance</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startScanner:" title="startScanner:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startScanner:">&ndash;&nbsp;startScanner:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startScanner:(BRIBeaconMessageScanner *)<em>scanner</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initRelutionTagRegistry:" title="initRelutionTagRegistry:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initRelutionTagRegistry:">&ndash;&nbsp;initRelutionTagRegistry:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initRelutionTagRegistry:(BRIBeaconMessageScanner *)<em>scanner</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startAdvertiser" title="startAdvertiser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startAdvertiser">&ndash;&nbsp;startAdvertiser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startAdvertiser</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onMeshActive:" title="onMeshActive:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onMeshActive:">&ndash;&nbsp;onMeshActive:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onMeshActive:(BRBeaconMessageStreamNode *)<em>senderNode</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onReceivedMessage:withMessage:" title="onReceivedMessage:withMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onReceivedMessage:withMessage:">&ndash;&nbsp;onReceivedMessage:withMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onReceivedMessage:(BRBeaconMessageStreamNode *)<em>senderNode</em> withMessage:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onMeshInactive:" title="onMeshInactive:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onMeshInactive:">&ndash;&nbsp;onMeshInactive:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onMeshInactive:(BRBeaconMessageStreamNode *)<em>senderNode</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onActionExecutionStarted:" title="onActionExecutionStarted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onActionExecutionStarted:">&ndash;&nbsp;onActionExecutionStarted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onActionExecutionStarted:(BRBeaconAction *)<em>action</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onActionTriggered:" title="onActionTriggered:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onActionTriggered:">&ndash;&nbsp;onActionTriggered:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onActionTriggered:(BRBeaconContentAction *)<em>contentAction</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onTagVisited:" title="onTagVisited:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onTagVisited:">&ndash;&nbsp;onTagVisited:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onTagVisited:(BRBeaconTagAction *)<em>tagAction</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onNotificationActionTriggered:" title="onNotificationActionTriggered:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onNotificationActionTriggered:">&ndash;&nbsp;onNotificationActionTriggered:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onNotificationActionTriggered:(BRBeaconNotificationAction *)<em>notificationAction</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishLoginSucceeded" title="publishLoginSucceeded"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishLoginSucceeded">+&nbsp;publishLoginSucceeded</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishLoginSucceeded</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishLoginFailed" title="publishLoginFailed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishLoginFailed">+&nbsp;publishLoginFailed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishLoginFailed</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishLoginRelutionError" title="publishLoginRelutionError"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishLoginRelutionError">+&nbsp;publishLoginRelutionError</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishLoginRelutionError</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishBeacons:" title="publishBeacons:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishBeacons:">+&nbsp;publishBeacons:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishBeacons:(BRBeaconMessage *)<em>beaconMessage</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishTagAction:" title="publishTagAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishTagAction:">+&nbsp;publishTagAction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishTagAction:(BRBeaconTagAction *)<em>tagAction</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishTagActionExecuted:" title="publishTagActionExecuted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishTagActionExecuted:">+&nbsp;publishTagActionExecuted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishTagActionExecuted:(BRBeaconTagAction *)<em>tagAction</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishContentAction:" title="publishContentAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishContentAction:">+&nbsp;publishContentAction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishContentAction:(BRBeaconContentAction *)<em>contentAction</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishContentActionExecuted:" title="publishContentActionExecuted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishContentActionExecuted:">+&nbsp;publishContentActionExecuted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishContentActionExecuted:(BRBeaconContentAction *)<em>contentAction</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishNotificationAction:" title="publishNotificationAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishNotificationAction:">+&nbsp;publishNotificationAction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishNotificationAction:(BRBeaconNotificationAction *)<em>notificationAction</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishNotificationActionExecuted:" title="publishNotificationActionExecuted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishNotificationActionExecuted:">+&nbsp;publishNotificationActionExecuted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishNotificationActionExecuted:(BRBeaconNotificationAction *)<em>notificationAction</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishRelutionTag:andMessage:" title="publishRelutionTag:andMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishRelutionTag:andMessage:">+&nbsp;publishRelutionTag:andMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishRelutionTag:(long)<em>tag</em> andMessage:(BRRelutionTagMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishBeaconActive" title="publishBeaconActive"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishBeaconActive">+&nbsp;publishBeaconActive</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishBeaconActive</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishBeaconInactive" title="publishBeaconInactive"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishBeaconInactive">+&nbsp;publishBeaconInactive</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishBeaconInactive</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishDistance:" title="publishDistance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishDistance:">+&nbsp;publishDistance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)publishDistance:(float)<em>distance</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopWithoutRemovingObservers" title="stopWithoutRemovingObservers"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopWithoutRemovingObservers">&ndash;&nbsp;stopWithoutRemovingObservers</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopWithoutRemovingObservers</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopRelutionTagRegistry" title="stopRelutionTagRegistry"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopRelutionTagRegistry">&ndash;&nbsp;stopRelutionTagRegistry</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopRelutionTagRegistry</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopAdvertiser" title="stopAdvertiser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopAdvertiser">&ndash;&nbsp;stopAdvertiser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopAdvertiser</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopScanConfigLoader" title="stopScanConfigLoader"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopScanConfigLoader">&ndash;&nbsp;stopScanConfigLoader</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopScanConfigLoader</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopScanner" title="stopScanner"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopScanner">&ndash;&nbsp;stopScanner</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopScanner</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopPolicyTrigger" title="stopPolicyTrigger"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopPolicyTrigger">&ndash;&nbsp;stopPolicyTrigger</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopPolicyTrigger</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopTrigger" title="stopTrigger"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopTrigger">&ndash;&nbsp;stopTrigger</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopTrigger</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopReporter" title="stopReporter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopReporter">&ndash;&nbsp;stopReporter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopReporter</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 M-Way Solutions GmbH. All rights reserved. Updated: 2017-09-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

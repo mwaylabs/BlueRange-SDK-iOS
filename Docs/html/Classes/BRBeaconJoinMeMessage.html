@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BRBeaconJoinMeMessage Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BlueRange SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">M-Way Solutions GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/ackField">ackField</option>
+		
+		<option value="//api/name/batteryRuntime">batteryRuntime</option>
+		
+		<option value="//api/name/clusterId">clusterId</option>
+		
+		<option value="//api/name/clusterSize">clusterSize</option>
+		
+		<option value="//api/name/deviceType">deviceType</option>
+		
+		<option value="//api/name/freeInConnections">freeInConnections</option>
+		
+		<option value="//api/name/freeOutConnections">freeOutConnections</option>
+		
+		<option value="//api/name/hopsToSink">hopsToSink</option>
+		
+		<option value="//api/name/meshWriteHandle">meshWriteHandle</option>
+		
+		<option value="//api/name/networkId">networkId</option>
+		
+		<option value="//api/name/nodeId">nodeId</option>
+		
+		<option value="//api/name/txPower">txPower</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/copyWithZone:">- copyWithZone:</option>
+		
+		<option value="//api/name/encodeWithCoder:">- encodeWithCoder:</option>
+		
+		<option value="//api/name/getDescription">- getDescription</option>
+		
+		<option value="//api/name/hash">- hash</option>
+		
+		<option value="//api/name/initWithCoder:">- initWithCoder:</option>
+		
+		<option value="//api/name/initWithDate:andNetworkId:andSender:andClusterId:andClusterSize:andFreeInConnections:andFreeOutConnections:andBatteryRuntime:andTxPower:andDeviceType:andHopsToSink:andMeshWriteHandle:andAckField:andRssi:">- initWithDate:andNetworkId:andSender:andClusterId:andClusterSize:andFreeInConnections:andFreeOutConnections:andBatteryRuntime:andTxPower:andDeviceType:andHopsToSink:andMeshWriteHandle:andAckField:andRssi:</option>
+		
+		<option value="//api/name/initWithNetworkId:andSender:andClusterId:andClusterSize:andFreeInConnections:andFreeOutConnections:andBatteryRuntime:andTxPower:andDeviceType:andHopsToSink:andMeshWriteHandle:andAckField:andRssi:">- initWithNetworkId:andSender:andClusterId:andClusterSize:andFreeInConnections:andFreeOutConnections:andBatteryRuntime:andTxPower:andDeviceType:andHopsToSink:andMeshWriteHandle:andAckField:andRssi:</option>
+		
+		<option value="//api/name/isEqual:">- isEqual:</option>
+		
+		<option value="//api/name/newCopy">- newCopy</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BRBeaconJoinMeMessage Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/BRBeaconMessage.html">BRBeaconMessage</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BRBeaconJoinMeMessage.h<br />BRBeaconJoinMeMessage.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Beacon join me messages are send by BlueRange SmartBeacons, whenever a beacon is able to
+connect with another one. These messages contain useful information about a beacon which can
+be used to identify a beacon. Moreover, since they are sent regularly by a beacon these
+messages might be used for position estimation use cases like indoor navigation.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/networkId" title="networkId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/networkId">&nbsp;&nbsp;networkId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) int networkId</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/nodeId" title="nodeId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/nodeId">&nbsp;&nbsp;nodeId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) int nodeId</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clusterId" title="clusterId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clusterId">&nbsp;&nbsp;clusterId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) long long clusterId</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clusterSize" title="clusterSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clusterSize">&nbsp;&nbsp;clusterSize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) short clusterSize</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/freeInConnections" title="freeInConnections"></a>
+	<h3 class="method-title"><code><a href="#//api/name/freeInConnections">&nbsp;&nbsp;freeInConnections</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) short freeInConnections</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/freeOutConnections" title="freeOutConnections"></a>
+	<h3 class="method-title"><code><a href="#//api/name/freeOutConnections">&nbsp;&nbsp;freeOutConnections</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) short freeOutConnections</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/batteryRuntime" title="batteryRuntime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/batteryRuntime">&nbsp;&nbsp;batteryRuntime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) short batteryRuntime</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/txPower" title="txPower"></a>
+	<h3 class="method-title"><code><a href="#//api/name/txPower">&nbsp;&nbsp;txPower</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) short txPower</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceType" title="deviceType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceType">&nbsp;&nbsp;deviceType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) short deviceType</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hopsToSink" title="hopsToSink"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hopsToSink">&nbsp;&nbsp;hopsToSink</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) int hopsToSink</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/meshWriteHandle" title="meshWriteHandle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/meshWriteHandle">&nbsp;&nbsp;meshWriteHandle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) int meshWriteHandle</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ackField" title="ackField"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ackField">&nbsp;&nbsp;ackField</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) long long ackField</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithNetworkId:andSender:andClusterId:andClusterSize:andFreeInConnections:andFreeOutConnections:andBatteryRuntime:andTxPower:andDeviceType:andHopsToSink:andMeshWriteHandle:andAckField:andRssi:" title="initWithNetworkId:andSender:andClusterId:andClusterSize:andFreeInConnections:andFreeOutConnections:andBatteryRuntime:andTxPower:andDeviceType:andHopsToSink:andMeshWriteHandle:andAckField:andRssi:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithNetworkId:andSender:andClusterId:andClusterSize:andFreeInConnections:andFreeOutConnections:andBatteryRuntime:andTxPower:andDeviceType:andHopsToSink:andMeshWriteHandle:andAckField:andRssi:">&ndash;&nbsp;initWithNetworkId:andSender:andClusterId:andClusterSize:andFreeInConnections:andFreeOutConnections:andBatteryRuntime:andTxPower:andDeviceType:andHopsToSink:andMeshWriteHandle:andAckField:andRssi:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithNetworkId:(int)<em>_networkId</em> andSender:(int)<em>_nodeId</em> andClusterId:(long long)<em>_clusterId</em> andClusterSize:(short)<em>_clusterSize</em> andFreeInConnections:(short)<em>_freeInConnections</em> andFreeOutConnections:(short)<em>_freeOutConnections</em> andBatteryRuntime:(short)<em>_batteryRuntime</em> andTxPower:(short)<em>_txPower</em> andDeviceType:(short)<em>_deviceType</em> andHopsToSink:(int)<em>_hopsToSink</em> andMeshWriteHandle:(int)<em>_meshWriteHandle</em> andAckField:(long long)<em>_ackField</em> andRssi:(int)<em>rssi</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithDate:andNetworkId:andSender:andClusterId:andClusterSize:andFreeInConnections:andFreeOutConnections:andBatteryRuntime:andTxPower:andDeviceType:andHopsToSink:andMeshWriteHandle:andAckField:andRssi:" title="initWithDate:andNetworkId:andSender:andClusterId:andClusterSize:andFreeInConnections:andFreeOutConnections:andBatteryRuntime:andTxPower:andDeviceType:andHopsToSink:andMeshWriteHandle:andAckField:andRssi:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithDate:andNetworkId:andSender:andClusterId:andClusterSize:andFreeInConnections:andFreeOutConnections:andBatteryRuntime:andTxPower:andDeviceType:andHopsToSink:andMeshWriteHandle:andAckField:andRssi:">&ndash;&nbsp;initWithDate:andNetworkId:andSender:andClusterId:andClusterSize:andFreeInConnections:andFreeOutConnections:andBatteryRuntime:andTxPower:andDeviceType:andHopsToSink:andMeshWriteHandle:andAckField:andRssi:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithDate:(NSDate *)<em>_timestamp</em> andNetworkId:(int)<em>_networkId</em> andSender:(int)<em>_nodeId</em> andClusterId:(long long)<em>_clusterId</em> andClusterSize:(short)<em>_clusterSize</em> andFreeInConnections:(short)<em>_freeInConnections</em> andFreeOutConnections:(short)<em>_freeOutConnections</em> andBatteryRuntime:(short)<em>_batteryRuntime</em> andTxPower:(short)<em>_txPower</em> andDeviceType:(short)<em>_deviceType</em> andHopsToSink:(int)<em>_hopsToSink</em> andMeshWriteHandle:(int)<em>_meshWriteHandle</em> andAckField:(long long)<em>_ackField</em> andRssi:(int)<em>rssi</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithCoder:" title="initWithCoder:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithCoder:">&ndash;&nbsp;initWithCoder:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithCoder:(NSCoder *)<em>coder</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/encodeWithCoder:" title="encodeWithCoder:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/encodeWithCoder:">&ndash;&nbsp;encodeWithCoder:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)encodeWithCoder:(NSCoder *)<em>coder</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isEqual:" title="isEqual:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isEqual:">&ndash;&nbsp;isEqual:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isEqual:(id)<em>object</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDescription" title="getDescription"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDescription">&ndash;&nbsp;getDescription</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getDescription</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/newCopy" title="newCopy"></a>
+	<h3 class="method-title"><code><a href="#//api/name/newCopy">&ndash;&nbsp;newCopy</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BRBeaconMessage *)newCopy</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/copyWithZone:" title="copyWithZone:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/copyWithZone:">&ndash;&nbsp;copyWithZone:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)copyWithZone:(struct _NSZone *)<em>zone</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hash" title="hash"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hash">&ndash;&nbsp;hash</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSUInteger)hash</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 M-Way Solutions GmbH. All rights reserved. Updated: 2017-09-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

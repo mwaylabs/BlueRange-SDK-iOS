@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BlueRangeSDK"
-  s.version      = "1.1"
+  s.version      = "1.1.1"
   s.summary      = "iOS SDK for interaction with Relution SmartBeacons"
 
   # This description is used to generate tags and improve search results.
@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://repo.mwaysolutions.com/relution/relution-beacon-sdk-ios.git" }
+  s.source       = { :git => "https://repo.mwaysolutions.com/relution/relution-beacon-sdk-ios.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

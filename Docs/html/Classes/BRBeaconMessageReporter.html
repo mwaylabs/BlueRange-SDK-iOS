@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BRBeaconMessageReporter Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BlueRange SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">M-Way Solutions GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/pollingTimeWaitForReceiverAvailableInMs">pollingTimeWaitForReceiverAvailableInMs</option>
+		
+		<option value="//api/name/timeBetweenReportsInMs">timeBetweenReportsInMs</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/buildActivityReport">- buildActivityReport</option>
+		
+		<option value="//api/name/clearLog">- clearLog</option>
+		
+		<option value="//api/name/initWithLogger:andBuilder:andSender:">- initWithLogger:andBuilder:andSender:</option>
+		
+		<option value="//api/name/onMeshInactive:">- onMeshInactive:</option>
+		
+		<option value="//api/name/postprocessMessage:">- postprocessMessage:</option>
+		
+		<option value="//api/name/preprocessMessage:">- preprocessMessage:</option>
+		
+		<option value="//api/name/sendReport:">- sendReport:</option>
+		
+		<option value="//api/name/startReporting">- startReporting</option>
+		
+		<option value="//api/name/startReportingInBackground">- startReportingInBackground</option>
+		
+		<option value="//api/name/startReportingThread">- startReportingThread</option>
+		
+		<option value="//api/name/stopReporting">- stopReporting</option>
+		
+		<option value="//api/name/stopReportingInBackground">- stopReportingInBackground</option>
+		
+		<option value="//api/name/tryConstructingReport">- tryConstructingReport</option>
+		
+		<option value="//api/name/waitUntilNextReportRequest">- waitUntilNextReportRequest</option>
+		
+		<option value="//api/name/waitUntilReportReceiverIsAvailable">- waitUntilReportReceiverIsAvailable</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BRBeaconMessageReporter Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/BRBeaconMessagePassingStreamNode.html">BRBeaconMessagePassingStreamNode</a> : <a href="../Classes/BRBeaconMessageStreamNode.html">BRBeaconMessageStreamNode</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BRBeaconMessageReporter.h<br />BRBeaconMessageReporter.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A beacon message reporter periodically reads the log of a {@link BRBeaconMessageLogger} instance
+and sends reports to a specified sender. The reports will be sent to the receiver
+every {@link #timeBetweenReportsInMs} milliseconds.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/timeBetweenReportsInMs" title="timeBetweenReportsInMs"></a>
+	<h3 class="method-title"><code><a href="#//api/name/timeBetweenReportsInMs">&nbsp;&nbsp;timeBetweenReportsInMs</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property long timeBetweenReportsInMs</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pollingTimeWaitForReceiverAvailableInMs" title="pollingTimeWaitForReceiverAvailableInMs"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pollingTimeWaitForReceiverAvailableInMs">&nbsp;&nbsp;pollingTimeWaitForReceiverAvailableInMs</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property long pollingTimeWaitForReceiverAvailableInMs</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithLogger:andBuilder:andSender:" title="initWithLogger:andBuilder:andSender:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithLogger:andBuilder:andSender:">&ndash;&nbsp;initWithLogger:andBuilder:andSender:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new instance using the preconfigured {@link BRBeaconMessageLogger},
+{@link BRBeaconMessageReportBuilder} and {@link BRBeaconMessageReportSender}.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithLogger:(BRBeaconMessageLogger *)<em>logger</em> andBuilder:(id&lt;BRBeaconMessageReportBuilder&gt;)<em>reportBuilder</em> andSender:(id&lt;BRBeaconMessageReportSender&gt;)<em>sender</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>logger</code></th>
+						<td><p>The preconfigured logger that is used for scanning and persistently
+logging {@link BRBeaconMessage}s.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reportBuilder</code></th>
+						<td><p>A builder that transform a stream of {@link BRBeaconMessage}s to a
+{@link BRBeaconMessageReport} object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sender</code></th>
+						<td><p>The {@link BRBeaconMessageReportSender} object which the reports will be sent to.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a new instance using the preconfigured {@link BRBeaconMessageLogger},
+{@link BRBeaconMessageReportBuilder} and {@link BRBeaconMessageReportSender}.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageReporter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startReporting" title="startReporting"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startReporting">&ndash;&nbsp;startReporting</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts scanning, persistently logging and periodically
+sending reports.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startReporting</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Starts scanning, persistently logging and periodically
+sending reports.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageReporter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopReporting" title="stopReporting"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopReporting">&ndash;&nbsp;stopReporting</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stops scanning, logging and reporting.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopReporting</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Stops scanning, logging and reporting.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageReporter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/preprocessMessage:" title="preprocessMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/preprocessMessage:">&ndash;&nbsp;preprocessMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is called right before a beacon message is passed to the receivers.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)preprocessMessage:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The received message that is going to be passed to the receivers.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is called right before a beacon message is passed to the receivers.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessagePassingStreamNode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/postprocessMessage:" title="postprocessMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/postprocessMessage:">&ndash;&nbsp;postprocessMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is called right after a beacon message was passed to the receivers.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)postprocessMessage:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The received message that was passed to the receivers.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is called right after a beacon message was passed to the receivers.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessagePassingStreamNode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onMeshInactive:" title="onMeshInactive:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onMeshInactive:">&ndash;&nbsp;onMeshInactive:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onMeshInactive:(BRBeaconMessageStreamNode *)<em>senderNode</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/startReportingInBackground" title="startReportingInBackground"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startReportingInBackground">&ndash;&nbsp;startReportingInBackground</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startReportingInBackground</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startReportingThread" title="startReportingThread"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startReportingThread">&ndash;&nbsp;startReportingThread</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startReportingThread</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/waitUntilNextReportRequest" title="waitUntilNextReportRequest"></a>
+	<h3 class="method-title"><code><a href="#//api/name/waitUntilNextReportRequest">&ndash;&nbsp;waitUntilNextReportRequest</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)waitUntilNextReportRequest</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/waitUntilReportReceiverIsAvailable" title="waitUntilReportReceiverIsAvailable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/waitUntilReportReceiverIsAvailable">&ndash;&nbsp;waitUntilReportReceiverIsAvailable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)waitUntilReportReceiverIsAvailable</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tryConstructingReport" title="tryConstructingReport"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tryConstructingReport">&ndash;&nbsp;tryConstructingReport</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;BRBeaconMessageReport&gt;)tryConstructingReport</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/buildActivityReport" title="buildActivityReport"></a>
+	<h3 class="method-title"><code><a href="#//api/name/buildActivityReport">&ndash;&nbsp;buildActivityReport</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;BRBeaconMessageReport&gt;)buildActivityReport</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendReport:" title="sendReport:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendReport:">&ndash;&nbsp;sendReport:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)sendReport:(id&lt;BRBeaconMessageReport&gt;)<em>report</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearLog" title="clearLog"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearLog">&ndash;&nbsp;clearLog</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)clearLog</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopReportingInBackground" title="stopReportingInBackground"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopReportingInBackground">&ndash;&nbsp;stopReportingInBackground</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopReportingInBackground</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 M-Way Solutions GmbH. All rights reserved. Updated: 2017-09-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

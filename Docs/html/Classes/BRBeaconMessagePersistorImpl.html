@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BRBeaconMessagePersistorImpl Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BlueRange SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">M-Way Solutions GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/chunkSize">chunkSize</option>
+		
+		<option value="//api/name/maxLogSize">maxLogSize</option>
+		
+		<option value="//api/name/tracer">tracer</option>
+		
+		<option value="//api/name/zippingEnabled">zippingEnabled</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/clearMessages">- clearMessages</option>
+		
+		<option value="//api/name/deleteChunk:">- deleteChunk:</option>
+		
+		<option value="//api/name/getBytesCount:">- getBytesCount:</option>
+		
+		<option value="//api/name/getLogIterator">- getLogIterator</option>
+		
+		<option value="//api/name/getLogSizeInBytes">- getLogSizeInBytes</option>
+		
+		<option value="//api/name/getTotalMessages">- getTotalMessages</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/initWithFileAccessor:">- initWithFileAccessor:</option>
+		
+		<option value="//api/name/initWithFileAccessor:andChunkSize:">- initWithFileAccessor:andChunkSize:</option>
+		
+		<option value="//api/name/readLog">- readLog</option>
+		
+		<option value="//api/name/saveChunk">- saveChunk</option>
+		
+		<option value="//api/name/writeChunk">- writeChunk</option>
+		
+		<option value="//api/name/writeMessage:">- writeMessage:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BRBeaconMessagePersistorImpl Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/BRBeaconMessagePersistor.html">BRBeaconMessagePersistor</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BRBeaconMessagePersistorImpl.h<br />BRBeaconMessagePersistorImpl.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class is the default implementation of the {@link BRBeaconMessagePersistor} interface. The
+log has a default maximum size of {@link #DEFAULT_MAX_LOG_SIZE}. In order to increase
+performance and compression efficiency and decrease energy consumption, the messages are saved
+in chunks with a chunk size of {@link #chunkSize}. The persisting strategy is defined by the
+{@link BRFileAccessor}. By default, each chunk is compressed with the gzip compression algorithm
+before it is being saved. However, to increase the persisting efficiency, the compression
+might be turned off.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/tracer" title="tracer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tracer">&nbsp;&nbsp;tracer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property id&lt;BRITracer&gt; tracer</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxLogSize" title="maxLogSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxLogSize">&nbsp;&nbsp;maxLogSize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property int maxLogSize</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/chunkSize" title="chunkSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/chunkSize">&nbsp;&nbsp;chunkSize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property int chunkSize</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/zippingEnabled" title="zippingEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/zippingEnabled">&nbsp;&nbsp;zippingEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property BOOL zippingEnabled</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithFileAccessor:" title="initWithFileAccessor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithFileAccessor:">&ndash;&nbsp;initWithFileAccessor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithFileAccessor:(id&lt;BRFileAccessor&gt;)<em>fileAccessor</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithFileAccessor:andChunkSize:" title="initWithFileAccessor:andChunkSize:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithFileAccessor:andChunkSize:">&ndash;&nbsp;initWithFileAccessor:andChunkSize:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithFileAccessor:(id&lt;BRFileAccessor&gt;)<em>fileAccessor</em> andChunkSize:(int)<em>chunkSize</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readLog" title="readLog"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readLog">&ndash;&nbsp;readLog</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BRBeaconMessageLog *)readLog</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLogIterator" title="getLogIterator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLogIterator">&ndash;&nbsp;getLogIterator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;BRLogIterator&gt;)getLogIterator</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTotalMessages" title="getTotalMessages"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTotalMessages">&ndash;&nbsp;getTotalMessages</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (int)getTotalMessages</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLogSizeInBytes" title="getLogSizeInBytes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLogSizeInBytes">&ndash;&nbsp;getLogSizeInBytes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (int)getLogSizeInBytes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearMessages" title="clearMessages"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearMessages">&ndash;&nbsp;clearMessages</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)clearMessages</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeMessage:" title="writeMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeMessage:">&ndash;&nbsp;writeMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)writeMessage:(BRBeaconMessage *)<em>beaconMessage</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/deleteChunk:" title="deleteChunk:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteChunk:">&ndash;&nbsp;deleteChunk:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteChunk:(NSString *)<em>fileName</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveChunk" title="saveChunk"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveChunk">&ndash;&nbsp;saveChunk</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)saveChunk</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeChunk" title="writeChunk"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeChunk">&ndash;&nbsp;writeChunk</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)writeChunk</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getBytesCount:" title="getBytesCount:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBytesCount:">&ndash;&nbsp;getBytesCount:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (int)getBytesCount:(NSInputStream *)<em>inputStream</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 M-Way Solutions GmbH. All rights reserved. Updated: 2017-09-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

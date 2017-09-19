@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BRRelutionHeatmapReportBuilder Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BlueRange SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">M-Way Solutions GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/intervalDurationInMs">intervalDurationInMs</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addBeaconMessage:">- addBeaconMessage:</option>
+		
+		<option value="//api/name/addIntervalToReport">- addIntervalToReport</option>
+		
+		<option value="//api/name/addJoinMeMessage:">- addJoinMeMessage:</option>
+		
+		<option value="//api/name/addJoinMeMessageToInterval:">- addJoinMeMessageToInterval:</option>
+		
+		<option value="//api/name/buildReport">- buildReport</option>
+		
+		<option value="//api/name/collectMessage:forNode:">- collectMessage:forNode:</option>
+		
+		<option value="//api/name/createActivityReport">- createActivityReport</option>
+		
+		<option value="//api/name/createAndAddNodeToDiscoveredNodes:">- createAndAddNodeToDiscoveredNodes:</option>
+		
+		<option value="//api/name/createNewInterval:">- createNewInterval:</option>
+		
+		<option value="//api/name/createNewReport">- createNewReport</option>
+		
+		<option value="//api/name/getNode:">- getNode:</option>
+		
+		<option value="//api/name/initWithOrganizationUuid:">- initWithOrganizationUuid:</option>
+		
+		<option value="//api/name/intervalEndReached:">- intervalEndReached:</option>
+		
+		<option value="//api/name/newReport">- newReport</option>
+		
+		<option value="//api/name/updateDiscoveryNodes:">- updateDiscoveryNodes:</option>
+		
+		<option value="//api/name/updateEndTime:">- updateEndTime:</option>
+		
+		<option value="//api/name/updateNode:withMessage:">- updateNode:withMessage:</option>
+		
+		<option value="//api/name/updateNodeEntriesOfNode:">- updateNodeEntriesOfNode:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BRRelutionHeatmapReportBuilder Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/BRBeaconMessageReportBuilder.html">BRBeaconMessageReportBuilder</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BRRelutionHeatmapReportBuilder.h<br />BRRelutionHeatmapReportBuilder.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/intervalDurationInMs" title="intervalDurationInMs"></a>
+	<h3 class="method-title"><code><a href="#//api/name/intervalDurationInMs">&nbsp;&nbsp;intervalDurationInMs</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property long intervalDurationInMs</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithOrganizationUuid:" title="initWithOrganizationUuid:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithOrganizationUuid:">&ndash;&nbsp;initWithOrganizationUuid:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithOrganizationUuid:(NSString *)<em>organizationUuid</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/newReport" title="newReport"></a>
+	<h3 class="method-title"><code><a href="#//api/name/newReport">&ndash;&nbsp;newReport</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts with a new report
+@throws <a href="../Classes/BRBuildException.html">BRBuildException</a> if an error occurred.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)newReport</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Starts with a new report
+@throws <a href="../Classes/BRBuildException.html">BRBuildException</a> if an error occurred.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageReportBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addBeaconMessage:" title="addBeaconMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addBeaconMessage:">&ndash;&nbsp;addBeaconMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A builder method that commands the builder to add the beacon message to the report.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addBeaconMessage:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>the message to be added.
+@throws <a href="../Classes/BRBuildException.html">BRBuildException</a> will be thrown, if an error occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A builder method that commands the builder to add the beacon message to the report.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageReportBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/buildReport" title="buildReport"></a>
+	<h3 class="method-title"><code><a href="#//api/name/buildReport">&ndash;&nbsp;buildReport</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a newly constructed report containing all added messages.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BRRelutionHeatmapReport *)buildReport</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the newly consturcted beacon message report.
+@throws <a href="../Classes/BRBuildException.html">BRBuildException</a> will be thrown, if an error occurred.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a newly constructed report containing all added messages.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageReportBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createNewReport" title="createNewReport"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createNewReport">&ndash;&nbsp;createNewReport</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)createNewReport</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addJoinMeMessage:" title="addJoinMeMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addJoinMeMessage:">&ndash;&nbsp;addJoinMeMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addJoinMeMessage:(BRBeaconJoinMeMessage *)<em>joinMeMessage</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createNewInterval:" title="createNewInterval:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createNewInterval:">&ndash;&nbsp;createNewInterval:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)createNewInterval:(BRBeaconJoinMeMessage *)<em>joinMeMessage</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addJoinMeMessageToInterval:" title="addJoinMeMessageToInterval:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addJoinMeMessageToInterval:">&ndash;&nbsp;addJoinMeMessageToInterval:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addJoinMeMessageToInterval:(BRBeaconJoinMeMessage *)<em>joinMeMessage</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateEndTime:" title="updateEndTime:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateEndTime:">&ndash;&nbsp;updateEndTime:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)updateEndTime:(BRBeaconJoinMeMessage *)<em>joinMeMessage</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateDiscoveryNodes:" title="updateDiscoveryNodes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateDiscoveryNodes:">&ndash;&nbsp;updateDiscoveryNodes:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)updateDiscoveryNodes:(BRBeaconJoinMeMessage *)<em>joinMeMessage</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNode:" title="getNode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNode:">&ndash;&nbsp;getNode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSMutableDictionary *)getNode:(int)<em>nodeId</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createAndAddNodeToDiscoveredNodes:" title="createAndAddNodeToDiscoveredNodes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAndAddNodeToDiscoveredNodes:">&ndash;&nbsp;createAndAddNodeToDiscoveredNodes:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)createAndAddNodeToDiscoveredNodes:(int)<em>nodeId</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateNode:withMessage:" title="updateNode:withMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateNode:withMessage:">&ndash;&nbsp;updateNode:withMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)updateNode:(NSMutableDictionary *)<em>node</em> withMessage:(BRBeaconJoinMeMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/collectMessage:forNode:" title="collectMessage:forNode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/collectMessage:forNode:">&ndash;&nbsp;collectMessage:forNode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)collectMessage:(BRBeaconJoinMeMessage *)<em>message</em> forNode:(NSMutableDictionary *)<em>node</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateNodeEntriesOfNode:" title="updateNodeEntriesOfNode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateNodeEntriesOfNode:">&ndash;&nbsp;updateNodeEntriesOfNode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)updateNodeEntriesOfNode:(NSMutableDictionary *)<em>node</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/intervalEndReached:" title="intervalEndReached:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/intervalEndReached:">&ndash;&nbsp;intervalEndReached:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)intervalEndReached:(BRBeaconJoinMeMessage *)<em>joinMeMessage</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addIntervalToReport" title="addIntervalToReport"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addIntervalToReport">&ndash;&nbsp;addIntervalToReport</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addIntervalToReport</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createActivityReport" title="createActivityReport"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createActivityReport">&ndash;&nbsp;createActivityReport</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BRRelutionHeatmapReport *)createActivityReport</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 M-Way Solutions GmbH. All rights reserved. Updated: 2017-09-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

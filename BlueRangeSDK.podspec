@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/me-mway/BlueRange-SDK-iOS.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/me-mway/BlueRange-SDK-iOS.git", :tag => s.version, :branch => 'master' }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -29,7 +29,7 @@
 //
 
 #import "BRHttpClient.h"
-#import <ASIHTTPRequest.h>
+#import <ASIHTTPRequest/ASIHTTPRequest.h>
 #import "BRJsonUtils.h"
 #import "BRConstants.h"
 

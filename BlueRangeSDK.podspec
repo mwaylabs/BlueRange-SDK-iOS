@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BlueRangeSDK"
-  s.version      = "1.1.7"
+  s.version      = "1.1.8"
   s.summary      = "iOS SDK for interaction with Relution SmartBeacons"
 
   # This description is used to generate tags and improve search results.
@@ -122,6 +122,10 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency 'ASIHTTPRequest', '~> 1.8'
+  s.library = 'z'
+
+  # Needed for ASIHttpRequest
+  s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 
   # ――― Pod install ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   # The following script will run after 'pod install' and will modify the app's

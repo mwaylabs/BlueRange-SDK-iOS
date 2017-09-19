@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BRDefaultBeaconMessageScannerImpl Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BlueRange SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">M-Way Solutions GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/centralManager">centralManager</option>
+		
+		<option value="//api/name/scanOptions">scanOptions</option>
+		
+		<option value="//api/name/scanRestartTimer">scanRestartTimer</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addMessageGenerator:">- addMessageGenerator:</option>
+		
+		<option value="//api/name/centralManager:didDiscoverPeripheral:advertisementData:RSSI:">- centralManager:didDiscoverPeripheral:advertisementData:RSSI:</option>
+		
+		<option value="//api/name/centralManagerDidUpdateState:">- centralManagerDidUpdateState:</option>
+		
+		<option value="//api/name/handleBeaconsWithAdvertisementData:RSSI:">- handleBeaconsWithAdvertisementData:RSSI:</option>
+		
+		<option value="//api/name/initWithTracer:">- initWithTracer:</option>
+		
+		<option value="//api/name/receivedMeshBeacon:rssi:">- receivedMeshBeacon:rssi:</option>
+		
+		<option value="//api/name/scanRestartTimerHandler:">- scanRestartTimerHandler:</option>
+		
+		<option value="//api/name/setObserver:">- setObserver:</option>
+		
+		<option value="//api/name/startScanning">- startScanning</option>
+		
+		<option value="//api/name/stopScanning">- stopScanning</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BRDefaultBeaconMessageScannerImpl Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/BRBeaconMessageScannerImpl.html">BRBeaconMessageScannerImpl</a><br />CBCentralManagerDelegate</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BRDefaultBeaconMessageScannerImpl.h<br />BRDefaultBeaconMessageScannerImpl.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/centralManager" title="centralManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/centralManager">&nbsp;&nbsp;centralManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) CBCentralManager *centralManager</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanOptions" title="scanOptions"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanOptions">&nbsp;&nbsp;scanOptions</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSDictionary *scanOptions</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanRestartTimer" title="scanRestartTimer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanRestartTimer">&nbsp;&nbsp;scanRestartTimer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSTimer *scanRestartTimer</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithTracer:" title="initWithTracer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithTracer:">&ndash;&nbsp;initWithTracer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithTracer:(id&lt;BRITracer&gt;)<em>tracer</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMessageGenerator:" title="addMessageGenerator:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMessageGenerator:">&ndash;&nbsp;addMessageGenerator:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addMessageGenerator:(id&lt;BRBeaconMessageGenerator&gt;)<em>messageGenerator</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setObserver:" title="setObserver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setObserver:">&ndash;&nbsp;setObserver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)setObserver:(id&lt;BRBeaconMessageScannerImplObserver&gt;)<em>observer</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startScanning" title="startScanning"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startScanning">&ndash;&nbsp;startScanning</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startScanning</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopScanning" title="stopScanning"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopScanning">&ndash;&nbsp;stopScanning</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopScanning</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleBeaconsWithAdvertisementData:RSSI:" title="handleBeaconsWithAdvertisementData:RSSI:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleBeaconsWithAdvertisementData:RSSI:">&ndash;&nbsp;handleBeaconsWithAdvertisementData:RSSI:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)handleBeaconsWithAdvertisementData:(NSDictionary *)<em>advertisementData</em> RSSI:(NSNumber *)<em>RSSI</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/centralManagerDidUpdateState:" title="centralManagerDidUpdateState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/centralManagerDidUpdateState:">&ndash;&nbsp;centralManagerDidUpdateState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)centralManagerDidUpdateState:(CBCentralManager *)<em>central</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanRestartTimerHandler:" title="scanRestartTimerHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanRestartTimerHandler:">&ndash;&nbsp;scanRestartTimerHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)scanRestartTimerHandler:(NSTimer *)<em>timer</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/centralManager:didDiscoverPeripheral:advertisementData:RSSI:" title="centralManager:didDiscoverPeripheral:advertisementData:RSSI:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/centralManager:didDiscoverPeripheral:advertisementData:RSSI:">&ndash;&nbsp;centralManager:didDiscoverPeripheral:advertisementData:RSSI:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)centralManager:(CBCentralManager *)<em>central</em> didDiscoverPeripheral:(CBPeripheral *)<em>peripheral</em> advertisementData:(NSDictionary *)<em>advertisementData</em> RSSI:(NSNumber *)<em>RSSI</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/receivedMeshBeacon:rssi:" title="receivedMeshBeacon:rssi:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/receivedMeshBeacon:rssi:">&ndash;&nbsp;receivedMeshBeacon:rssi:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BRBeaconMessage *)receivedMeshBeacon:(NSDictionary *)<em>advertisementData</em> rssi:(NSNumber *)<em>RSSI</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 M-Way Solutions GmbH. All rights reserved. Updated: 2017-09-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

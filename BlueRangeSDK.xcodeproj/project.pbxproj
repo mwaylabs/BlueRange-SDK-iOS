@@ -1,0 +1,2099 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		052EC2616205E106E5CDD1FC /* libPods-BlueRangeSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F7365CE9156A35AD51E243 /* libPods-BlueRangeSDKTests.a */; };
+		590B096B1D8006A700CF1ECA /* BlueRangeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 590B096A1D8006A700CF1ECA /* BlueRangeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B098F1D80071200CF1ECA /* BRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E3BFB91C2AA1F70064C717 /* BRConstants.m */; };
+		590B09901D80071200CF1ECA /* BRBeaconAdvertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C114081C3A8430008E6DF5 /* BRBeaconAdvertiser.m */; };
+		590B09911D80071200CF1ECA /* BRSimpleMovingAverageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F322161C9C0E9D00FF72ED /* BRSimpleMovingAverageFilter.m */; };
+		590B09921D80071200CF1ECA /* BRLinearWeightedMovingAverageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F322191C9C0F5D00FF72ED /* BRLinearWeightedMovingAverageFilter.m */; };
+		590B09931D80071200CF1ECA /* BRBeaconMessageAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F3221C1C9C113D00FF72ED /* BRBeaconMessageAggregate.m */; };
+		590B09941D80071200CF1ECA /* BRBeaconMessageAggregator.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F3221F1C9C16D100FF72ED /* BRBeaconMessageAggregator.m */; };
+		590B09951D80071200CF1ECA /* BRBeaconMessagePacketAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = 595BBA7B1D7EA85F00BE3372 /* BRBeaconMessagePacketAggregate.m */; };
+		590B09961D80071200CF1ECA /* BRBeaconMessageSlidingWindowAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = 595BBA7E1D7EAB4900BE3372 /* BRBeaconMessageSlidingWindowAggregate.m */; };
+		590B09971D80071200CF1ECA /* BRAnalyticalDistanceEstimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 595187701C9C087D0051001B /* BRAnalyticalDistanceEstimator.m */; };
+		590B09981D80071200CF1ECA /* BREmpiricalDistanceEstimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 595187731C9C0C890051001B /* BREmpiricalDistanceEstimator.m */; };
+		590B09991D80071200CF1ECA /* BRIBeaconMessageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F322261C9C2E7C00FF72ED /* BRIBeaconMessageFilter.m */; };
+		590B099A1D80071200CF1ECA /* BRRelutionTagMessageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F322291C9C303A00FF72ED /* BRRelutionTagMessageFilter.m */; };
+		590B099B1D80071200CF1ECA /* BRBeaconMessageLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 596DAF301CBF963700FCA2CB /* BRBeaconMessageLog.m */; };
+		590B099C1D80071200CF1ECA /* BRBeaconMessagePersistor.m in Sources */ = {isa = PBXBuildFile; fileRef = 596DAF381CBF999300FCA2CB /* BRBeaconMessagePersistor.m */; };
+		590B099D1D80071200CF1ECA /* BRBeaconMessageLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 596DAF3B1CBF99D800FCA2CB /* BRBeaconMessageLogger.m */; };
+		590B099E1D80071200CF1ECA /* BRBeaconMessagePersistorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 596DAF3E1CBF9BEB00FCA2CB /* BRBeaconMessagePersistorImpl.m */; };
+		590B099F1D80071200CF1ECA /* BRBeaconMessagePersistorImplLogIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 596DAF481CBFA09800FCA2CB /* BRBeaconMessagePersistorImplLogIterator.m */; };
+		590B09A01D80071200CF1ECA /* BRBeaconMessageReportBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 596DAF521CBFE53500FCA2CB /* BRBeaconMessageReportBuilder.m */; };
+		590B09A11D80071200CF1ECA /* BRBeaconMessageReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 596DAF581CBFE91300FCA2CB /* BRBeaconMessageReporter.m */; };
+		590B09A21D80071200CF1ECA /* BRBeaconMessageReportSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 596DAF551CBFE61300FCA2CB /* BRBeaconMessageReportSender.m */; };
+		590B09A31D80071200CF1ECA /* BRBeaconMessageStreamNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 590A1A2E1C99774600F05178 /* BRBeaconMessageStreamNode.m */; };
+		590B09A41D80071200CF1ECA /* BRBeaconMessageStreamNodeDefaultReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 595187631C9BFB990051001B /* BRBeaconMessageStreamNodeDefaultReceiver.m */; };
+		590B09A51D80071200CF1ECA /* BRBeaconMessagePassingStreamNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 595187661C9BFC160051001B /* BRBeaconMessagePassingStreamNode.m */; };
+		590B09A61D80071200CF1ECA /* BRBeaconMessageQueuedStreamNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 595187691C9BFE3E0051001B /* BRBeaconMessageQueuedStreamNode.m */; };
+		590B09A71D80071200CF1ECA /* BRIBeaconMessageScannerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E3BFC31C2AC8120064C717 /* BRIBeaconMessageScannerImpl.m */; };
+		590B09A81D80071200CF1ECA /* BRDefaultBeaconMessageScannerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 591D48771C2D6DE200A744C4 /* BRDefaultBeaconMessageScannerImpl.m */; };
+		590B09A91D80071200CF1ECA /* BRBeaconJoinMeMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 590A1A341C999D5000F05178 /* BRBeaconJoinMeMessage.m */; };
+		590B09AA1D80071200CF1ECA /* BRBeaconJoinMeMessageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 590A1A371C999EC400F05178 /* BRBeaconJoinMeMessageGenerator.m */; };
+		590B09AB1D80071200CF1ECA /* BRIBeaconMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E3BFC91C2AD6350064C717 /* BRIBeaconMessage.m */; };
+		590B09AC1D80071200CF1ECA /* BRIBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5918B7DD1C9ADE9A00FECA47 /* BRIBeacon.m */; };
+		590B09AD1D80071200CF1ECA /* BRIBeaconMessageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 593C75F31C2FF8D400BB8509 /* BRIBeaconMessageGenerator.m */; };
+		590B09AE1D80071200CF1ECA /* BREddystoneMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5935AC8B1D70602500624D0C /* BREddystoneMessage.m */; };
+		590B09AF1D80071200CF1ECA /* BREddystoneMessageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5972B93A1D7427D800E38D74 /* BREddystoneMessageGenerator.m */; };
+		590B09B01D80071200CF1ECA /* BREddystoneUidMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5935AC881D705F6900624D0C /* BREddystoneUidMessage.m */; };
+		590B09B11D80071200CF1ECA /* BREddystoneUidMessageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5972B93D1D742AC000E38D74 /* BREddystoneUidMessageGenerator.m */; };
+		590B09B21D80071200CF1ECA /* BREddystoneUrlMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5935AC8E1D70724F00624D0C /* BREddystoneUrlMessage.m */; };
+		590B09B31D80071200CF1ECA /* BREddystoneUrlMessageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5972B9401D743B3F00E38D74 /* BREddystoneUrlMessageGenerator.m */; };
+		590B09B41D80071200CF1ECA /* BRRelutionTagMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 596B7C551D78100E008300D7 /* BRRelutionTagMessage.m */; };
+		590B09B51D80071200CF1ECA /* BRRelutionTagMessageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 596B7C581D781022008300D7 /* BRRelutionTagMessageGenerator.m */; };
+		590B09B61D80071200CF1ECA /* BRRelutionTagMessageV1.m in Sources */ = {isa = PBXBuildFile; fileRef = 591D487D1C2D787C00A744C4 /* BRRelutionTagMessageV1.m */; };
+		590B09B71D80071200CF1ECA /* BRRelutionTagMessageGeneratorV1.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E3BFC01C2AB1A90064C717 /* BRRelutionTagMessageGeneratorV1.m */; };
+		590B09B81D80071200CF1ECA /* BRBeaconMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5918B7DA1C9AD78C00FECA47 /* BRBeaconMessage.m */; };
+		590B09B91D80071200CF1ECA /* BRBeaconMessageScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D340201C299E280085D23F /* BRBeaconMessageScanner.m */; };
+		590B09BA1D80071200CF1ECA /* BRBeaconMessageScannerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D340231C29A0D20085D23F /* BRBeaconMessageScannerConfig.m */; };
+		590B09BB1D80071200CF1ECA /* BRIBeaconMessageScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 590A1A281C99741C00F05178 /* BRIBeaconMessageScanner.m */; };
+		590B09BC1D80071200CF1ECA /* BRBeaconMessageScannerSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5918B7E01C9AFD4700FECA47 /* BRBeaconMessageScannerSimulator.m */; };
+		590B09BD1D80071200CF1ECA /* BRBeaconContentAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912A5661C9C4BE800A4784C /* BRBeaconContentAction.m */; };
+		590B09BE1D80071200CF1ECA /* BRBeaconContentActionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A08FF1C9FF2A2001E49F8 /* BRBeaconContentActionBuilder.m */; };
+		590B09BF1D80071200CF1ECA /* BRBeaconContentActionExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A09021C9FF3BD001E49F8 /* BRBeaconContentActionExecutor.m */; };
+		590B09C01D80071200CF1ECA /* BRBeaconNotificationAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912A5691C9C4D0500A4784C /* BRBeaconNotificationAction.m */; };
+		590B09C11D80071200CF1ECA /* BRBeaconNotificationActionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A09051C9FF77E001E49F8 /* BRBeaconNotificationActionBuilder.m */; };
+		590B09C21D80071200CF1ECA /* BRBeaconNotificationExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A09081C9FF8FC001E49F8 /* BRBeaconNotificationExecutor.m */; };
+		590B09C31D80071200CF1ECA /* BRBeaconTagAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912A56C1C9C4DCF00A4784C /* BRBeaconTagAction.m */; };
+		590B09C41D80071200CF1ECA /* BRBeaconTagActionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A090B1C9FFE30001E49F8 /* BRBeaconTagActionBuilder.m */; };
+		590B09C51D80071200CF1ECA /* BRBeaconTagActionExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A090E1CA0007D001E49F8 /* BRBeaconTagActionExecutor.m */; };
+		590B09C61D80071200CF1ECA /* BRBeaconTagVisit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912A56F1C9C4E8C00A4784C /* BRBeaconTagVisit.m */; };
+		590B09C71D80071200CF1ECA /* BRBeaconMessageActionMapperStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 595AF4181CA18FA700B1154A /* BRBeaconMessageActionMapperStub.m */; };
+		590B09C81D80071200CF1ECA /* BRRelutionTagMessageActionMapperEmptyStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 595AF41B1CA1950500B1154A /* BRRelutionTagMessageActionMapperEmptyStub.m */; };
+		590B09C91D80071200CF1ECA /* BRIBeaconMessageActionMapperStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 59569C5C1CAE719800ED1329 /* BRIBeaconMessageActionMapperStub.m */; };
+		590B09CA1D80071200CF1ECA /* BRBeaconActionLocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 595AF4251CA198E100B1154A /* BRBeaconActionLocker.m */; };
+		590B09CB1D80071200CF1ECA /* BRRunningFlag.m in Sources */ = {isa = PBXBuildFile; fileRef = 595AF4211CA1985E00B1154A /* BRRunningFlag.m */; };
+		590B09CC1D80071200CF1ECA /* BRBeaconAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912A5511C9C35EE00A4784C /* BRBeaconAction.m */; };
+		590B09CD1D80071200CF1ECA /* BRBeaconCampaign.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912A5541C9C37FB00A4784C /* BRBeaconCampaign.m */; };
+		590B09CE1D80071200CF1ECA /* BRRelutionActionInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912A57E1C9C528A00A4784C /* BRRelutionActionInformation.m */; };
+		590B09CF1D80071200CF1ECA /* BRBeaconActionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912A58C1C9C57FF00A4784C /* BRBeaconActionBuilder.m */; };
+		590B09D01D80071200CF1ECA /* BRBeaconActionExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A08FC1C9FF01B001E49F8 /* BRBeaconActionExecutor.m */; };
+		590B09D11D80071200CF1ECA /* BRBeaconActionRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 595AF41E1CA1970100B1154A /* BRBeaconActionRegistry.m */; };
+		590B09D21D80071200CF1ECA /* BRBeaconMessageActionTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DB19F01CA2A1E6005DFE3D /* BRBeaconMessageActionTrigger.m */; };
+		590B09D31D80071200CF1ECA /* BRRelutionHeatmapReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5947F3411CC0D56200D82451 /* BRRelutionHeatmapReport.m */; };
+		590B09D41D80071200CF1ECA /* BRRelutionHeatmapReportBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5947F3441CC0D5E600D82451 /* BRRelutionHeatmapReportBuilder.m */; };
+		590B09D51D80071200CF1ECA /* BRRelutionHeatmapSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 5947F3471CC0E09600D82451 /* BRRelutionHeatmapSender.m */; };
+		590B09D61D80071200CF1ECA /* BRRelutionHeatmapSenderStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 5947F34E1CC0E8F700D82451 /* BRRelutionHeatmapSenderStub.m */; };
+		590B09D71D80071200CF1ECA /* BRRelutionHeatmapService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5947F34B1CC0E6A000D82451 /* BRRelutionHeatmapService.m */; };
+		590B09D81D80071200CF1ECA /* BRRelutionIBeaconMessageActionMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5961F9B41CA4363200AE11B3 /* BRRelutionIBeaconMessageActionMapper.m */; };
+		590B09D91D80071200CF1ECA /* BRRelutionCampaignService.m in Sources */ = {isa = PBXBuildFile; fileRef = 591A46081CAA6D2F0093C7A6 /* BRRelutionCampaignService.m */; };
+		590B09DA1D80071200CF1ECA /* BRRelutionScanConfigLoaderImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5928604C1D7967B200C60133 /* BRRelutionScanConfigLoaderImpl.m */; };
+		590B09DB1D80071200CF1ECA /* BRRelutionScanConfigLoaderStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 592860491D7966C200C60133 /* BRRelutionScanConfigLoaderStub.m */; };
+		590B09DC1D80071200CF1ECA /* BRFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 596B7C601D78665B008300D7 /* BRFilter.m */; };
+		590B09DD1D80071200CF1ECA /* BRLogOpFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 596B7C631D786767008300D7 /* BRLogOpFilter.m */; };
+		590B09DE1D80071200CF1ECA /* BRLongFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 596B7C661D786BA4008300D7 /* BRLongFilter.m */; };
+		590B09DF1D80071200CF1ECA /* BRStringFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 596B7C691D786C9E008300D7 /* BRStringFilter.m */; };
+		590B09E01D80071200CF1ECA /* BRAdvertisingMessagesConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 596B7C721D786EFE008300D7 /* BRAdvertisingMessagesConfiguration.m */; };
+		590B09E11D80071200CF1ECA /* BRDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 596B7C6C1D786DD1008300D7 /* BRDataObject.m */; };
+		590B09E21D80071200CF1ECA /* BRDataArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 596B7C6F1D786E4E008300D7 /* BRDataArray.m */; };
+		590B09E31D80071200CF1ECA /* BRRelutionTagInfos.m in Sources */ = {isa = PBXBuildFile; fileRef = 596B7C751D786FAA008300D7 /* BRRelutionTagInfos.m */; };
+		590B09E41D80071200CF1ECA /* BRRelution.m in Sources */ = {isa = PBXBuildFile; fileRef = 59543E961CFD9F24006BD639 /* BRRelution.m */; };
+		590B09E51D80071200CF1ECA /* BRRelutionTagInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 591A460C1CAA78C70093C7A6 /* BRRelutionTagInfo.m */; };
+		590B09E61D80071200CF1ECA /* BRRelutionTagInfoRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 591A46111CAA7A310093C7A6 /* BRRelutionTagInfoRegistry.m */; };
+		590B09E71D80071200CF1ECA /* BRRelutionTagInfoRegistryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 591A46141CAA7AD30093C7A6 /* BRRelutionTagInfoRegistryImpl.m */; };
+		590B09E81D80071200CF1ECA /* BRRelutionTagInfoRegistryStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 591A46171CAA8EC20093C7A6 /* BRRelutionTagInfoRegistryStub.m */; };
+		590B09E91D80071200CF1ECA /* BRBeaconTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 596D6AAB1D7DA26F00D994B2 /* BRBeaconTrigger.m */; };
+		590B09EA1D80071200CF1ECA /* BRRelutionIoTService.m in Sources */ = {isa = PBXBuildFile; fileRef = 591A461D1CAAA1FF0093C7A6 /* BRRelutionIoTService.m */; };
+		590B09EB1D80071200CF1ECA /* BRFileAccessorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 596DAF451CBF9ECD00FCA2CB /* BRFileAccessorImpl.m */; };
+		590B09EC1D80071200CF1ECA /* BRZipCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 596DAF4B1CBFC79A00FCA2CB /* BRZipCompression.m */; };
+		590B09ED1D80071200CF1ECA /* BRTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E9A1851CAC12ED00071B61 /* BRTimeFormatter.m */; };
+		590B09EE1D80071200CF1ECA /* BRNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 590D8D6C1CA2F3AB00CE2C19 /* BRNetwork.m */; };
+		590B09EF1D80071200CF1ECA /* BRHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 59543E921CFD9B9A006BD639 /* BRHttpClient.m */; };
+		590B09F01D80071200CF1ECA /* BRCoreMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5918B7E41C9B0BFD00FECA47 /* BRCoreMath.m */; };
+		590B09F11D80071200CF1ECA /* BRTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C3F7A11C9866C40025F79B /* BRTracer.m */; };
+		590B09F21D80071200CF1ECA /* BRByteArrayParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 590A1A3B1C99A6D500F05178 /* BRByteArrayParser.m */; };
+		590B09F31D80071200CF1ECA /* BRJsonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A09111CA00319001E49F8 /* BRJsonUtils.m */; };
+		590B09F41D80071200CF1ECA /* BRLimitedSizeQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E9A1811CABF88300071B61 /* BRLimitedSizeQueue.m */; };
+		590B09F51D80071200CF1ECA /* BRByteArrayConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 596B7C5B1D781FFA008300D7 /* BRByteArrayConverter.m */; };
+		590B0A7E1D800E8F00CF1ECA /* BRConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E3BFB81C2AA1F70064C717 /* BRConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A7F1D800E8F00CF1ECA /* BRBeaconAdvertiser.h in Headers */ = {isa = PBXBuildFile; fileRef = 59C114071C3A8430008E6DF5 /* BRBeaconAdvertiser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A801D800E8F00CF1ECA /* BRMovingAverageFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F322121C9C0E1600FF72ED /* BRMovingAverageFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A811D800E8F00CF1ECA /* BRSimpleMovingAverageFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F322151C9C0E9D00FF72ED /* BRSimpleMovingAverageFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A821D800E8F00CF1ECA /* BRLinearWeightedMovingAverageFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F322181C9C0F5D00FF72ED /* BRLinearWeightedMovingAverageFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A831D800E8F00CF1ECA /* BRBeaconMessageAggregate.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F3221B1C9C113D00FF72ED /* BRBeaconMessageAggregate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A841D800E8F00CF1ECA /* BRBeaconMessageAggregator.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F3221E1C9C16D100FF72ED /* BRBeaconMessageAggregator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A851D800E8F00CF1ECA /* BRBeaconMessagePacketAggregate.h in Headers */ = {isa = PBXBuildFile; fileRef = 595BBA7A1D7EA85F00BE3372 /* BRBeaconMessagePacketAggregate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A861D800E8F00CF1ECA /* BRBeaconMessageSlidingWindowAggregate.h in Headers */ = {isa = PBXBuildFile; fileRef = 595BBA7D1D7EAB4900BE3372 /* BRBeaconMessageSlidingWindowAggregate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A871D800E8F00CF1ECA /* BRDistanceEstimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5951876C1C9C08390051001B /* BRDistanceEstimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A881D800E8F00CF1ECA /* BRAnalyticalDistanceEstimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5951876F1C9C087D0051001B /* BRAnalyticalDistanceEstimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A891D800E8F00CF1ECA /* BREmpiricalDistanceEstimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 595187721C9C0C890051001B /* BREmpiricalDistanceEstimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A8A1D800E8F00CF1ECA /* BRBeaconMessageFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F322221C9C2E6700FF72ED /* BRBeaconMessageFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A8B1D800E8F00CF1ECA /* BRIBeaconMessageFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F322251C9C2E7C00FF72ED /* BRIBeaconMessageFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A8C1D800E8F00CF1ECA /* BRRelutionTagMessageFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F322281C9C303A00FF72ED /* BRRelutionTagMessageFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A8D1D800E8F00CF1ECA /* BRBeaconMessageLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF2F1CBF963700FCA2CB /* BRBeaconMessageLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A8E1D800E8F00CF1ECA /* BRBeaconMessagePersistor.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF321CBF981900FCA2CB /* BRBeaconMessagePersistor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A8F1D800E8F00CF1ECA /* BRLogIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF351CBF991800FCA2CB /* BRLogIterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A901D800E8F00CF1ECA /* BRBeaconMessageLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF3A1CBF99D800FCA2CB /* BRBeaconMessageLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A911D800E8F00CF1ECA /* BRBeaconMessagePersistorImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF3D1CBF9BEB00FCA2CB /* BRBeaconMessagePersistorImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A921D800E8F00CF1ECA /* BRBeaconMessagePersistorImplLogIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF471CBFA09800FCA2CB /* BRBeaconMessagePersistorImplLogIterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A931D800E8F00CF1ECA /* BRBeaconMessageReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF4E1CBFE50700FCA2CB /* BRBeaconMessageReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A941D800E8F00CF1ECA /* BRBeaconMessageReportBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF511CBFE53500FCA2CB /* BRBeaconMessageReportBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A951D800E8F00CF1ECA /* BRBeaconMessageReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF571CBFE91300FCA2CB /* BRBeaconMessageReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A961D800E8F00CF1ECA /* BRBeaconMessageReportSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF541CBFE61300FCA2CB /* BRBeaconMessageReportSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A971D800E8F00CF1ECA /* BRBeaconMessageStreamNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 590A1A2D1C99774600F05178 /* BRBeaconMessageStreamNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A981D800E8F00CF1ECA /* BRBeaconMessageStreamNodeReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 590A1A301C99775A00F05178 /* BRBeaconMessageStreamNodeReceiver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A991D800E8F00CF1ECA /* BRBeaconMessageStreamNodeDefaultReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 595187621C9BFB990051001B /* BRBeaconMessageStreamNodeDefaultReceiver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A9A1D800E8F00CF1ECA /* BRBeaconMessagePassingStreamNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 595187651C9BFC160051001B /* BRBeaconMessagePassingStreamNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A9B1D800E8F00CF1ECA /* BRBeaconMessageQueuedStreamNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 595187681C9BFE3E0051001B /* BRBeaconMessageQueuedStreamNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A9C1D800E8F00CF1ECA /* BRIBeaconMessageScannerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E3BFC21C2AC8120064C717 /* BRIBeaconMessageScannerImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A9D1D800E8F00CF1ECA /* BRDefaultBeaconMessageScannerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 591D48761C2D6DE200A744C4 /* BRDefaultBeaconMessageScannerImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A9E1D800E8F00CF1ECA /* BRBeaconMessageGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E3BFBC1C2AB1360064C717 /* BRBeaconMessageGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0A9F1D800E8F00CF1ECA /* BRBeaconJoinMeMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 590A1A331C999D5000F05178 /* BRBeaconJoinMeMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AA01D800E8F00CF1ECA /* BRBeaconJoinMeMessageGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 590A1A361C999EC400F05178 /* BRBeaconJoinMeMessageGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AA11D800E8F00CF1ECA /* BRIBeaconMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E3BFC81C2AD6350064C717 /* BRIBeaconMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AA21D800E8F00CF1ECA /* BRIBeacon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5918B7DC1C9ADE9A00FECA47 /* BRIBeacon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AA31D800E8F00CF1ECA /* BRIBeaconMessageGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 593C75F21C2FF8D400BB8509 /* BRIBeaconMessageGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AA41D800E8F00CF1ECA /* BREddystoneMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5935AC8A1D70602500624D0C /* BREddystoneMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AA51D800E8F00CF1ECA /* BREddystoneMessageGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5972B9391D7427D800E38D74 /* BREddystoneMessageGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AA61D800E8F00CF1ECA /* BREddystoneUidMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5935AC871D705F6900624D0C /* BREddystoneUidMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AA71D800E8F00CF1ECA /* BREddystoneUidMessageGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5972B93C1D742AC000E38D74 /* BREddystoneUidMessageGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AA81D800E8F00CF1ECA /* BREddystoneUrlMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5935AC8D1D70724F00624D0C /* BREddystoneUrlMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AA91D800E8F00CF1ECA /* BREddystoneUrlMessageGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5972B93F1D743B3F00E38D74 /* BREddystoneUrlMessageGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AAA1D800E8F00CF1ECA /* BRRelutionTagMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 596B7C541D78100E008300D7 /* BRRelutionTagMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AAB1D800E8F00CF1ECA /* BRRelutionTagMessageGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 596B7C571D781022008300D7 /* BRRelutionTagMessageGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AAC1D800E8F00CF1ECA /* BRRelutionTagMessageV1.h in Headers */ = {isa = PBXBuildFile; fileRef = 591D487C1C2D787C00A744C4 /* BRRelutionTagMessageV1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AAD1D800E8F00CF1ECA /* BRRelutionTagMessageGeneratorV1.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E3BFBF1C2AB1A90064C717 /* BRRelutionTagMessageGeneratorV1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AAE1D800E8F00CF1ECA /* BRBeaconMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5918B7D91C9AD78C00FECA47 /* BRBeaconMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AAF1D800E8F00CF1ECA /* BRBeaconMessageScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D3401F1C299E280085D23F /* BRBeaconMessageScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AB01D800E8F00CF1ECA /* BRBeaconMessageScannerConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D340221C29A0D20085D23F /* BRBeaconMessageScannerConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AB11D800E8F00CF1ECA /* BRBeaconMessageScannerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 591D48791C2D6DF400A744C4 /* BRBeaconMessageScannerImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AB21D800E8F00CF1ECA /* BRIBeaconMessageScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 590A1A271C99741C00F05178 /* BRIBeaconMessageScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AB31D800E8F00CF1ECA /* BRBeaconMessageScannerSimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5918B7DF1C9AFD4700FECA47 /* BRBeaconMessageScannerSimulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AB41D800E8F00CF1ECA /* BRBeaconContentAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A5651C9C4BE800A4784C /* BRBeaconContentAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AB51D800E8F00CF1ECA /* BRBeaconContentActionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 599A08FE1C9FF2A2001E49F8 /* BRBeaconContentActionBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AB61D800E8F00CF1ECA /* BRBeaconContentActionExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 599A09011C9FF3BD001E49F8 /* BRBeaconContentActionExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AB71D800E8F00CF1ECA /* BRBeaconContentActionListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A5621C9C4B3100A4784C /* BRBeaconContentActionListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AB81D800E8F00CF1ECA /* BRBeaconNotificationAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A5681C9C4D0500A4784C /* BRBeaconNotificationAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AB91D800E8F00CF1ECA /* BRBeaconNotificationActionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 599A09041C9FF77E001E49F8 /* BRBeaconNotificationActionBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ABA1D800E8F00CF1ECA /* BRBeaconNotificationExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 599A09071C9FF8FC001E49F8 /* BRBeaconNotificationExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ABB1D800E8F00CF1ECA /* BRBeaconNotificationListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A5711C9C512500A4784C /* BRBeaconNotificationListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ABC1D800E8F00CF1ECA /* BRBeaconTagAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A56B1C9C4DCF00A4784C /* BRBeaconTagAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ABD1D800E8F00CF1ECA /* BRBeaconTagActionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 599A090A1C9FFE30001E49F8 /* BRBeaconTagActionBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ABE1D800E8F00CF1ECA /* BRBeaconTagActionExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 599A090D1CA0007D001E49F8 /* BRBeaconTagActionExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ABF1D800E8F00CF1ECA /* BRBeaconTagActionListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A5741C9C517C00A4784C /* BRBeaconTagActionListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AC01D800E8F00CF1ECA /* BRBeaconTagVisit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A56E1C9C4E8C00A4784C /* BRBeaconTagVisit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AC11D800E8F00CF1ECA /* BRBeaconMessageActionMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A5771C9C51F500A4784C /* BRBeaconMessageActionMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AC21D800E8F00CF1ECA /* BRIBeaconMessageActionMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A57A1C9C523500A4784C /* BRIBeaconMessageActionMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AC31D800E8F00CF1ECA /* BRRelutionTagMessageActionMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A5881C9C560600A4784C /* BRRelutionTagMessageActionMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AC41D800E8F00CF1ECA /* BRBeaconMessageActionMapperStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 595AF4171CA18FA700B1154A /* BRBeaconMessageActionMapperStub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AC51D800E8F00CF1ECA /* BRRelutionTagMessageActionMapperEmptyStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 595AF41A1CA1950500B1154A /* BRRelutionTagMessageActionMapperEmptyStub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AC61D800E8F00CF1ECA /* BRIBeaconMessageActionMapperStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 59569C5B1CAE719800ED1329 /* BRIBeaconMessageActionMapperStub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AC71D800E8F00CF1ECA /* BRBeaconActionLocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 595AF4241CA198E100B1154A /* BRBeaconActionLocker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AC81D800E8F00CF1ECA /* BRRunningFlag.h in Headers */ = {isa = PBXBuildFile; fileRef = 595AF4201CA1985E00B1154A /* BRRunningFlag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AC91D800E8F00CF1ECA /* BRBeaconAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A5501C9C35EE00A4784C /* BRBeaconAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ACA1D800E8F00CF1ECA /* BRBeaconCampaign.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A5531C9C37FB00A4784C /* BRBeaconCampaign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ACB1D800E8F00CF1ECA /* BRBeaconActionDebugListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A5561C9C4A1F00A4784C /* BRBeaconActionDebugListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ACC1D800E8F00CF1ECA /* BRBeaconActionListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A5591C9C4A7400A4784C /* BRBeaconActionListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ACD1D800E8F00CF1ECA /* BRRelutionActionInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A57D1C9C528A00A4784C /* BRRelutionActionInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ACE1D800E8F00CF1ECA /* BRBeaconActionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5912A58B1C9C57FF00A4784C /* BRBeaconActionBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ACF1D800E8F00CF1ECA /* BRBeaconActionExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 599A08FB1C9FF01B001E49F8 /* BRBeaconActionExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AD01D800E8F00CF1ECA /* BRBeaconActionRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 595AF41D1CA1970100B1154A /* BRBeaconActionRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AD11D800E8F00CF1ECA /* BRBeaconMessageActionTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = 59DB19EF1CA2A1E6005DFE3D /* BRBeaconMessageActionTrigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AD21D800E8F00CF1ECA /* BRRelutionHeatmapReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5947F3401CC0D56200D82451 /* BRRelutionHeatmapReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AD31D800E8F00CF1ECA /* BRRelutionHeatmapReportBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5947F3431CC0D5E600D82451 /* BRRelutionHeatmapReportBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AD41D800E8F00CF1ECA /* BRRelutionHeatmapSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 5947F3461CC0E09600D82451 /* BRRelutionHeatmapSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AD51D800E8F00CF1ECA /* BRRelutionHeatmapSenderStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 5947F34D1CC0E8F700D82451 /* BRRelutionHeatmapSenderStub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AD61D800E8F00CF1ECA /* BRRelutionHeatmapService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5947F34A1CC0E6A000D82451 /* BRRelutionHeatmapService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AD71D800E8F00CF1ECA /* BRRelutionIBeaconMessageActionMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5961F9B31CA4363200AE11B3 /* BRRelutionIBeaconMessageActionMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AD81D800E8F00CF1ECA /* BRRelutionCampaignService.h in Headers */ = {isa = PBXBuildFile; fileRef = 591A46071CAA6D2F0093C7A6 /* BRRelutionCampaignService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AD91D800E8F00CF1ECA /* BRRelutionScanConfigLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 592860451D79669500C60133 /* BRRelutionScanConfigLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ADA1D800E8F00CF1ECA /* BRRelutionScanConfigLoaderImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 5928604B1D7967B200C60133 /* BRRelutionScanConfigLoaderImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ADB1D800E8F00CF1ECA /* BRRelutionScanConfigLoaderStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 592860481D7966C200C60133 /* BRRelutionScanConfigLoaderStub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ADC1D800E8F00CF1ECA /* BRFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 596B7C5F1D78665B008300D7 /* BRFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ADD1D800E8F00CF1ECA /* BRLogOpFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 596B7C621D786767008300D7 /* BRLogOpFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ADE1D800E8F00CF1ECA /* BRLongFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 596B7C651D786BA4008300D7 /* BRLongFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0ADF1D800E8F00CF1ECA /* BRStringFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 596B7C681D786C9E008300D7 /* BRStringFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AE01D800E8F00CF1ECA /* BRAdvertisingMessagesConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 596B7C711D786EFE008300D7 /* BRAdvertisingMessagesConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AE11D800E8F00CF1ECA /* BRDataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 596B7C6B1D786DD1008300D7 /* BRDataObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AE21D800E8F00CF1ECA /* BRDataArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 596B7C6E1D786E4E008300D7 /* BRDataArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AE31D800E8F00CF1ECA /* BRRelutionTagInfos.h in Headers */ = {isa = PBXBuildFile; fileRef = 596B7C741D786FAA008300D7 /* BRRelutionTagInfos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AE41D800E8F00CF1ECA /* BRRelution.h in Headers */ = {isa = PBXBuildFile; fileRef = 59543E951CFD9F24006BD639 /* BRRelution.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AE51D800E8F00CF1ECA /* BRRelutionTagInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 591A460B1CAA78C70093C7A6 /* BRRelutionTagInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AE61D800E8F00CF1ECA /* BRRelutionTagInfoRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 591A460E1CAA79ED0093C7A6 /* BRRelutionTagInfoRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AE71D800E8F00CF1ECA /* BRRelutionTagInfoRegistryImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 591A46131CAA7AD30093C7A6 /* BRRelutionTagInfoRegistryImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AE81D800E8F00CF1ECA /* BRRelutionTagInfoRegistryStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 591A46161CAA8EC20093C7A6 /* BRRelutionTagInfoRegistryStub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AE91D800E8F00CF1ECA /* BRBeaconTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = 596D6AAA1D7DA26F00D994B2 /* BRBeaconTrigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590B0AEA1D800E8F00CF1ECA /* BRRelutionIoTService.h in Headers */ = {isa = PBXBuildFile; fileRef = 591A461C1CAAA1FF0093C7A6 /* BRRelutionIoTService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074BC1D816A6500B593EB /* BRFileAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF411CBF9E5700FCA2CB /* BRFileAccessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074BD1D816A6500B593EB /* BRFileAccessorImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF441CBF9ECD00FCA2CB /* BRFileAccessorImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074BE1D816A6500B593EB /* BRZipCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = 596DAF4A1CBFC79A00FCA2CB /* BRZipCompression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074BF1D816A6500B593EB /* BRTimeFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E9A1841CAC12ED00071B61 /* BRTimeFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074CD1D816A6600B593EB /* BRNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 590D8D6B1CA2F3AB00CE2C19 /* BRNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074CE1D816A6600B593EB /* BRHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 59543E911CFD9B9A006BD639 /* BRHttpClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074CF1D816A6600B593EB /* BRBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 592771D51D804F5E002595CD /* BRBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074D01D816A6600B593EB /* BRCoreMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 5918B7E31C9B0BFD00FECA47 /* BRCoreMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074D11D816A6600B593EB /* BRITracer.h in Headers */ = {isa = PBXBuildFile; fileRef = 59C3F79D1C9866360025F79B /* BRITracer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074D21D816A6600B593EB /* BRTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = 59C3F7A01C9866C40025F79B /* BRTracer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074D31D816A6600B593EB /* BRAbstract.h in Headers */ = {isa = PBXBuildFile; fileRef = 590A1A2B1C9974BC00F05178 /* BRAbstract.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074D41D816A6600B593EB /* BRByteArrayParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 590A1A3A1C99A6D500F05178 /* BRByteArrayParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074D51D816A6600B593EB /* BRJsonUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 599A09101CA00319001E49F8 /* BRJsonUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074D61D816A6600B593EB /* BRLimitedSizeQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E9A1801CABF88300071B61 /* BRLimitedSizeQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074D71D816A6600B593EB /* BRByteArrayConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 596B7C5A1D781FFA008300D7 /* BRByteArrayConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594074ED1D8172B000B593EB /* BRBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 592771D61D804F5E002595CD /* BRBluetooth.m */; };
+		5940758A1D81BC0D00B593EB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F208B51B5E3F15007BD48E /* CoreBluetooth.framework */; };
+		5940758B1D81BC0D00B593EB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 594075771D81B9C300B593EB /* CoreFoundation.framework */; };
+		5940758C1D81BC0D00B593EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4FFD308153BF3E800759785 /* CoreGraphics.framework */; };
+		5940758D1D81BC0D00B593EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5F48D1B662E4F000373BE /* CoreLocation.framework */; };
+		5940758E1D81BC1400B593EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4FFD306153BF3E800759785 /* Foundation.framework */; };
+		5940758F1D81BC1800B593EB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5961F9991CA41A5A00AE11B3 /* CFNetwork.framework */; };
+		594075901D81BC2A00B593EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5961F99B1CA41A6000AE11B3 /* SystemConfiguration.framework */; };
+		594075911D81BC2E00B593EB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5961F99D1CA41A6400AE11B3 /* MobileCoreServices.framework */; };
+		594F54111F69869800DC5526 /* BlueRangeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590B09681D8006A700CF1ECA /* BlueRangeSDK.framework */; };
+		594F541D1F69954B00DC5526 /* BRLinearWeightedMovingAverageFilterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F541C1F69954B00DC5526 /* BRLinearWeightedMovingAverageFilterTest.m */; };
+		595E8E721F6BC8810061FF0B /* BRBeaconMessageQueuedStreamNodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 595E8E711F6BC8810061FF0B /* BRBeaconMessageQueuedStreamNodeTest.m */; };
+		595E8E761F6BED850061FF0B /* BRRelutionHeatmapReportBuilderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 595E8E751F6BED850061FF0B /* BRRelutionHeatmapReportBuilderTest.m */; };
+		595E8E791F6BFD310061FF0B /* BRBeaconTriggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 595E8E781F6BFD310061FF0B /* BRBeaconTriggerTest.m */; };
+		597B56A51F6A8B95003493C7 /* BRSimpleMovingAverageFilterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 597B56A41F6A8B95003493C7 /* BRSimpleMovingAverageFilterTest.m */; };
+		597B56A71F6A8D02003493C7 /* BRBeaconMessageAggregatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 597B56A61F6A8D02003493C7 /* BRBeaconMessageAggregatorTest.m */; };
+		597B56AB1F6A8D88003493C7 /* BRTestBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 597B56AA1F6A8D88003493C7 /* BRTestBlocker.m */; };
+		597B56AE1F6A8E01003493C7 /* BRTestFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 597B56AD1F6A8E01003493C7 /* BRTestFailure.m */; };
+		597B56B31F6A8F11003493C7 /* BRDummyBeaconMessagePersistor.m in Sources */ = {isa = PBXBuildFile; fileRef = 597B56B21F6A8F10003493C7 /* BRDummyBeaconMessagePersistor.m */; };
+		597B56B61F6A908B003493C7 /* BRDummyBeaconMessagePersistorLogIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 597B56B51F6A908B003493C7 /* BRDummyBeaconMessagePersistorLogIterator.m */; };
+		597B56B91F6A91F7003493C7 /* BRDummyFileAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 597B56B81F6A91F7003493C7 /* BRDummyFileAccessor.m */; };
+		597B56BC1F6A9A32003493C7 /* BRDummyTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = 597B56BB1F6A9A32003493C7 /* BRDummyTracer.m */; };
+		597B56BF1F6A9DE0003493C7 /* libASIHTTPRequest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 597B56BD1F6A9DE0003493C7 /* libASIHTTPRequest.a */; };
+		597B56C01F6A9DE0003493C7 /* libReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 597B56BE1F6A9DE0003493C7 /* libReachability.a */; };
+		597B56C61F6A9DE0003493C7 /* BRIBeaconMessageFilterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 597B56C51F6A9DE0003493C7 /* BRIBeaconMessageFilterTest.m */; };
+		597E0A111F6A94AC002A1779 /* BRBeaconMessageLoggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E0A101F6A94AC002A1779 /* BRBeaconMessageLoggerTest.m */; };
+		597E0A131F6AAC24002A1779 /* BRBeaconMessagePersistorImplTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E0A121F6AAC24002A1779 /* BRBeaconMessagePersistorImplTest.m */; };
+		597E0A171F6AB8BB002A1779 /* BRBeaconMessageScannerConfigTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 597E0A161F6AB8BB002A1779 /* BRBeaconMessageScannerConfigTest.m */; };
+		59ECCF8F1F602CCA00778E96 /* libPods-BlueRangeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ECCF8D1F602CCA00778E96 /* libPods-BlueRangeSDK.a */; };
+		59ECCF901F602CCA00778E96 /* libPods-BlueRangeSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ECCF8E1F602CCA00778E96 /* libPods-BlueRangeSDKTests.a */; };
+		59ECCF931F6035F100778E96 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ECCF921F6035F100778E96 /* libz.1.2.5.tbd */; };
+		B5906336B660DA07AC5D9556 /* libPods-BlueRangeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F39524C7F5A3A02827F070 /* libPods-BlueRangeSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		594F54121F69869800DC5526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4FFD2F7153BF3E800759785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 590B09671D8006A700CF1ECA;
+			remoteInfo = BlueRangeSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45AC3B8744C30C2441B58D1B /* Pods-BlueRangeSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueRangeSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueRangeSDKTests/Pods-BlueRangeSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		590A1A271C99741C00F05178 /* BRIBeaconMessageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRIBeaconMessageScanner.h; sourceTree = "<group>"; };
+		590A1A281C99741C00F05178 /* BRIBeaconMessageScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRIBeaconMessageScanner.m; sourceTree = "<group>"; };
+		590A1A2B1C9974BC00F05178 /* BRAbstract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRAbstract.h; sourceTree = "<group>"; };
+		590A1A2D1C99774600F05178 /* BRBeaconMessageStreamNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageStreamNode.h; sourceTree = "<group>"; };
+		590A1A2E1C99774600F05178 /* BRBeaconMessageStreamNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageStreamNode.m; sourceTree = "<group>"; };
+		590A1A301C99775A00F05178 /* BRBeaconMessageStreamNodeReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageStreamNodeReceiver.h; sourceTree = "<group>"; };
+		590A1A331C999D5000F05178 /* BRBeaconJoinMeMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconJoinMeMessage.h; sourceTree = "<group>"; };
+		590A1A341C999D5000F05178 /* BRBeaconJoinMeMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconJoinMeMessage.m; sourceTree = "<group>"; };
+		590A1A361C999EC400F05178 /* BRBeaconJoinMeMessageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconJoinMeMessageGenerator.h; sourceTree = "<group>"; };
+		590A1A371C999EC400F05178 /* BRBeaconJoinMeMessageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconJoinMeMessageGenerator.m; sourceTree = "<group>"; };
+		590A1A3A1C99A6D500F05178 /* BRByteArrayParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRByteArrayParser.h; sourceTree = "<group>"; };
+		590A1A3B1C99A6D500F05178 /* BRByteArrayParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRByteArrayParser.m; sourceTree = "<group>"; };
+		590B09681D8006A700CF1ECA /* BlueRangeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlueRangeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		590B096A1D8006A700CF1ECA /* BlueRangeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueRangeSDK.h; sourceTree = "<group>"; };
+		590B096C1D8006A700CF1ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		590B097A1D8006A800CF1ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		590D8D6B1CA2F3AB00CE2C19 /* BRNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRNetwork.h; sourceTree = "<group>"; };
+		590D8D6C1CA2F3AB00CE2C19 /* BRNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRNetwork.m; sourceTree = "<group>"; };
+		5912A5501C9C35EE00A4784C /* BRBeaconAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconAction.h; sourceTree = "<group>"; };
+		5912A5511C9C35EE00A4784C /* BRBeaconAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconAction.m; sourceTree = "<group>"; };
+		5912A5531C9C37FB00A4784C /* BRBeaconCampaign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconCampaign.h; sourceTree = "<group>"; };
+		5912A5541C9C37FB00A4784C /* BRBeaconCampaign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconCampaign.m; sourceTree = "<group>"; };
+		5912A5561C9C4A1F00A4784C /* BRBeaconActionDebugListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconActionDebugListener.h; sourceTree = "<group>"; };
+		5912A5591C9C4A7400A4784C /* BRBeaconActionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconActionListener.h; sourceTree = "<group>"; };
+		5912A5621C9C4B3100A4784C /* BRBeaconContentActionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconContentActionListener.h; sourceTree = "<group>"; };
+		5912A5651C9C4BE800A4784C /* BRBeaconContentAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconContentAction.h; sourceTree = "<group>"; };
+		5912A5661C9C4BE800A4784C /* BRBeaconContentAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconContentAction.m; sourceTree = "<group>"; };
+		5912A5681C9C4D0500A4784C /* BRBeaconNotificationAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconNotificationAction.h; sourceTree = "<group>"; };
+		5912A5691C9C4D0500A4784C /* BRBeaconNotificationAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconNotificationAction.m; sourceTree = "<group>"; };
+		5912A56B1C9C4DCF00A4784C /* BRBeaconTagAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconTagAction.h; sourceTree = "<group>"; };
+		5912A56C1C9C4DCF00A4784C /* BRBeaconTagAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconTagAction.m; sourceTree = "<group>"; };
+		5912A56E1C9C4E8C00A4784C /* BRBeaconTagVisit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconTagVisit.h; sourceTree = "<group>"; };
+		5912A56F1C9C4E8C00A4784C /* BRBeaconTagVisit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconTagVisit.m; sourceTree = "<group>"; };
+		5912A5711C9C512500A4784C /* BRBeaconNotificationListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconNotificationListener.h; sourceTree = "<group>"; };
+		5912A5741C9C517C00A4784C /* BRBeaconTagActionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconTagActionListener.h; sourceTree = "<group>"; };
+		5912A5771C9C51F500A4784C /* BRBeaconMessageActionMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageActionMapper.h; sourceTree = "<group>"; };
+		5912A57A1C9C523500A4784C /* BRIBeaconMessageActionMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRIBeaconMessageActionMapper.h; sourceTree = "<group>"; };
+		5912A57D1C9C528A00A4784C /* BRRelutionActionInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionActionInformation.h; sourceTree = "<group>"; };
+		5912A57E1C9C528A00A4784C /* BRRelutionActionInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionActionInformation.m; sourceTree = "<group>"; };
+		5912A5881C9C560600A4784C /* BRRelutionTagMessageActionMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionTagMessageActionMapper.h; sourceTree = "<group>"; };
+		5912A58B1C9C57FF00A4784C /* BRBeaconActionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconActionBuilder.h; sourceTree = "<group>"; };
+		5912A58C1C9C57FF00A4784C /* BRBeaconActionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconActionBuilder.m; sourceTree = "<group>"; };
+		5918B7D91C9AD78C00FECA47 /* BRBeaconMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessage.h; sourceTree = "<group>"; };
+		5918B7DA1C9AD78C00FECA47 /* BRBeaconMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessage.m; sourceTree = "<group>"; };
+		5918B7DC1C9ADE9A00FECA47 /* BRIBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRIBeacon.h; sourceTree = "<group>"; };
+		5918B7DD1C9ADE9A00FECA47 /* BRIBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRIBeacon.m; sourceTree = "<group>"; };
+		5918B7DF1C9AFD4700FECA47 /* BRBeaconMessageScannerSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageScannerSimulator.h; sourceTree = "<group>"; };
+		5918B7E01C9AFD4700FECA47 /* BRBeaconMessageScannerSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageScannerSimulator.m; sourceTree = "<group>"; };
+		5918B7E31C9B0BFD00FECA47 /* BRCoreMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCoreMath.h; sourceTree = "<group>"; };
+		5918B7E41C9B0BFD00FECA47 /* BRCoreMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCoreMath.m; sourceTree = "<group>"; };
+		591A46071CAA6D2F0093C7A6 /* BRRelutionCampaignService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionCampaignService.h; sourceTree = "<group>"; };
+		591A46081CAA6D2F0093C7A6 /* BRRelutionCampaignService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionCampaignService.m; sourceTree = "<group>"; };
+		591A460B1CAA78C70093C7A6 /* BRRelutionTagInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionTagInfo.h; sourceTree = "<group>"; };
+		591A460C1CAA78C70093C7A6 /* BRRelutionTagInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionTagInfo.m; sourceTree = "<group>"; };
+		591A460E1CAA79ED0093C7A6 /* BRRelutionTagInfoRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionTagInfoRegistry.h; sourceTree = "<group>"; };
+		591A46111CAA7A310093C7A6 /* BRRelutionTagInfoRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionTagInfoRegistry.m; sourceTree = "<group>"; };
+		591A46131CAA7AD30093C7A6 /* BRRelutionTagInfoRegistryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionTagInfoRegistryImpl.h; sourceTree = "<group>"; };
+		591A46141CAA7AD30093C7A6 /* BRRelutionTagInfoRegistryImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionTagInfoRegistryImpl.m; sourceTree = "<group>"; };
+		591A46161CAA8EC20093C7A6 /* BRRelutionTagInfoRegistryStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionTagInfoRegistryStub.h; sourceTree = "<group>"; };
+		591A46171CAA8EC20093C7A6 /* BRRelutionTagInfoRegistryStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionTagInfoRegistryStub.m; sourceTree = "<group>"; };
+		591A461C1CAAA1FF0093C7A6 /* BRRelutionIoTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionIoTService.h; sourceTree = "<group>"; };
+		591A461D1CAAA1FF0093C7A6 /* BRRelutionIoTService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionIoTService.m; sourceTree = "<group>"; };
+		591D48761C2D6DE200A744C4 /* BRDefaultBeaconMessageScannerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDefaultBeaconMessageScannerImpl.h; sourceTree = "<group>"; };
+		591D48771C2D6DE200A744C4 /* BRDefaultBeaconMessageScannerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDefaultBeaconMessageScannerImpl.m; sourceTree = "<group>"; };
+		591D48791C2D6DF400A744C4 /* BRBeaconMessageScannerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageScannerImpl.h; sourceTree = "<group>"; };
+		591D487C1C2D787C00A744C4 /* BRRelutionTagMessageV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionTagMessageV1.h; sourceTree = "<group>"; };
+		591D487D1C2D787C00A744C4 /* BRRelutionTagMessageV1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionTagMessageV1.m; sourceTree = "<group>"; };
+		592771D51D804F5E002595CD /* BRBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBluetooth.h; sourceTree = "<group>"; };
+		592771D61D804F5E002595CD /* BRBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBluetooth.m; sourceTree = "<group>"; };
+		592860451D79669500C60133 /* BRRelutionScanConfigLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionScanConfigLoader.h; sourceTree = "<group>"; };
+		592860481D7966C200C60133 /* BRRelutionScanConfigLoaderStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionScanConfigLoaderStub.h; sourceTree = "<group>"; };
+		592860491D7966C200C60133 /* BRRelutionScanConfigLoaderStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionScanConfigLoaderStub.m; sourceTree = "<group>"; };
+		5928604B1D7967B200C60133 /* BRRelutionScanConfigLoaderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionScanConfigLoaderImpl.h; sourceTree = "<group>"; };
+		5928604C1D7967B200C60133 /* BRRelutionScanConfigLoaderImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionScanConfigLoaderImpl.m; sourceTree = "<group>"; };
+		5935AC871D705F6900624D0C /* BREddystoneUidMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREddystoneUidMessage.h; sourceTree = "<group>"; };
+		5935AC881D705F6900624D0C /* BREddystoneUidMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREddystoneUidMessage.m; sourceTree = "<group>"; };
+		5935AC8A1D70602500624D0C /* BREddystoneMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREddystoneMessage.h; sourceTree = "<group>"; };
+		5935AC8B1D70602500624D0C /* BREddystoneMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREddystoneMessage.m; sourceTree = "<group>"; };
+		5935AC8D1D70724F00624D0C /* BREddystoneUrlMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREddystoneUrlMessage.h; sourceTree = "<group>"; };
+		5935AC8E1D70724F00624D0C /* BREddystoneUrlMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREddystoneUrlMessage.m; sourceTree = "<group>"; };
+		593C75F21C2FF8D400BB8509 /* BRIBeaconMessageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRIBeaconMessageGenerator.h; sourceTree = "<group>"; };
+		593C75F31C2FF8D400BB8509 /* BRIBeaconMessageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRIBeaconMessageGenerator.m; sourceTree = "<group>"; };
+		594075771D81B9C300B593EB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5947F3401CC0D56200D82451 /* BRRelutionHeatmapReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionHeatmapReport.h; sourceTree = "<group>"; };
+		5947F3411CC0D56200D82451 /* BRRelutionHeatmapReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionHeatmapReport.m; sourceTree = "<group>"; };
+		5947F3431CC0D5E600D82451 /* BRRelutionHeatmapReportBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionHeatmapReportBuilder.h; sourceTree = "<group>"; };
+		5947F3441CC0D5E600D82451 /* BRRelutionHeatmapReportBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionHeatmapReportBuilder.m; sourceTree = "<group>"; };
+		5947F3461CC0E09600D82451 /* BRRelutionHeatmapSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionHeatmapSender.h; sourceTree = "<group>"; };
+		5947F3471CC0E09600D82451 /* BRRelutionHeatmapSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionHeatmapSender.m; sourceTree = "<group>"; };
+		5947F34A1CC0E6A000D82451 /* BRRelutionHeatmapService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionHeatmapService.h; sourceTree = "<group>"; };
+		5947F34B1CC0E6A000D82451 /* BRRelutionHeatmapService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionHeatmapService.m; sourceTree = "<group>"; };
+		5947F34D1CC0E8F700D82451 /* BRRelutionHeatmapSenderStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionHeatmapSenderStub.h; sourceTree = "<group>"; };
+		5947F34E1CC0E8F700D82451 /* BRRelutionHeatmapSenderStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionHeatmapSenderStub.m; sourceTree = "<group>"; };
+		594F540C1F69869800DC5526 /* BlueRangeSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueRangeSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		594F541C1F69954B00DC5526 /* BRLinearWeightedMovingAverageFilterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLinearWeightedMovingAverageFilterTest.m; sourceTree = "<group>"; };
+		595187621C9BFB990051001B /* BRBeaconMessageStreamNodeDefaultReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageStreamNodeDefaultReceiver.h; sourceTree = "<group>"; };
+		595187631C9BFB990051001B /* BRBeaconMessageStreamNodeDefaultReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageStreamNodeDefaultReceiver.m; sourceTree = "<group>"; };
+		595187651C9BFC160051001B /* BRBeaconMessagePassingStreamNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessagePassingStreamNode.h; sourceTree = "<group>"; };
+		595187661C9BFC160051001B /* BRBeaconMessagePassingStreamNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessagePassingStreamNode.m; sourceTree = "<group>"; };
+		595187681C9BFE3E0051001B /* BRBeaconMessageQueuedStreamNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageQueuedStreamNode.h; sourceTree = "<group>"; };
+		595187691C9BFE3E0051001B /* BRBeaconMessageQueuedStreamNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageQueuedStreamNode.m; sourceTree = "<group>"; };
+		5951876C1C9C08390051001B /* BRDistanceEstimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDistanceEstimator.h; sourceTree = "<group>"; };
+		5951876F1C9C087D0051001B /* BRAnalyticalDistanceEstimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAnalyticalDistanceEstimator.h; sourceTree = "<group>"; };
+		595187701C9C087D0051001B /* BRAnalyticalDistanceEstimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAnalyticalDistanceEstimator.m; sourceTree = "<group>"; };
+		595187721C9C0C890051001B /* BREmpiricalDistanceEstimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREmpiricalDistanceEstimator.h; sourceTree = "<group>"; };
+		595187731C9C0C890051001B /* BREmpiricalDistanceEstimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREmpiricalDistanceEstimator.m; sourceTree = "<group>"; };
+		59543E911CFD9B9A006BD639 /* BRHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRHttpClient.h; sourceTree = "<group>"; };
+		59543E921CFD9B9A006BD639 /* BRHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRHttpClient.m; sourceTree = "<group>"; };
+		59543E951CFD9F24006BD639 /* BRRelution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelution.h; sourceTree = "<group>"; };
+		59543E961CFD9F24006BD639 /* BRRelution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelution.m; sourceTree = "<group>"; };
+		59569C5B1CAE719800ED1329 /* BRIBeaconMessageActionMapperStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRIBeaconMessageActionMapperStub.h; sourceTree = "<group>"; };
+		59569C5C1CAE719800ED1329 /* BRIBeaconMessageActionMapperStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRIBeaconMessageActionMapperStub.m; sourceTree = "<group>"; };
+		595AF4171CA18FA700B1154A /* BRBeaconMessageActionMapperStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageActionMapperStub.h; sourceTree = "<group>"; };
+		595AF4181CA18FA700B1154A /* BRBeaconMessageActionMapperStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageActionMapperStub.m; sourceTree = "<group>"; };
+		595AF41A1CA1950500B1154A /* BRRelutionTagMessageActionMapperEmptyStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionTagMessageActionMapperEmptyStub.h; sourceTree = "<group>"; };
+		595AF41B1CA1950500B1154A /* BRRelutionTagMessageActionMapperEmptyStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionTagMessageActionMapperEmptyStub.m; sourceTree = "<group>"; };
+		595AF41D1CA1970100B1154A /* BRBeaconActionRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconActionRegistry.h; sourceTree = "<group>"; };
+		595AF41E1CA1970100B1154A /* BRBeaconActionRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconActionRegistry.m; sourceTree = "<group>"; };
+		595AF4201CA1985E00B1154A /* BRRunningFlag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRunningFlag.h; sourceTree = "<group>"; };
+		595AF4211CA1985E00B1154A /* BRRunningFlag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRunningFlag.m; sourceTree = "<group>"; };
+		595AF4241CA198E100B1154A /* BRBeaconActionLocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconActionLocker.h; sourceTree = "<group>"; };
+		595AF4251CA198E100B1154A /* BRBeaconActionLocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconActionLocker.m; sourceTree = "<group>"; };
+		595BBA7A1D7EA85F00BE3372 /* BRBeaconMessagePacketAggregate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessagePacketAggregate.h; sourceTree = "<group>"; };
+		595BBA7B1D7EA85F00BE3372 /* BRBeaconMessagePacketAggregate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessagePacketAggregate.m; sourceTree = "<group>"; };
+		595BBA7D1D7EAB4900BE3372 /* BRBeaconMessageSlidingWindowAggregate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageSlidingWindowAggregate.h; sourceTree = "<group>"; };
+		595BBA7E1D7EAB4900BE3372 /* BRBeaconMessageSlidingWindowAggregate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageSlidingWindowAggregate.m; sourceTree = "<group>"; };
+		595E8E711F6BC8810061FF0B /* BRBeaconMessageQueuedStreamNodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageQueuedStreamNodeTest.m; sourceTree = "<group>"; };
+		595E8E751F6BED850061FF0B /* BRRelutionHeatmapReportBuilderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionHeatmapReportBuilderTest.m; sourceTree = "<group>"; };
+		595E8E781F6BFD310061FF0B /* BRBeaconTriggerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconTriggerTest.m; sourceTree = "<group>"; };
+		5961F9991CA41A5A00AE11B3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5961F99B1CA41A6000AE11B3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5961F99D1CA41A6400AE11B3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5961F99F1CA41A7A00AE11B3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5961F9B31CA4363200AE11B3 /* BRRelutionIBeaconMessageActionMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionIBeaconMessageActionMapper.h; sourceTree = "<group>"; };
+		5961F9B41CA4363200AE11B3 /* BRRelutionIBeaconMessageActionMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionIBeaconMessageActionMapper.m; sourceTree = "<group>"; };
+		596B7C541D78100E008300D7 /* BRRelutionTagMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionTagMessage.h; sourceTree = "<group>"; };
+		596B7C551D78100E008300D7 /* BRRelutionTagMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionTagMessage.m; sourceTree = "<group>"; };
+		596B7C571D781022008300D7 /* BRRelutionTagMessageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionTagMessageGenerator.h; sourceTree = "<group>"; };
+		596B7C581D781022008300D7 /* BRRelutionTagMessageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionTagMessageGenerator.m; sourceTree = "<group>"; };
+		596B7C5A1D781FFA008300D7 /* BRByteArrayConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRByteArrayConverter.h; sourceTree = "<group>"; };
+		596B7C5B1D781FFA008300D7 /* BRByteArrayConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRByteArrayConverter.m; sourceTree = "<group>"; };
+		596B7C5F1D78665B008300D7 /* BRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRFilter.h; sourceTree = "<group>"; };
+		596B7C601D78665B008300D7 /* BRFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRFilter.m; sourceTree = "<group>"; };
+		596B7C621D786767008300D7 /* BRLogOpFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLogOpFilter.h; sourceTree = "<group>"; };
+		596B7C631D786767008300D7 /* BRLogOpFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLogOpFilter.m; sourceTree = "<group>"; };
+		596B7C651D786BA4008300D7 /* BRLongFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLongFilter.h; sourceTree = "<group>"; };
+		596B7C661D786BA4008300D7 /* BRLongFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLongFilter.m; sourceTree = "<group>"; };
+		596B7C681D786C9E008300D7 /* BRStringFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringFilter.h; sourceTree = "<group>"; };
+		596B7C691D786C9E008300D7 /* BRStringFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRStringFilter.m; sourceTree = "<group>"; };
+		596B7C6B1D786DD1008300D7 /* BRDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDataObject.h; sourceTree = "<group>"; };
+		596B7C6C1D786DD1008300D7 /* BRDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDataObject.m; sourceTree = "<group>"; };
+		596B7C6E1D786E4E008300D7 /* BRDataArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDataArray.h; sourceTree = "<group>"; };
+		596B7C6F1D786E4E008300D7 /* BRDataArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDataArray.m; sourceTree = "<group>"; };
+		596B7C711D786EFE008300D7 /* BRAdvertisingMessagesConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAdvertisingMessagesConfiguration.h; sourceTree = "<group>"; };
+		596B7C721D786EFE008300D7 /* BRAdvertisingMessagesConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAdvertisingMessagesConfiguration.m; sourceTree = "<group>"; };
+		596B7C741D786FAA008300D7 /* BRRelutionTagInfos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionTagInfos.h; sourceTree = "<group>"; };
+		596B7C751D786FAA008300D7 /* BRRelutionTagInfos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionTagInfos.m; sourceTree = "<group>"; };
+		596D6AAA1D7DA26F00D994B2 /* BRBeaconTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconTrigger.h; sourceTree = "<group>"; };
+		596D6AAB1D7DA26F00D994B2 /* BRBeaconTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconTrigger.m; sourceTree = "<group>"; };
+		596DAF2F1CBF963700FCA2CB /* BRBeaconMessageLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageLog.h; sourceTree = "<group>"; };
+		596DAF301CBF963700FCA2CB /* BRBeaconMessageLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageLog.m; sourceTree = "<group>"; };
+		596DAF321CBF981900FCA2CB /* BRBeaconMessagePersistor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessagePersistor.h; sourceTree = "<group>"; };
+		596DAF351CBF991800FCA2CB /* BRLogIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLogIterator.h; sourceTree = "<group>"; };
+		596DAF381CBF999300FCA2CB /* BRBeaconMessagePersistor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessagePersistor.m; sourceTree = "<group>"; };
+		596DAF3A1CBF99D800FCA2CB /* BRBeaconMessageLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageLogger.h; sourceTree = "<group>"; };
+		596DAF3B1CBF99D800FCA2CB /* BRBeaconMessageLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageLogger.m; sourceTree = "<group>"; };
+		596DAF3D1CBF9BEB00FCA2CB /* BRBeaconMessagePersistorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessagePersistorImpl.h; sourceTree = "<group>"; };
+		596DAF3E1CBF9BEB00FCA2CB /* BRBeaconMessagePersistorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessagePersistorImpl.m; sourceTree = "<group>"; };
+		596DAF411CBF9E5700FCA2CB /* BRFileAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRFileAccessor.h; sourceTree = "<group>"; };
+		596DAF441CBF9ECD00FCA2CB /* BRFileAccessorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRFileAccessorImpl.h; sourceTree = "<group>"; };
+		596DAF451CBF9ECD00FCA2CB /* BRFileAccessorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRFileAccessorImpl.m; sourceTree = "<group>"; };
+		596DAF471CBFA09800FCA2CB /* BRBeaconMessagePersistorImplLogIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessagePersistorImplLogIterator.h; sourceTree = "<group>"; };
+		596DAF481CBFA09800FCA2CB /* BRBeaconMessagePersistorImplLogIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessagePersistorImplLogIterator.m; sourceTree = "<group>"; };
+		596DAF4A1CBFC79A00FCA2CB /* BRZipCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRZipCompression.h; sourceTree = "<group>"; };
+		596DAF4B1CBFC79A00FCA2CB /* BRZipCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRZipCompression.m; sourceTree = "<group>"; };
+		596DAF4E1CBFE50700FCA2CB /* BRBeaconMessageReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageReport.h; sourceTree = "<group>"; };
+		596DAF511CBFE53500FCA2CB /* BRBeaconMessageReportBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageReportBuilder.h; sourceTree = "<group>"; };
+		596DAF521CBFE53500FCA2CB /* BRBeaconMessageReportBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageReportBuilder.m; sourceTree = "<group>"; };
+		596DAF541CBFE61300FCA2CB /* BRBeaconMessageReportSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageReportSender.h; sourceTree = "<group>"; };
+		596DAF551CBFE61300FCA2CB /* BRBeaconMessageReportSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageReportSender.m; sourceTree = "<group>"; };
+		596DAF571CBFE91300FCA2CB /* BRBeaconMessageReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageReporter.h; sourceTree = "<group>"; };
+		596DAF581CBFE91300FCA2CB /* BRBeaconMessageReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageReporter.m; sourceTree = "<group>"; };
+		5972B9391D7427D800E38D74 /* BREddystoneMessageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREddystoneMessageGenerator.h; sourceTree = "<group>"; };
+		5972B93A1D7427D800E38D74 /* BREddystoneMessageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREddystoneMessageGenerator.m; sourceTree = "<group>"; };
+		5972B93C1D742AC000E38D74 /* BREddystoneUidMessageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREddystoneUidMessageGenerator.h; sourceTree = "<group>"; };
+		5972B93D1D742AC000E38D74 /* BREddystoneUidMessageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREddystoneUidMessageGenerator.m; sourceTree = "<group>"; };
+		5972B93F1D743B3F00E38D74 /* BREddystoneUrlMessageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREddystoneUrlMessageGenerator.h; sourceTree = "<group>"; };
+		5972B9401D743B3F00E38D74 /* BREddystoneUrlMessageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREddystoneUrlMessageGenerator.m; sourceTree = "<group>"; };
+		597B56A41F6A8B95003493C7 /* BRSimpleMovingAverageFilterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSimpleMovingAverageFilterTest.m; sourceTree = "<group>"; };
+		597B56A61F6A8D02003493C7 /* BRBeaconMessageAggregatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageAggregatorTest.m; sourceTree = "<group>"; };
+		597B56A91F6A8D88003493C7 /* BRTestBlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTestBlocker.h; sourceTree = "<group>"; };
+		597B56AA1F6A8D88003493C7 /* BRTestBlocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTestBlocker.m; sourceTree = "<group>"; };
+		597B56AC1F6A8E01003493C7 /* BRTestFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTestFailure.h; sourceTree = "<group>"; };
+		597B56AD1F6A8E01003493C7 /* BRTestFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTestFailure.m; sourceTree = "<group>"; };
+		597B56B11F6A8F10003493C7 /* BRDummyBeaconMessagePersistor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDummyBeaconMessagePersistor.h; sourceTree = "<group>"; };
+		597B56B21F6A8F10003493C7 /* BRDummyBeaconMessagePersistor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDummyBeaconMessagePersistor.m; sourceTree = "<group>"; };
+		597B56B41F6A908B003493C7 /* BRDummyBeaconMessagePersistorLogIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDummyBeaconMessagePersistorLogIterator.h; sourceTree = "<group>"; };
+		597B56B51F6A908B003493C7 /* BRDummyBeaconMessagePersistorLogIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDummyBeaconMessagePersistorLogIterator.m; sourceTree = "<group>"; };
+		597B56B71F6A91F7003493C7 /* BRDummyFileAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDummyFileAccessor.h; sourceTree = "<group>"; };
+		597B56B81F6A91F7003493C7 /* BRDummyFileAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDummyFileAccessor.m; sourceTree = "<group>"; };
+		597B56BA1F6A9A32003493C7 /* BRDummyTracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDummyTracer.h; sourceTree = "<group>"; };
+		597B56BB1F6A9A32003493C7 /* BRDummyTracer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDummyTracer.m; sourceTree = "<group>"; };
+		597B56BD1F6A9DE0003493C7 /* libASIHTTPRequest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libASIHTTPRequest.a; path = "Pods/../build/Release-iphoneos/ASIHTTPRequest/libASIHTTPRequest.a"; sourceTree = "<group>"; };
+		597B56BE1F6A9DE0003493C7 /* libReachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReachability.a; path = "Pods/../build/Release-iphoneos/Reachability/libReachability.a"; sourceTree = "<group>"; };
+		597B56C51F6A9DE0003493C7 /* BRIBeaconMessageFilterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRIBeaconMessageFilterTest.m; sourceTree = "<group>"; };
+		597E0A101F6A94AC002A1779 /* BRBeaconMessageLoggerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageLoggerTest.m; sourceTree = "<group>"; };
+		597E0A121F6AAC24002A1779 /* BRBeaconMessagePersistorImplTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessagePersistorImplTest.m; sourceTree = "<group>"; };
+		597E0A161F6AB8BB002A1779 /* BRBeaconMessageScannerConfigTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageScannerConfigTest.m; sourceTree = "<group>"; };
+		599A08FB1C9FF01B001E49F8 /* BRBeaconActionExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconActionExecutor.h; sourceTree = "<group>"; };
+		599A08FC1C9FF01B001E49F8 /* BRBeaconActionExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconActionExecutor.m; sourceTree = "<group>"; };
+		599A08FE1C9FF2A2001E49F8 /* BRBeaconContentActionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconContentActionBuilder.h; sourceTree = "<group>"; };
+		599A08FF1C9FF2A2001E49F8 /* BRBeaconContentActionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconContentActionBuilder.m; sourceTree = "<group>"; };
+		599A09011C9FF3BD001E49F8 /* BRBeaconContentActionExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconContentActionExecutor.h; sourceTree = "<group>"; };
+		599A09021C9FF3BD001E49F8 /* BRBeaconContentActionExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconContentActionExecutor.m; sourceTree = "<group>"; };
+		599A09041C9FF77E001E49F8 /* BRBeaconNotificationActionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconNotificationActionBuilder.h; sourceTree = "<group>"; };
+		599A09051C9FF77E001E49F8 /* BRBeaconNotificationActionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconNotificationActionBuilder.m; sourceTree = "<group>"; };
+		599A09071C9FF8FC001E49F8 /* BRBeaconNotificationExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconNotificationExecutor.h; sourceTree = "<group>"; };
+		599A09081C9FF8FC001E49F8 /* BRBeaconNotificationExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconNotificationExecutor.m; sourceTree = "<group>"; };
+		599A090A1C9FFE30001E49F8 /* BRBeaconTagActionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconTagActionBuilder.h; sourceTree = "<group>"; };
+		599A090B1C9FFE30001E49F8 /* BRBeaconTagActionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconTagActionBuilder.m; sourceTree = "<group>"; };
+		599A090D1CA0007D001E49F8 /* BRBeaconTagActionExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconTagActionExecutor.h; sourceTree = "<group>"; };
+		599A090E1CA0007D001E49F8 /* BRBeaconTagActionExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconTagActionExecutor.m; sourceTree = "<group>"; };
+		599A09101CA00319001E49F8 /* BRJsonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRJsonUtils.h; sourceTree = "<group>"; };
+		599A09111CA00319001E49F8 /* BRJsonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRJsonUtils.m; sourceTree = "<group>"; };
+		59C114071C3A8430008E6DF5 /* BRBeaconAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconAdvertiser.h; sourceTree = "<group>"; };
+		59C114081C3A8430008E6DF5 /* BRBeaconAdvertiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconAdvertiser.m; sourceTree = "<group>"; };
+		59C3F79D1C9866360025F79B /* BRITracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRITracer.h; sourceTree = "<group>"; };
+		59C3F7A01C9866C40025F79B /* BRTracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTracer.h; sourceTree = "<group>"; };
+		59C3F7A11C9866C40025F79B /* BRTracer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTracer.m; sourceTree = "<group>"; };
+		59D3401F1C299E280085D23F /* BRBeaconMessageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageScanner.h; sourceTree = "<group>"; };
+		59D340201C299E280085D23F /* BRBeaconMessageScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageScanner.m; sourceTree = "<group>"; };
+		59D340221C29A0D20085D23F /* BRBeaconMessageScannerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageScannerConfig.h; sourceTree = "<group>"; };
+		59D340231C29A0D20085D23F /* BRBeaconMessageScannerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageScannerConfig.m; sourceTree = "<group>"; };
+		59DB19EF1CA2A1E6005DFE3D /* BRBeaconMessageActionTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageActionTrigger.h; sourceTree = "<group>"; };
+		59DB19F01CA2A1E6005DFE3D /* BRBeaconMessageActionTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageActionTrigger.m; sourceTree = "<group>"; };
+		59E3BFB81C2AA1F70064C717 /* BRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRConstants.h; sourceTree = "<group>"; };
+		59E3BFB91C2AA1F70064C717 /* BRConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRConstants.m; sourceTree = "<group>"; };
+		59E3BFBC1C2AB1360064C717 /* BRBeaconMessageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageGenerator.h; sourceTree = "<group>"; };
+		59E3BFBF1C2AB1A90064C717 /* BRRelutionTagMessageGeneratorV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionTagMessageGeneratorV1.h; sourceTree = "<group>"; };
+		59E3BFC01C2AB1A90064C717 /* BRRelutionTagMessageGeneratorV1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionTagMessageGeneratorV1.m; sourceTree = "<group>"; };
+		59E3BFC21C2AC8120064C717 /* BRIBeaconMessageScannerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRIBeaconMessageScannerImpl.h; sourceTree = "<group>"; };
+		59E3BFC31C2AC8120064C717 /* BRIBeaconMessageScannerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRIBeaconMessageScannerImpl.m; sourceTree = "<group>"; };
+		59E3BFC81C2AD6350064C717 /* BRIBeaconMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRIBeaconMessage.h; sourceTree = "<group>"; };
+		59E3BFC91C2AD6350064C717 /* BRIBeaconMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRIBeaconMessage.m; sourceTree = "<group>"; };
+		59E9A1801CABF88300071B61 /* BRLimitedSizeQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLimitedSizeQueue.h; sourceTree = "<group>"; };
+		59E9A1811CABF88300071B61 /* BRLimitedSizeQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLimitedSizeQueue.m; sourceTree = "<group>"; };
+		59E9A1841CAC12ED00071B61 /* BRTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTimeFormatter.h; sourceTree = "<group>"; };
+		59E9A1851CAC12ED00071B61 /* BRTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTimeFormatter.m; sourceTree = "<group>"; };
+		59ECCF871F60222A00778E96 /* libASIHTTPRequest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libASIHTTPRequest.a; path = "../../../../Library/Developer/Xcode/DerivedData/BlueRangeSDK-axugaiunylysccdkurguzuzirsuu/Build/Products/Debug-iphonesimulator/ASIHTTPRequest/libASIHTTPRequest.a"; sourceTree = "<group>"; };
+		59ECCF881F60222A00778E96 /* libReachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReachability.a; path = "../../../../Library/Developer/Xcode/DerivedData/BlueRangeSDK-axugaiunylysccdkurguzuzirsuu/Build/Products/Debug-iphonesimulator/Reachability/libReachability.a"; sourceTree = "<group>"; };
+		59ECCF8D1F602CCA00778E96 /* libPods-BlueRangeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-BlueRangeSDK.a"; path = "Pods/../build/Release-iphoneos/libPods-BlueRangeSDK.a"; sourceTree = "<group>"; };
+		59ECCF8E1F602CCA00778E96 /* libPods-BlueRangeSDKTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-BlueRangeSDKTests.a"; path = "../../../../Library/Developer/Xcode/DerivedData/BlueRangeSDK-axugaiunylysccdkurguzuzirsuu/Build/Products/Debug-iphonesimulator/libPods-BlueRangeSDKTests.a"; sourceTree = "<group>"; };
+		59ECCF921F6035F100778E96 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		59F322121C9C0E1600FF72ED /* BRMovingAverageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMovingAverageFilter.h; sourceTree = "<group>"; };
+		59F322151C9C0E9D00FF72ED /* BRSimpleMovingAverageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSimpleMovingAverageFilter.h; sourceTree = "<group>"; };
+		59F322161C9C0E9D00FF72ED /* BRSimpleMovingAverageFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSimpleMovingAverageFilter.m; sourceTree = "<group>"; };
+		59F322181C9C0F5D00FF72ED /* BRLinearWeightedMovingAverageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLinearWeightedMovingAverageFilter.h; sourceTree = "<group>"; };
+		59F322191C9C0F5D00FF72ED /* BRLinearWeightedMovingAverageFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLinearWeightedMovingAverageFilter.m; sourceTree = "<group>"; };
+		59F3221B1C9C113D00FF72ED /* BRBeaconMessageAggregate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageAggregate.h; sourceTree = "<group>"; };
+		59F3221C1C9C113D00FF72ED /* BRBeaconMessageAggregate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageAggregate.m; sourceTree = "<group>"; };
+		59F3221E1C9C16D100FF72ED /* BRBeaconMessageAggregator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageAggregator.h; sourceTree = "<group>"; };
+		59F3221F1C9C16D100FF72ED /* BRBeaconMessageAggregator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBeaconMessageAggregator.m; sourceTree = "<group>"; };
+		59F322221C9C2E6700FF72ED /* BRBeaconMessageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBeaconMessageFilter.h; sourceTree = "<group>"; };
+		59F322251C9C2E7C00FF72ED /* BRIBeaconMessageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRIBeaconMessageFilter.h; sourceTree = "<group>"; };
+		59F322261C9C2E7C00FF72ED /* BRIBeaconMessageFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRIBeaconMessageFilter.m; sourceTree = "<group>"; };
+		59F322281C9C303A00FF72ED /* BRRelutionTagMessageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRelutionTagMessageFilter.h; sourceTree = "<group>"; };
+		59F322291C9C303A00FF72ED /* BRRelutionTagMessageFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRelutionTagMessageFilter.m; sourceTree = "<group>"; };
+		7D5AB1DAD08CD931D0C5E123 /* Pods-BlueRangeSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueRangeSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueRangeSDK/Pods-BlueRangeSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		A1B5F48D1B662E4F000373BE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A1F208B51B5E3F15007BD48E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		B6F7365CE9156A35AD51E243 /* libPods-BlueRangeSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlueRangeSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5F39524C7F5A3A02827F070 /* libPods-BlueRangeSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlueRangeSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3C33446E19EA3575939C3B /* Pods-BlueRangeSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueRangeSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueRangeSDKTests/Pods-BlueRangeSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED1DAFA0D9F22F7341C1339E /* Pods-BlueRangeSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueRangeSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueRangeSDK/Pods-BlueRangeSDK.release.xcconfig"; sourceTree = "<group>"; };
+		F4FFD304153BF3E800759785 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F4FFD306153BF3E800759785 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4FFD308153BF3E800759785 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F4FFD312153BF3E800759785 /* BlueRange_SDK_iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueRange_SDK_iOS-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		590B09641D8006A700CF1ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597B56BF1F6A9DE0003493C7 /* libASIHTTPRequest.a in Frameworks */,
+				597B56C01F6A9DE0003493C7 /* libReachability.a in Frameworks */,
+				59ECCF931F6035F100778E96 /* libz.1.2.5.tbd in Frameworks */,
+				59ECCF8F1F602CCA00778E96 /* libPods-BlueRangeSDK.a in Frameworks */,
+				59ECCF901F602CCA00778E96 /* libPods-BlueRangeSDKTests.a in Frameworks */,
+				594075911D81BC2E00B593EB /* MobileCoreServices.framework in Frameworks */,
+				594075901D81BC2A00B593EB /* SystemConfiguration.framework in Frameworks */,
+				5940758F1D81BC1800B593EB /* CFNetwork.framework in Frameworks */,
+				5940758E1D81BC1400B593EB /* Foundation.framework in Frameworks */,
+				5940758A1D81BC0D00B593EB /* CoreBluetooth.framework in Frameworks */,
+				5940758B1D81BC0D00B593EB /* CoreFoundation.framework in Frameworks */,
+				5940758C1D81BC0D00B593EB /* CoreGraphics.framework in Frameworks */,
+				5940758D1D81BC0D00B593EB /* CoreLocation.framework in Frameworks */,
+				B5906336B660DA07AC5D9556 /* libPods-BlueRangeSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		594F54091F69869800DC5526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				594F54111F69869800DC5526 /* BlueRangeSDK.framework in Frameworks */,
+				052EC2616205E106E5CDD1FC /* libPods-BlueRangeSDKTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		590A1A231C99725D00F05178 /* implementations */ = {
+			isa = PBXGroup;
+			children = (
+				59E3BFC21C2AC8120064C717 /* BRIBeaconMessageScannerImpl.h */,
+				59E3BFC31C2AC8120064C717 /* BRIBeaconMessageScannerImpl.m */,
+				591D48761C2D6DE200A744C4 /* BRDefaultBeaconMessageScannerImpl.h */,
+				591D48771C2D6DE200A744C4 /* BRDefaultBeaconMessageScannerImpl.m */,
+			);
+			name = implementations;
+			sourceTree = "<group>";
+		};
+		590A1A2A1C99749A00F05178 /* lang */ = {
+			isa = PBXGroup;
+			children = (
+				590A1A2B1C9974BC00F05178 /* BRAbstract.h */,
+			);
+			name = lang;
+			sourceTree = "<group>";
+		};
+		590A1A2C1C99771300F05178 /* streaming */ = {
+			isa = PBXGroup;
+			children = (
+				590A1A2D1C99774600F05178 /* BRBeaconMessageStreamNode.h */,
+				590A1A2E1C99774600F05178 /* BRBeaconMessageStreamNode.m */,
+				590A1A301C99775A00F05178 /* BRBeaconMessageStreamNodeReceiver.h */,
+				595187621C9BFB990051001B /* BRBeaconMessageStreamNodeDefaultReceiver.h */,
+				595187631C9BFB990051001B /* BRBeaconMessageStreamNodeDefaultReceiver.m */,
+				595187651C9BFC160051001B /* BRBeaconMessagePassingStreamNode.h */,
+				595187661C9BFC160051001B /* BRBeaconMessagePassingStreamNode.m */,
+				595187681C9BFE3E0051001B /* BRBeaconMessageQueuedStreamNode.h */,
+				595187691C9BFE3E0051001B /* BRBeaconMessageQueuedStreamNode.m */,
+			);
+			name = streaming;
+			sourceTree = "<group>";
+		};
+		590A1A391C99A6C400F05178 /* structs */ = {
+			isa = PBXGroup;
+			children = (
+				590A1A3A1C99A6D500F05178 /* BRByteArrayParser.h */,
+				590A1A3B1C99A6D500F05178 /* BRByteArrayParser.m */,
+				599A09101CA00319001E49F8 /* BRJsonUtils.h */,
+				599A09111CA00319001E49F8 /* BRJsonUtils.m */,
+				59E9A1801CABF88300071B61 /* BRLimitedSizeQueue.h */,
+				59E9A1811CABF88300071B61 /* BRLimitedSizeQueue.m */,
+				596B7C5A1D781FFA008300D7 /* BRByteArrayConverter.h */,
+				596B7C5B1D781FFA008300D7 /* BRByteArrayConverter.m */,
+			);
+			name = structs;
+			sourceTree = "<group>";
+		};
+		590B09691D8006A700CF1ECA /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				590B0AEB1D80109000CF1ECA /* src */,
+				590B096A1D8006A700CF1ECA /* BlueRangeSDK.h */,
+				590B096C1D8006A700CF1ECA /* Info.plist */,
+			);
+			name = SDK;
+			path = BlueRangeSDK;
+			sourceTree = "<group>";
+		};
+		590B09771D8006A800CF1ECA /* BlueRangeSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				594F54171F6993C300DC5526 /* core */,
+				597B56A81F6A8D62003493C7 /* helper */,
+				595E8E731F6BECD40061FF0B /* services */,
+				590B097A1D8006A800CF1ECA /* Info.plist */,
+			);
+			path = BlueRangeSDKTests;
+			sourceTree = "<group>";
+		};
+		590B0AEB1D80109000CF1ECA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				59E3BFB71C2AA1EB0064C717 /* common */,
+				59D3401C1C2999840085D23F /* core */,
+				59D3401D1C29998C0085D23F /* services */,
+				59C3F7941C984F270025F79B /* utils */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		590D8D6A1CA2F39900CE2C19 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				590D8D6B1CA2F3AB00CE2C19 /* BRNetwork.h */,
+				590D8D6C1CA2F3AB00CE2C19 /* BRNetwork.m */,
+				59543E911CFD9B9A006BD639 /* BRHttpClient.h */,
+				59543E921CFD9B9A006BD639 /* BRHttpClient.m */,
+				592771D51D804F5E002595CD /* BRBluetooth.h */,
+				592771D61D804F5E002595CD /* BRBluetooth.m */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		5912A54F1C9C35CD00A4784C /* triggering */ = {
+			isa = PBXGroup;
+			children = (
+				5912A55C1C9C4AEC00A4784C /* actions */,
+				5912A55D1C9C4AF600A4784C /* registry */,
+				5912A55E1C9C4AFC00A4784C /* rules */,
+				5912A5501C9C35EE00A4784C /* BRBeaconAction.h */,
+				5912A5511C9C35EE00A4784C /* BRBeaconAction.m */,
+				5912A5531C9C37FB00A4784C /* BRBeaconCampaign.h */,
+				5912A5541C9C37FB00A4784C /* BRBeaconCampaign.m */,
+				5912A5561C9C4A1F00A4784C /* BRBeaconActionDebugListener.h */,
+				5912A5591C9C4A7400A4784C /* BRBeaconActionListener.h */,
+				5912A57D1C9C528A00A4784C /* BRRelutionActionInformation.h */,
+				5912A57E1C9C528A00A4784C /* BRRelutionActionInformation.m */,
+				5912A58B1C9C57FF00A4784C /* BRBeaconActionBuilder.h */,
+				5912A58C1C9C57FF00A4784C /* BRBeaconActionBuilder.m */,
+				599A08FB1C9FF01B001E49F8 /* BRBeaconActionExecutor.h */,
+				599A08FC1C9FF01B001E49F8 /* BRBeaconActionExecutor.m */,
+				595AF41D1CA1970100B1154A /* BRBeaconActionRegistry.h */,
+				595AF41E1CA1970100B1154A /* BRBeaconActionRegistry.m */,
+				59DB19EF1CA2A1E6005DFE3D /* BRBeaconMessageActionTrigger.h */,
+				59DB19F01CA2A1E6005DFE3D /* BRBeaconMessageActionTrigger.m */,
+			);
+			name = triggering;
+			sourceTree = "<group>";
+		};
+		5912A55C1C9C4AEC00A4784C /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				5912A55F1C9C4B0B00A4784C /* content */,
+				5912A5601C9C4B1000A4784C /* notification */,
+				5912A5611C9C4B1700A4784C /* tag */,
+			);
+			name = actions;
+			sourceTree = "<group>";
+		};
+		5912A55D1C9C4AF600A4784C /* registry */ = {
+			isa = PBXGroup;
+			children = (
+				5912A5771C9C51F500A4784C /* BRBeaconMessageActionMapper.h */,
+				5912A57A1C9C523500A4784C /* BRIBeaconMessageActionMapper.h */,
+				5912A5881C9C560600A4784C /* BRRelutionTagMessageActionMapper.h */,
+				595AF4171CA18FA700B1154A /* BRBeaconMessageActionMapperStub.h */,
+				595AF4181CA18FA700B1154A /* BRBeaconMessageActionMapperStub.m */,
+				595AF41A1CA1950500B1154A /* BRRelutionTagMessageActionMapperEmptyStub.h */,
+				595AF41B1CA1950500B1154A /* BRRelutionTagMessageActionMapperEmptyStub.m */,
+				59569C5B1CAE719800ED1329 /* BRIBeaconMessageActionMapperStub.h */,
+				59569C5C1CAE719800ED1329 /* BRIBeaconMessageActionMapperStub.m */,
+			);
+			name = registry;
+			sourceTree = "<group>";
+		};
+		5912A55E1C9C4AFC00A4784C /* rules */ = {
+			isa = PBXGroup;
+			children = (
+				595AF4231CA198D500B1154A /* locking */,
+				595AF4201CA1985E00B1154A /* BRRunningFlag.h */,
+				595AF4211CA1985E00B1154A /* BRRunningFlag.m */,
+			);
+			name = rules;
+			sourceTree = "<group>";
+		};
+		5912A55F1C9C4B0B00A4784C /* content */ = {
+			isa = PBXGroup;
+			children = (
+				5912A5651C9C4BE800A4784C /* BRBeaconContentAction.h */,
+				5912A5661C9C4BE800A4784C /* BRBeaconContentAction.m */,
+				599A08FE1C9FF2A2001E49F8 /* BRBeaconContentActionBuilder.h */,
+				599A08FF1C9FF2A2001E49F8 /* BRBeaconContentActionBuilder.m */,
+				599A09011C9FF3BD001E49F8 /* BRBeaconContentActionExecutor.h */,
+				599A09021C9FF3BD001E49F8 /* BRBeaconContentActionExecutor.m */,
+				5912A5621C9C4B3100A4784C /* BRBeaconContentActionListener.h */,
+			);
+			name = content;
+			sourceTree = "<group>";
+		};
+		5912A5601C9C4B1000A4784C /* notification */ = {
+			isa = PBXGroup;
+			children = (
+				5912A5681C9C4D0500A4784C /* BRBeaconNotificationAction.h */,
+				5912A5691C9C4D0500A4784C /* BRBeaconNotificationAction.m */,
+				599A09041C9FF77E001E49F8 /* BRBeaconNotificationActionBuilder.h */,
+				599A09051C9FF77E001E49F8 /* BRBeaconNotificationActionBuilder.m */,
+				599A09071C9FF8FC001E49F8 /* BRBeaconNotificationExecutor.h */,
+				599A09081C9FF8FC001E49F8 /* BRBeaconNotificationExecutor.m */,
+				5912A5711C9C512500A4784C /* BRBeaconNotificationListener.h */,
+			);
+			name = notification;
+			sourceTree = "<group>";
+		};
+		5912A5611C9C4B1700A4784C /* tag */ = {
+			isa = PBXGroup;
+			children = (
+				5912A56B1C9C4DCF00A4784C /* BRBeaconTagAction.h */,
+				5912A56C1C9C4DCF00A4784C /* BRBeaconTagAction.m */,
+				599A090A1C9FFE30001E49F8 /* BRBeaconTagActionBuilder.h */,
+				599A090B1C9FFE30001E49F8 /* BRBeaconTagActionBuilder.m */,
+				599A090D1CA0007D001E49F8 /* BRBeaconTagActionExecutor.h */,
+				599A090E1CA0007D001E49F8 /* BRBeaconTagActionExecutor.m */,
+				5912A5741C9C517C00A4784C /* BRBeaconTagActionListener.h */,
+				5912A56E1C9C4E8C00A4784C /* BRBeaconTagVisit.h */,
+				5912A56F1C9C4E8C00A4784C /* BRBeaconTagVisit.m */,
+			);
+			name = tag;
+			sourceTree = "<group>";
+		};
+		5918B7E21C9B0BED00FECA47 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				5918B7E31C9B0BFD00FECA47 /* BRCoreMath.h */,
+				5918B7E41C9B0BFD00FECA47 /* BRCoreMath.m */,
+			);
+			name = math;
+			sourceTree = "<group>";
+		};
+		591A460A1CAA789E0093C7A6 /* tags */ = {
+			isa = PBXGroup;
+			children = (
+				591A460B1CAA78C70093C7A6 /* BRRelutionTagInfo.h */,
+				591A460C1CAA78C70093C7A6 /* BRRelutionTagInfo.m */,
+				591A460E1CAA79ED0093C7A6 /* BRRelutionTagInfoRegistry.h */,
+				591A46111CAA7A310093C7A6 /* BRRelutionTagInfoRegistry.m */,
+				591A46131CAA7AD30093C7A6 /* BRRelutionTagInfoRegistryImpl.h */,
+				591A46141CAA7AD30093C7A6 /* BRRelutionTagInfoRegistryImpl.m */,
+				591A46161CAA8EC20093C7A6 /* BRRelutionTagInfoRegistryStub.h */,
+				591A46171CAA8EC20093C7A6 /* BRRelutionTagInfoRegistryStub.m */,
+			);
+			name = tags;
+			sourceTree = "<group>";
+		};
+		592860441D79666800C60133 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				592860451D79669500C60133 /* BRRelutionScanConfigLoader.h */,
+				5928604B1D7967B200C60133 /* BRRelutionScanConfigLoaderImpl.h */,
+				5928604C1D7967B200C60133 /* BRRelutionScanConfigLoaderImpl.m */,
+				592860481D7966C200C60133 /* BRRelutionScanConfigLoaderStub.h */,
+				592860491D7966C200C60133 /* BRRelutionScanConfigLoaderStub.m */,
+			);
+			name = configuration;
+			sourceTree = "<group>";
+		};
+		5947F33F1CC0D53B00D82451 /* analytics */ = {
+			isa = PBXGroup;
+			children = (
+				5947F3401CC0D56200D82451 /* BRRelutionHeatmapReport.h */,
+				5947F3411CC0D56200D82451 /* BRRelutionHeatmapReport.m */,
+				5947F3431CC0D5E600D82451 /* BRRelutionHeatmapReportBuilder.h */,
+				5947F3441CC0D5E600D82451 /* BRRelutionHeatmapReportBuilder.m */,
+				5947F3461CC0E09600D82451 /* BRRelutionHeatmapSender.h */,
+				5947F3471CC0E09600D82451 /* BRRelutionHeatmapSender.m */,
+				5947F34D1CC0E8F700D82451 /* BRRelutionHeatmapSenderStub.h */,
+				5947F34E1CC0E8F700D82451 /* BRRelutionHeatmapSenderStub.m */,
+				5947F34A1CC0E6A000D82451 /* BRRelutionHeatmapService.h */,
+				5947F34B1CC0E6A000D82451 /* BRRelutionHeatmapService.m */,
+			);
+			name = analytics;
+			sourceTree = "<group>";
+		};
+		594F54171F6993C300DC5526 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				594F54181F69940700DC5526 /* aggregating */,
+				597B56C11F6A9DE0003493C7 /* filtering */,
+				597B56AF1F6A8EEE003493C7 /* logging */,
+				597B56C21F6A9DE0003493C7 /* reporting */,
+				597B56C31F6A9DE0003493C7 /* scanning */,
+				597B56C41F6A9DE0003493C7 /* streaming */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		594F54181F69940700DC5526 /* aggregating */ = {
+			isa = PBXGroup;
+			children = (
+				594F54191F69942F00DC5526 /* averaging */,
+				597B56A61F6A8D02003493C7 /* BRBeaconMessageAggregatorTest.m */,
+			);
+			name = aggregating;
+			sourceTree = "<group>";
+		};
+		594F54191F69942F00DC5526 /* averaging */ = {
+			isa = PBXGroup;
+			children = (
+				594F541C1F69954B00DC5526 /* BRLinearWeightedMovingAverageFilterTest.m */,
+				597B56A41F6A8B95003493C7 /* BRSimpleMovingAverageFilterTest.m */,
+			);
+			name = averaging;
+			sourceTree = "<group>";
+		};
+		5951876B1C9C081A0051001B /* distancing */ = {
+			isa = PBXGroup;
+			children = (
+				5951876C1C9C08390051001B /* BRDistanceEstimator.h */,
+				5951876F1C9C087D0051001B /* BRAnalyticalDistanceEstimator.h */,
+				595187701C9C087D0051001B /* BRAnalyticalDistanceEstimator.m */,
+				595187721C9C0C890051001B /* BREmpiricalDistanceEstimator.h */,
+				595187731C9C0C890051001B /* BREmpiricalDistanceEstimator.m */,
+			);
+			name = distancing;
+			sourceTree = "<group>";
+		};
+		59543E941CFD9F16006BD639 /* relution */ = {
+			isa = PBXGroup;
+			children = (
+				596B7C5D1D78664A008300D7 /* filters */,
+				596B7C5E1D78664E008300D7 /* model */,
+				59543E951CFD9F24006BD639 /* BRRelution.h */,
+				59543E961CFD9F24006BD639 /* BRRelution.m */,
+			);
+			name = relution;
+			sourceTree = "<group>";
+		};
+		595AF4231CA198D500B1154A /* locking */ = {
+			isa = PBXGroup;
+			children = (
+				595AF4241CA198E100B1154A /* BRBeaconActionLocker.h */,
+				595AF4251CA198E100B1154A /* BRBeaconActionLocker.m */,
+			);
+			name = locking;
+			sourceTree = "<group>";
+		};
+		595E8E731F6BECD40061FF0B /* services */ = {
+			isa = PBXGroup;
+			children = (
+				595E8E771F6BFD1C0061FF0B /* trigger */,
+				595E8E741F6BED0F0061FF0B /* heatmap */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
+		595E8E741F6BED0F0061FF0B /* heatmap */ = {
+			isa = PBXGroup;
+			children = (
+				595E8E751F6BED850061FF0B /* BRRelutionHeatmapReportBuilderTest.m */,
+			);
+			name = heatmap;
+			sourceTree = "<group>";
+		};
+		595E8E771F6BFD1C0061FF0B /* trigger */ = {
+			isa = PBXGroup;
+			children = (
+				595E8E781F6BFD310061FF0B /* BRBeaconTriggerTest.m */,
+			);
+			name = trigger;
+			sourceTree = "<group>";
+		};
+		5961F9A71CA4268C00AE11B3 /* campaigns */ = {
+			isa = PBXGroup;
+			children = (
+				5961F9B31CA4363200AE11B3 /* BRRelutionIBeaconMessageActionMapper.h */,
+				5961F9B41CA4363200AE11B3 /* BRRelutionIBeaconMessageActionMapper.m */,
+				591A46071CAA6D2F0093C7A6 /* BRRelutionCampaignService.h */,
+				591A46081CAA6D2F0093C7A6 /* BRRelutionCampaignService.m */,
+			);
+			name = campaigns;
+			sourceTree = "<group>";
+		};
+		596B7C5D1D78664A008300D7 /* filters */ = {
+			isa = PBXGroup;
+			children = (
+				596B7C5F1D78665B008300D7 /* BRFilter.h */,
+				596B7C601D78665B008300D7 /* BRFilter.m */,
+				596B7C621D786767008300D7 /* BRLogOpFilter.h */,
+				596B7C631D786767008300D7 /* BRLogOpFilter.m */,
+				596B7C651D786BA4008300D7 /* BRLongFilter.h */,
+				596B7C661D786BA4008300D7 /* BRLongFilter.m */,
+				596B7C681D786C9E008300D7 /* BRStringFilter.h */,
+				596B7C691D786C9E008300D7 /* BRStringFilter.m */,
+			);
+			name = filters;
+			sourceTree = "<group>";
+		};
+		596B7C5E1D78664E008300D7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				596B7C711D786EFE008300D7 /* BRAdvertisingMessagesConfiguration.h */,
+				596B7C721D786EFE008300D7 /* BRAdvertisingMessagesConfiguration.m */,
+				596B7C6B1D786DD1008300D7 /* BRDataObject.h */,
+				596B7C6C1D786DD1008300D7 /* BRDataObject.m */,
+				596B7C6E1D786E4E008300D7 /* BRDataArray.h */,
+				596B7C6F1D786E4E008300D7 /* BRDataArray.m */,
+				596B7C741D786FAA008300D7 /* BRRelutionTagInfos.h */,
+				596B7C751D786FAA008300D7 /* BRRelutionTagInfos.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		596D6AA91D7DA25E00D994B2 /* trigger */ = {
+			isa = PBXGroup;
+			children = (
+				596D6AAA1D7DA26F00D994B2 /* BRBeaconTrigger.h */,
+				596D6AAB1D7DA26F00D994B2 /* BRBeaconTrigger.m */,
+			);
+			name = trigger;
+			sourceTree = "<group>";
+		};
+		596DAF2E1CBF962000FCA2CB /* logging */ = {
+			isa = PBXGroup;
+			children = (
+				596DAF2F1CBF963700FCA2CB /* BRBeaconMessageLog.h */,
+				596DAF301CBF963700FCA2CB /* BRBeaconMessageLog.m */,
+				596DAF321CBF981900FCA2CB /* BRBeaconMessagePersistor.h */,
+				596DAF381CBF999300FCA2CB /* BRBeaconMessagePersistor.m */,
+				596DAF351CBF991800FCA2CB /* BRLogIterator.h */,
+				596DAF3A1CBF99D800FCA2CB /* BRBeaconMessageLogger.h */,
+				596DAF3B1CBF99D800FCA2CB /* BRBeaconMessageLogger.m */,
+				596DAF3D1CBF9BEB00FCA2CB /* BRBeaconMessagePersistorImpl.h */,
+				596DAF3E1CBF9BEB00FCA2CB /* BRBeaconMessagePersistorImpl.m */,
+				596DAF471CBFA09800FCA2CB /* BRBeaconMessagePersistorImplLogIterator.h */,
+				596DAF481CBFA09800FCA2CB /* BRBeaconMessagePersistorImplLogIterator.m */,
+			);
+			name = logging;
+			sourceTree = "<group>";
+		};
+		596DAF401CBF9E4A00FCA2CB /* io */ = {
+			isa = PBXGroup;
+			children = (
+				596DAF411CBF9E5700FCA2CB /* BRFileAccessor.h */,
+				596DAF441CBF9ECD00FCA2CB /* BRFileAccessorImpl.h */,
+				596DAF451CBF9ECD00FCA2CB /* BRFileAccessorImpl.m */,
+				596DAF4A1CBFC79A00FCA2CB /* BRZipCompression.h */,
+				596DAF4B1CBFC79A00FCA2CB /* BRZipCompression.m */,
+			);
+			name = io;
+			sourceTree = "<group>";
+		};
+		596DAF4D1CBFE4F000FCA2CB /* reporting */ = {
+			isa = PBXGroup;
+			children = (
+				596DAF4E1CBFE50700FCA2CB /* BRBeaconMessageReport.h */,
+				596DAF511CBFE53500FCA2CB /* BRBeaconMessageReportBuilder.h */,
+				596DAF521CBFE53500FCA2CB /* BRBeaconMessageReportBuilder.m */,
+				596DAF571CBFE91300FCA2CB /* BRBeaconMessageReporter.h */,
+				596DAF581CBFE91300FCA2CB /* BRBeaconMessageReporter.m */,
+				596DAF541CBFE61300FCA2CB /* BRBeaconMessageReportSender.h */,
+				596DAF551CBFE61300FCA2CB /* BRBeaconMessageReportSender.m */,
+			);
+			name = reporting;
+			sourceTree = "<group>";
+		};
+		597B56A81F6A8D62003493C7 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				597B56A91F6A8D88003493C7 /* BRTestBlocker.h */,
+				597B56AA1F6A8D88003493C7 /* BRTestBlocker.m */,
+				597B56AC1F6A8E01003493C7 /* BRTestFailure.h */,
+				597B56AD1F6A8E01003493C7 /* BRTestFailure.m */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
+		597B56AF1F6A8EEE003493C7 /* logging */ = {
+			isa = PBXGroup;
+			children = (
+				597B56B01F6A8EF6003493C7 /* dummies */,
+				597E0A101F6A94AC002A1779 /* BRBeaconMessageLoggerTest.m */,
+				597E0A121F6AAC24002A1779 /* BRBeaconMessagePersistorImplTest.m */,
+			);
+			name = logging;
+			sourceTree = "<group>";
+		};
+		597B56B01F6A8EF6003493C7 /* dummies */ = {
+			isa = PBXGroup;
+			children = (
+				597B56B11F6A8F10003493C7 /* BRDummyBeaconMessagePersistor.h */,
+				597B56B21F6A8F10003493C7 /* BRDummyBeaconMessagePersistor.m */,
+				597B56B41F6A908B003493C7 /* BRDummyBeaconMessagePersistorLogIterator.h */,
+				597B56B51F6A908B003493C7 /* BRDummyBeaconMessagePersistorLogIterator.m */,
+				597B56B71F6A91F7003493C7 /* BRDummyFileAccessor.h */,
+				597B56B81F6A91F7003493C7 /* BRDummyFileAccessor.m */,
+				597B56BA1F6A9A32003493C7 /* BRDummyTracer.h */,
+				597B56BB1F6A9A32003493C7 /* BRDummyTracer.m */,
+			);
+			name = dummies;
+			sourceTree = "<group>";
+		};
+		597B56C11F6A9DE0003493C7 /* filtering */ = {
+			isa = PBXGroup;
+			children = (
+				597B56C51F6A9DE0003493C7 /* BRIBeaconMessageFilterTest.m */,
+			);
+			name = filtering;
+			sourceTree = "<group>";
+		};
+		597B56C21F6A9DE0003493C7 /* reporting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = reporting;
+			sourceTree = "<group>";
+		};
+		597B56C31F6A9DE0003493C7 /* scanning */ = {
+			isa = PBXGroup;
+			children = (
+				597E0A161F6AB8BB002A1779 /* BRBeaconMessageScannerConfigTest.m */,
+			);
+			name = scanning;
+			sourceTree = "<group>";
+		};
+		597B56C41F6A9DE0003493C7 /* streaming */ = {
+			isa = PBXGroup;
+			children = (
+				595E8E711F6BC8810061FF0B /* BRBeaconMessageQueuedStreamNodeTest.m */,
+			);
+			name = streaming;
+			sourceTree = "<group>";
+		};
+		59C114061C3A8413008E6DF5 /* advertising */ = {
+			isa = PBXGroup;
+			children = (
+				59C114071C3A8430008E6DF5 /* BRBeaconAdvertiser.h */,
+				59C114081C3A8430008E6DF5 /* BRBeaconAdvertiser.m */,
+			);
+			name = advertising;
+			sourceTree = "<group>";
+		};
+		59C3F7941C984F270025F79B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				596DAF401CBF9E4A00FCA2CB /* io */,
+				59E9A1831CAC12D900071B61 /* time */,
+				590D8D6A1CA2F39900CE2C19 /* network */,
+				5918B7E21C9B0BED00FECA47 /* math */,
+				59C3F79C1C9865F10025F79B /* logging */,
+				590A1A2A1C99749A00F05178 /* lang */,
+				590A1A391C99A6C400F05178 /* structs */,
+			);
+			name = utils;
+			path = ../bluerangesdk;
+			sourceTree = "<group>";
+		};
+		59C3F79C1C9865F10025F79B /* logging */ = {
+			isa = PBXGroup;
+			children = (
+				59C3F79D1C9866360025F79B /* BRITracer.h */,
+				59C3F7A01C9866C40025F79B /* BRTracer.h */,
+				59C3F7A11C9866C40025F79B /* BRTracer.m */,
+			);
+			name = logging;
+			sourceTree = "<group>";
+		};
+		59D3401C1C2999840085D23F /* core */ = {
+			isa = PBXGroup;
+			children = (
+				59C114061C3A8413008E6DF5 /* advertising */,
+				59F322101C9C0DF300FF72ED /* aggregating */,
+				5951876B1C9C081A0051001B /* distancing */,
+				59F322211C9C2E2B00FF72ED /* filtering */,
+				596DAF2E1CBF962000FCA2CB /* logging */,
+				596DAF4D1CBFE4F000FCA2CB /* reporting */,
+				590A1A2C1C99771300F05178 /* streaming */,
+				59D3401E1C299E060085D23F /* scanning */,
+				5912A54F1C9C35CD00A4784C /* triggering */,
+			);
+			name = core;
+			path = ../bluerangesdk;
+			sourceTree = "<group>";
+		};
+		59D3401D1C29998C0085D23F /* services */ = {
+			isa = PBXGroup;
+			children = (
+				5947F33F1CC0D53B00D82451 /* analytics */,
+				5961F9A71CA4268C00AE11B3 /* campaigns */,
+				592860441D79666800C60133 /* configuration */,
+				59543E941CFD9F16006BD639 /* relution */,
+				591A460A1CAA789E0093C7A6 /* tags */,
+				596D6AA91D7DA25E00D994B2 /* trigger */,
+				591A461C1CAAA1FF0093C7A6 /* BRRelutionIoTService.h */,
+				591A461D1CAAA1FF0093C7A6 /* BRRelutionIoTService.m */,
+			);
+			name = services;
+			path = ../bluerangesdk;
+			sourceTree = "<group>";
+		};
+		59D3401E1C299E060085D23F /* scanning */ = {
+			isa = PBXGroup;
+			children = (
+				590A1A231C99725D00F05178 /* implementations */,
+				59E3BFBB1C2AB10E0064C717 /* messages */,
+				59D3401F1C299E280085D23F /* BRBeaconMessageScanner.h */,
+				59D340201C299E280085D23F /* BRBeaconMessageScanner.m */,
+				59D340221C29A0D20085D23F /* BRBeaconMessageScannerConfig.h */,
+				59D340231C29A0D20085D23F /* BRBeaconMessageScannerConfig.m */,
+				591D48791C2D6DF400A744C4 /* BRBeaconMessageScannerImpl.h */,
+				590A1A271C99741C00F05178 /* BRIBeaconMessageScanner.h */,
+				590A1A281C99741C00F05178 /* BRIBeaconMessageScanner.m */,
+				5918B7DF1C9AFD4700FECA47 /* BRBeaconMessageScannerSimulator.h */,
+				5918B7E01C9AFD4700FECA47 /* BRBeaconMessageScannerSimulator.m */,
+			);
+			name = scanning;
+			sourceTree = "<group>";
+		};
+		59E3BFB71C2AA1EB0064C717 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				59E3BFB81C2AA1F70064C717 /* BRConstants.h */,
+				59E3BFB91C2AA1F70064C717 /* BRConstants.m */,
+			);
+			name = common;
+			path = ../bluerangesdk;
+			sourceTree = "<group>";
+		};
+		59E3BFBB1C2AB10E0064C717 /* messages */ = {
+			isa = PBXGroup;
+			children = (
+				59E3BFBC1C2AB1360064C717 /* BRBeaconMessageGenerator.h */,
+				590A1A331C999D5000F05178 /* BRBeaconJoinMeMessage.h */,
+				590A1A341C999D5000F05178 /* BRBeaconJoinMeMessage.m */,
+				590A1A361C999EC400F05178 /* BRBeaconJoinMeMessageGenerator.h */,
+				590A1A371C999EC400F05178 /* BRBeaconJoinMeMessageGenerator.m */,
+				59E3BFC81C2AD6350064C717 /* BRIBeaconMessage.h */,
+				59E3BFC91C2AD6350064C717 /* BRIBeaconMessage.m */,
+				5918B7DC1C9ADE9A00FECA47 /* BRIBeacon.h */,
+				5918B7DD1C9ADE9A00FECA47 /* BRIBeacon.m */,
+				593C75F21C2FF8D400BB8509 /* BRIBeaconMessageGenerator.h */,
+				593C75F31C2FF8D400BB8509 /* BRIBeaconMessageGenerator.m */,
+				5935AC8A1D70602500624D0C /* BREddystoneMessage.h */,
+				5935AC8B1D70602500624D0C /* BREddystoneMessage.m */,
+				5972B9391D7427D800E38D74 /* BREddystoneMessageGenerator.h */,
+				5972B93A1D7427D800E38D74 /* BREddystoneMessageGenerator.m */,
+				5935AC871D705F6900624D0C /* BREddystoneUidMessage.h */,
+				5935AC881D705F6900624D0C /* BREddystoneUidMessage.m */,
+				5972B93C1D742AC000E38D74 /* BREddystoneUidMessageGenerator.h */,
+				5972B93D1D742AC000E38D74 /* BREddystoneUidMessageGenerator.m */,
+				5935AC8D1D70724F00624D0C /* BREddystoneUrlMessage.h */,
+				5935AC8E1D70724F00624D0C /* BREddystoneUrlMessage.m */,
+				5972B93F1D743B3F00E38D74 /* BREddystoneUrlMessageGenerator.h */,
+				5972B9401D743B3F00E38D74 /* BREddystoneUrlMessageGenerator.m */,
+				596B7C541D78100E008300D7 /* BRRelutionTagMessage.h */,
+				596B7C551D78100E008300D7 /* BRRelutionTagMessage.m */,
+				596B7C571D781022008300D7 /* BRRelutionTagMessageGenerator.h */,
+				596B7C581D781022008300D7 /* BRRelutionTagMessageGenerator.m */,
+				591D487C1C2D787C00A744C4 /* BRRelutionTagMessageV1.h */,
+				591D487D1C2D787C00A744C4 /* BRRelutionTagMessageV1.m */,
+				59E3BFBF1C2AB1A90064C717 /* BRRelutionTagMessageGeneratorV1.h */,
+				59E3BFC01C2AB1A90064C717 /* BRRelutionTagMessageGeneratorV1.m */,
+				5918B7D91C9AD78C00FECA47 /* BRBeaconMessage.h */,
+				5918B7DA1C9AD78C00FECA47 /* BRBeaconMessage.m */,
+			);
+			name = messages;
+			sourceTree = "<group>";
+		};
+		59E9A1831CAC12D900071B61 /* time */ = {
+			isa = PBXGroup;
+			children = (
+				59E9A1841CAC12ED00071B61 /* BRTimeFormatter.h */,
+				59E9A1851CAC12ED00071B61 /* BRTimeFormatter.m */,
+			);
+			name = time;
+			sourceTree = "<group>";
+		};
+		59F322101C9C0DF300FF72ED /* aggregating */ = {
+			isa = PBXGroup;
+			children = (
+				59F322111C9C0E0600FF72ED /* averaging */,
+				59F3221B1C9C113D00FF72ED /* BRBeaconMessageAggregate.h */,
+				59F3221C1C9C113D00FF72ED /* BRBeaconMessageAggregate.m */,
+				59F3221E1C9C16D100FF72ED /* BRBeaconMessageAggregator.h */,
+				59F3221F1C9C16D100FF72ED /* BRBeaconMessageAggregator.m */,
+				595BBA7A1D7EA85F00BE3372 /* BRBeaconMessagePacketAggregate.h */,
+				595BBA7B1D7EA85F00BE3372 /* BRBeaconMessagePacketAggregate.m */,
+				595BBA7D1D7EAB4900BE3372 /* BRBeaconMessageSlidingWindowAggregate.h */,
+				595BBA7E1D7EAB4900BE3372 /* BRBeaconMessageSlidingWindowAggregate.m */,
+			);
+			name = aggregating;
+			sourceTree = "<group>";
+		};
+		59F322111C9C0E0600FF72ED /* averaging */ = {
+			isa = PBXGroup;
+			children = (
+				59F322121C9C0E1600FF72ED /* BRMovingAverageFilter.h */,
+				59F322151C9C0E9D00FF72ED /* BRSimpleMovingAverageFilter.h */,
+				59F322161C9C0E9D00FF72ED /* BRSimpleMovingAverageFilter.m */,
+				59F322181C9C0F5D00FF72ED /* BRLinearWeightedMovingAverageFilter.h */,
+				59F322191C9C0F5D00FF72ED /* BRLinearWeightedMovingAverageFilter.m */,
+			);
+			name = averaging;
+			sourceTree = "<group>";
+		};
+		59F322211C9C2E2B00FF72ED /* filtering */ = {
+			isa = PBXGroup;
+			children = (
+				59F322221C9C2E6700FF72ED /* BRBeaconMessageFilter.h */,
+				59F322251C9C2E7C00FF72ED /* BRIBeaconMessageFilter.h */,
+				59F322261C9C2E7C00FF72ED /* BRIBeaconMessageFilter.m */,
+				59F322281C9C303A00FF72ED /* BRRelutionTagMessageFilter.h */,
+				59F322291C9C303A00FF72ED /* BRRelutionTagMessageFilter.m */,
+			);
+			name = filtering;
+			sourceTree = "<group>";
+		};
+		9833D6CC582DA2FDB87CF77D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D5AB1DAD08CD931D0C5E123 /* Pods-BlueRangeSDK.debug.xcconfig */,
+				ED1DAFA0D9F22F7341C1339E /* Pods-BlueRangeSDK.release.xcconfig */,
+				EA3C33446E19EA3575939C3B /* Pods-BlueRangeSDKTests.debug.xcconfig */,
+				45AC3B8744C30C2441B58D1B /* Pods-BlueRangeSDKTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4FFD2F5153BF3E800759785 = {
+			isa = PBXGroup;
+			children = (
+				F4FFD30B153BF3E800759785 /* Supporting Files */,
+				590B09691D8006A700CF1ECA /* SDK */,
+				590B09771D8006A800CF1ECA /* BlueRangeSDKTests */,
+				F4FFD303153BF3E800759785 /* Frameworks */,
+				F4FFD301153BF3E800759785 /* Products */,
+				9833D6CC582DA2FDB87CF77D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F4FFD301153BF3E800759785 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				590B09681D8006A700CF1ECA /* BlueRangeSDK.framework */,
+				594F540C1F69869800DC5526 /* BlueRangeSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4FFD303153BF3E800759785 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				597B56BD1F6A9DE0003493C7 /* libASIHTTPRequest.a */,
+				597B56BE1F6A9DE0003493C7 /* libReachability.a */,
+				59ECCF921F6035F100778E96 /* libz.1.2.5.tbd */,
+				59ECCF8D1F602CCA00778E96 /* libPods-BlueRangeSDK.a */,
+				59ECCF8E1F602CCA00778E96 /* libPods-BlueRangeSDKTests.a */,
+				59ECCF871F60222A00778E96 /* libASIHTTPRequest.a */,
+				59ECCF881F60222A00778E96 /* libReachability.a */,
+				594075771D81B9C300B593EB /* CoreFoundation.framework */,
+				5961F99F1CA41A7A00AE11B3 /* libz.tbd */,
+				5961F99D1CA41A6400AE11B3 /* MobileCoreServices.framework */,
+				5961F99B1CA41A6000AE11B3 /* SystemConfiguration.framework */,
+				5961F9991CA41A5A00AE11B3 /* CFNetwork.framework */,
+				A1B5F48D1B662E4F000373BE /* CoreLocation.framework */,
+				A1F208B51B5E3F15007BD48E /* CoreBluetooth.framework */,
+				F4FFD304153BF3E800759785 /* UIKit.framework */,
+				F4FFD306153BF3E800759785 /* Foundation.framework */,
+				F4FFD308153BF3E800759785 /* CoreGraphics.framework */,
+				E5F39524C7F5A3A02827F070 /* libPods-BlueRangeSDK.a */,
+				B6F7365CE9156A35AD51E243 /* libPods-BlueRangeSDKTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4FFD30B153BF3E800759785 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4FFD312153BF3E800759785 /* BlueRange_SDK_iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = bluerangesdk;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		590B09651D8006A700CF1ECA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590B096B1D8006A700CF1ECA /* BlueRangeSDK.h in Headers */,
+				590B0A7E1D800E8F00CF1ECA /* BRConstants.h in Headers */,
+				590B0A7F1D800E8F00CF1ECA /* BRBeaconAdvertiser.h in Headers */,
+				590B0A801D800E8F00CF1ECA /* BRMovingAverageFilter.h in Headers */,
+				590B0A811D800E8F00CF1ECA /* BRSimpleMovingAverageFilter.h in Headers */,
+				590B0A821D800E8F00CF1ECA /* BRLinearWeightedMovingAverageFilter.h in Headers */,
+				590B0A831D800E8F00CF1ECA /* BRBeaconMessageAggregate.h in Headers */,
+				590B0A841D800E8F00CF1ECA /* BRBeaconMessageAggregator.h in Headers */,
+				590B0A851D800E8F00CF1ECA /* BRBeaconMessagePacketAggregate.h in Headers */,
+				590B0A861D800E8F00CF1ECA /* BRBeaconMessageSlidingWindowAggregate.h in Headers */,
+				590B0A871D800E8F00CF1ECA /* BRDistanceEstimator.h in Headers */,
+				590B0A881D800E8F00CF1ECA /* BRAnalyticalDistanceEstimator.h in Headers */,
+				590B0A891D800E8F00CF1ECA /* BREmpiricalDistanceEstimator.h in Headers */,
+				590B0A8A1D800E8F00CF1ECA /* BRBeaconMessageFilter.h in Headers */,
+				590B0A8B1D800E8F00CF1ECA /* BRIBeaconMessageFilter.h in Headers */,
+				590B0A8C1D800E8F00CF1ECA /* BRRelutionTagMessageFilter.h in Headers */,
+				590B0A8D1D800E8F00CF1ECA /* BRBeaconMessageLog.h in Headers */,
+				590B0A8E1D800E8F00CF1ECA /* BRBeaconMessagePersistor.h in Headers */,
+				590B0A8F1D800E8F00CF1ECA /* BRLogIterator.h in Headers */,
+				590B0A901D800E8F00CF1ECA /* BRBeaconMessageLogger.h in Headers */,
+				590B0A911D800E8F00CF1ECA /* BRBeaconMessagePersistorImpl.h in Headers */,
+				590B0A921D800E8F00CF1ECA /* BRBeaconMessagePersistorImplLogIterator.h in Headers */,
+				590B0A931D800E8F00CF1ECA /* BRBeaconMessageReport.h in Headers */,
+				590B0A941D800E8F00CF1ECA /* BRBeaconMessageReportBuilder.h in Headers */,
+				590B0A951D800E8F00CF1ECA /* BRBeaconMessageReporter.h in Headers */,
+				590B0A961D800E8F00CF1ECA /* BRBeaconMessageReportSender.h in Headers */,
+				590B0A971D800E8F00CF1ECA /* BRBeaconMessageStreamNode.h in Headers */,
+				590B0A981D800E8F00CF1ECA /* BRBeaconMessageStreamNodeReceiver.h in Headers */,
+				590B0A991D800E8F00CF1ECA /* BRBeaconMessageStreamNodeDefaultReceiver.h in Headers */,
+				590B0A9A1D800E8F00CF1ECA /* BRBeaconMessagePassingStreamNode.h in Headers */,
+				590B0A9B1D800E8F00CF1ECA /* BRBeaconMessageQueuedStreamNode.h in Headers */,
+				590B0A9C1D800E8F00CF1ECA /* BRIBeaconMessageScannerImpl.h in Headers */,
+				590B0A9D1D800E8F00CF1ECA /* BRDefaultBeaconMessageScannerImpl.h in Headers */,
+				590B0A9E1D800E8F00CF1ECA /* BRBeaconMessageGenerator.h in Headers */,
+				590B0A9F1D800E8F00CF1ECA /* BRBeaconJoinMeMessage.h in Headers */,
+				590B0AA01D800E8F00CF1ECA /* BRBeaconJoinMeMessageGenerator.h in Headers */,
+				590B0AA11D800E8F00CF1ECA /* BRIBeaconMessage.h in Headers */,
+				590B0AA21D800E8F00CF1ECA /* BRIBeacon.h in Headers */,
+				590B0AA31D800E8F00CF1ECA /* BRIBeaconMessageGenerator.h in Headers */,
+				590B0AA41D800E8F00CF1ECA /* BREddystoneMessage.h in Headers */,
+				590B0AA51D800E8F00CF1ECA /* BREddystoneMessageGenerator.h in Headers */,
+				590B0AA61D800E8F00CF1ECA /* BREddystoneUidMessage.h in Headers */,
+				590B0AA71D800E8F00CF1ECA /* BREddystoneUidMessageGenerator.h in Headers */,
+				590B0AA81D800E8F00CF1ECA /* BREddystoneUrlMessage.h in Headers */,
+				590B0AA91D800E8F00CF1ECA /* BREddystoneUrlMessageGenerator.h in Headers */,
+				590B0AAA1D800E8F00CF1ECA /* BRRelutionTagMessage.h in Headers */,
+				590B0AAB1D800E8F00CF1ECA /* BRRelutionTagMessageGenerator.h in Headers */,
+				590B0AAC1D800E8F00CF1ECA /* BRRelutionTagMessageV1.h in Headers */,
+				590B0AAD1D800E8F00CF1ECA /* BRRelutionTagMessageGeneratorV1.h in Headers */,
+				590B0AAE1D800E8F00CF1ECA /* BRBeaconMessage.h in Headers */,
+				590B0AAF1D800E8F00CF1ECA /* BRBeaconMessageScanner.h in Headers */,
+				590B0AB01D800E8F00CF1ECA /* BRBeaconMessageScannerConfig.h in Headers */,
+				590B0AB11D800E8F00CF1ECA /* BRBeaconMessageScannerImpl.h in Headers */,
+				590B0AB21D800E8F00CF1ECA /* BRIBeaconMessageScanner.h in Headers */,
+				590B0AB31D800E8F00CF1ECA /* BRBeaconMessageScannerSimulator.h in Headers */,
+				590B0AB41D800E8F00CF1ECA /* BRBeaconContentAction.h in Headers */,
+				590B0AB51D800E8F00CF1ECA /* BRBeaconContentActionBuilder.h in Headers */,
+				590B0AB61D800E8F00CF1ECA /* BRBeaconContentActionExecutor.h in Headers */,
+				590B0AB71D800E8F00CF1ECA /* BRBeaconContentActionListener.h in Headers */,
+				590B0AB81D800E8F00CF1ECA /* BRBeaconNotificationAction.h in Headers */,
+				590B0AB91D800E8F00CF1ECA /* BRBeaconNotificationActionBuilder.h in Headers */,
+				590B0ABA1D800E8F00CF1ECA /* BRBeaconNotificationExecutor.h in Headers */,
+				590B0ABB1D800E8F00CF1ECA /* BRBeaconNotificationListener.h in Headers */,
+				590B0ABC1D800E8F00CF1ECA /* BRBeaconTagAction.h in Headers */,
+				590B0ABD1D800E8F00CF1ECA /* BRBeaconTagActionBuilder.h in Headers */,
+				590B0ABE1D800E8F00CF1ECA /* BRBeaconTagActionExecutor.h in Headers */,
+				590B0ABF1D800E8F00CF1ECA /* BRBeaconTagActionListener.h in Headers */,
+				590B0AC01D800E8F00CF1ECA /* BRBeaconTagVisit.h in Headers */,
+				590B0AC11D800E8F00CF1ECA /* BRBeaconMessageActionMapper.h in Headers */,
+				590B0AC21D800E8F00CF1ECA /* BRIBeaconMessageActionMapper.h in Headers */,
+				590B0AC31D800E8F00CF1ECA /* BRRelutionTagMessageActionMapper.h in Headers */,
+				590B0AC41D800E8F00CF1ECA /* BRBeaconMessageActionMapperStub.h in Headers */,
+				590B0AC51D800E8F00CF1ECA /* BRRelutionTagMessageActionMapperEmptyStub.h in Headers */,
+				590B0AC61D800E8F00CF1ECA /* BRIBeaconMessageActionMapperStub.h in Headers */,
+				590B0AC71D800E8F00CF1ECA /* BRBeaconActionLocker.h in Headers */,
+				590B0AC81D800E8F00CF1ECA /* BRRunningFlag.h in Headers */,
+				590B0AC91D800E8F00CF1ECA /* BRBeaconAction.h in Headers */,
+				590B0ACA1D800E8F00CF1ECA /* BRBeaconCampaign.h in Headers */,
+				590B0ACB1D800E8F00CF1ECA /* BRBeaconActionDebugListener.h in Headers */,
+				590B0ACC1D800E8F00CF1ECA /* BRBeaconActionListener.h in Headers */,
+				590B0ACD1D800E8F00CF1ECA /* BRRelutionActionInformation.h in Headers */,
+				590B0ACE1D800E8F00CF1ECA /* BRBeaconActionBuilder.h in Headers */,
+				590B0ACF1D800E8F00CF1ECA /* BRBeaconActionExecutor.h in Headers */,
+				590B0AD01D800E8F00CF1ECA /* BRBeaconActionRegistry.h in Headers */,
+				590B0AD11D800E8F00CF1ECA /* BRBeaconMessageActionTrigger.h in Headers */,
+				590B0AD21D800E8F00CF1ECA /* BRRelutionHeatmapReport.h in Headers */,
+				590B0AD31D800E8F00CF1ECA /* BRRelutionHeatmapReportBuilder.h in Headers */,
+				590B0AD41D800E8F00CF1ECA /* BRRelutionHeatmapSender.h in Headers */,
+				590B0AD51D800E8F00CF1ECA /* BRRelutionHeatmapSenderStub.h in Headers */,
+				590B0AD61D800E8F00CF1ECA /* BRRelutionHeatmapService.h in Headers */,
+				590B0AD71D800E8F00CF1ECA /* BRRelutionIBeaconMessageActionMapper.h in Headers */,
+				590B0AD81D800E8F00CF1ECA /* BRRelutionCampaignService.h in Headers */,
+				590B0AD91D800E8F00CF1ECA /* BRRelutionScanConfigLoader.h in Headers */,
+				590B0ADA1D800E8F00CF1ECA /* BRRelutionScanConfigLoaderImpl.h in Headers */,
+				590B0ADB1D800E8F00CF1ECA /* BRRelutionScanConfigLoaderStub.h in Headers */,
+				590B0ADC1D800E8F00CF1ECA /* BRFilter.h in Headers */,
+				590B0ADD1D800E8F00CF1ECA /* BRLogOpFilter.h in Headers */,
+				590B0ADE1D800E8F00CF1ECA /* BRLongFilter.h in Headers */,
+				590B0ADF1D800E8F00CF1ECA /* BRStringFilter.h in Headers */,
+				590B0AE01D800E8F00CF1ECA /* BRAdvertisingMessagesConfiguration.h in Headers */,
+				590B0AE11D800E8F00CF1ECA /* BRDataObject.h in Headers */,
+				590B0AE21D800E8F00CF1ECA /* BRDataArray.h in Headers */,
+				590B0AE31D800E8F00CF1ECA /* BRRelutionTagInfos.h in Headers */,
+				590B0AE41D800E8F00CF1ECA /* BRRelution.h in Headers */,
+				590B0AE51D800E8F00CF1ECA /* BRRelutionTagInfo.h in Headers */,
+				590B0AE61D800E8F00CF1ECA /* BRRelutionTagInfoRegistry.h in Headers */,
+				590B0AE71D800E8F00CF1ECA /* BRRelutionTagInfoRegistryImpl.h in Headers */,
+				590B0AE81D800E8F00CF1ECA /* BRRelutionTagInfoRegistryStub.h in Headers */,
+				590B0AE91D800E8F00CF1ECA /* BRBeaconTrigger.h in Headers */,
+				590B0AEA1D800E8F00CF1ECA /* BRRelutionIoTService.h in Headers */,
+				594074BC1D816A6500B593EB /* BRFileAccessor.h in Headers */,
+				594074BD1D816A6500B593EB /* BRFileAccessorImpl.h in Headers */,
+				594074BE1D816A6500B593EB /* BRZipCompression.h in Headers */,
+				594074BF1D816A6500B593EB /* BRTimeFormatter.h in Headers */,
+				594074CD1D816A6600B593EB /* BRNetwork.h in Headers */,
+				594074CE1D816A6600B593EB /* BRHttpClient.h in Headers */,
+				594074CF1D816A6600B593EB /* BRBluetooth.h in Headers */,
+				594074D01D816A6600B593EB /* BRCoreMath.h in Headers */,
+				594074D11D816A6600B593EB /* BRITracer.h in Headers */,
+				594074D21D816A6600B593EB /* BRTracer.h in Headers */,
+				594074D31D816A6600B593EB /* BRAbstract.h in Headers */,
+				594074D41D816A6600B593EB /* BRByteArrayParser.h in Headers */,
+				594074D51D816A6600B593EB /* BRJsonUtils.h in Headers */,
+				594074D61D816A6600B593EB /* BRLimitedSizeQueue.h in Headers */,
+				594074D71D816A6600B593EB /* BRByteArrayConverter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		590B09671D8006A700CF1ECA /* BlueRangeSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 590B09841D8006A800CF1ECA /* Build configuration list for PBXNativeTarget "BlueRangeSDK" */;
+			buildPhases = (
+				77E98D04F93EAC47E94CBB94 /* [CP] Check Pods Manifest.lock */,
+				590B09631D8006A700CF1ECA /* Sources */,
+				590B09641D8006A700CF1ECA /* Frameworks */,
+				590B09651D8006A700CF1ECA /* Headers */,
+				590B09661D8006A700CF1ECA /* Resources */,
+				90D91083B6D0F68DDA56295F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueRangeSDK;
+			productName = BlueRangeSDK;
+			productReference = 590B09681D8006A700CF1ECA /* BlueRangeSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		594F540B1F69869800DC5526 /* BlueRangeSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 594F54141F69869800DC5526 /* Build configuration list for PBXNativeTarget "BlueRangeSDKTests" */;
+			buildPhases = (
+				4CDE5D82F39E31C2BC3B1152 /* [CP] Check Pods Manifest.lock */,
+				594F54081F69869800DC5526 /* Sources */,
+				594F54091F69869800DC5526 /* Frameworks */,
+				594F540A1F69869800DC5526 /* Resources */,
+				33D357DE1BE0BD22D79CC239 /* [CP] Embed Pods Frameworks */,
+				C7983E704C21B8A397AC37EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				594F54131F69869800DC5526 /* PBXTargetDependency */,
+			);
+			name = BlueRangeSDKTests;
+			productName = BlueRangeSDKTests;
+			productReference = 594F540C1F69869800DC5526 /* BlueRangeSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4FFD2F7153BF3E800759785 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SimpleTable;
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					590B09671D8006A700CF1ECA = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9PXH6A2B2X;
+					};
+					594F540B1F69869800DC5526 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9PXH6A2B2X;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F4FFD2FA153BF3E800759785 /* Build configuration list for PBXProject "BlueRangeSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4FFD2F5153BF3E800759785;
+			productRefGroup = F4FFD301153BF3E800759785 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				590B09671D8006A700CF1ECA /* BlueRangeSDK */,
+				594F540B1F69869800DC5526 /* BlueRangeSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		590B09661D8006A700CF1ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		594F540A1F69869800DC5526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33D357DE1BE0BD22D79CC239 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueRangeSDKTests/Pods-BlueRangeSDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CDE5D82F39E31C2BC3B1152 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueRangeSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77E98D04F93EAC47E94CBB94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueRangeSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90D91083B6D0F68DDA56295F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueRangeSDK/Pods-BlueRangeSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7983E704C21B8A397AC37EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueRangeSDKTests/Pods-BlueRangeSDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		590B09631D8006A700CF1ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				594074ED1D8172B000B593EB /* BRBluetooth.m in Sources */,
+				590B098F1D80071200CF1ECA /* BRConstants.m in Sources */,
+				590B09901D80071200CF1ECA /* BRBeaconAdvertiser.m in Sources */,
+				590B09911D80071200CF1ECA /* BRSimpleMovingAverageFilter.m in Sources */,
+				590B09921D80071200CF1ECA /* BRLinearWeightedMovingAverageFilter.m in Sources */,
+				590B09931D80071200CF1ECA /* BRBeaconMessageAggregate.m in Sources */,
+				590B09941D80071200CF1ECA /* BRBeaconMessageAggregator.m in Sources */,
+				590B09951D80071200CF1ECA /* BRBeaconMessagePacketAggregate.m in Sources */,
+				590B09961D80071200CF1ECA /* BRBeaconMessageSlidingWindowAggregate.m in Sources */,
+				590B09971D80071200CF1ECA /* BRAnalyticalDistanceEstimator.m in Sources */,
+				590B09981D80071200CF1ECA /* BREmpiricalDistanceEstimator.m in Sources */,
+				590B09991D80071200CF1ECA /* BRIBeaconMessageFilter.m in Sources */,
+				590B099A1D80071200CF1ECA /* BRRelutionTagMessageFilter.m in Sources */,
+				590B099B1D80071200CF1ECA /* BRBeaconMessageLog.m in Sources */,
+				590B099C1D80071200CF1ECA /* BRBeaconMessagePersistor.m in Sources */,
+				590B099D1D80071200CF1ECA /* BRBeaconMessageLogger.m in Sources */,
+				590B099E1D80071200CF1ECA /* BRBeaconMessagePersistorImpl.m in Sources */,
+				590B099F1D80071200CF1ECA /* BRBeaconMessagePersistorImplLogIterator.m in Sources */,
+				590B09A01D80071200CF1ECA /* BRBeaconMessageReportBuilder.m in Sources */,
+				590B09A11D80071200CF1ECA /* BRBeaconMessageReporter.m in Sources */,
+				590B09A21D80071200CF1ECA /* BRBeaconMessageReportSender.m in Sources */,
+				590B09A31D80071200CF1ECA /* BRBeaconMessageStreamNode.m in Sources */,
+				590B09A41D80071200CF1ECA /* BRBeaconMessageStreamNodeDefaultReceiver.m in Sources */,
+				590B09A51D80071200CF1ECA /* BRBeaconMessagePassingStreamNode.m in Sources */,
+				590B09A61D80071200CF1ECA /* BRBeaconMessageQueuedStreamNode.m in Sources */,
+				590B09A71D80071200CF1ECA /* BRIBeaconMessageScannerImpl.m in Sources */,
+				590B09A81D80071200CF1ECA /* BRDefaultBeaconMessageScannerImpl.m in Sources */,
+				590B09A91D80071200CF1ECA /* BRBeaconJoinMeMessage.m in Sources */,
+				590B09AA1D80071200CF1ECA /* BRBeaconJoinMeMessageGenerator.m in Sources */,
+				590B09AB1D80071200CF1ECA /* BRIBeaconMessage.m in Sources */,
+				590B09AC1D80071200CF1ECA /* BRIBeacon.m in Sources */,
+				590B09AD1D80071200CF1ECA /* BRIBeaconMessageGenerator.m in Sources */,
+				590B09AE1D80071200CF1ECA /* BREddystoneMessage.m in Sources */,
+				590B09AF1D80071200CF1ECA /* BREddystoneMessageGenerator.m in Sources */,
+				590B09B01D80071200CF1ECA /* BREddystoneUidMessage.m in Sources */,
+				590B09B11D80071200CF1ECA /* BREddystoneUidMessageGenerator.m in Sources */,
+				590B09B21D80071200CF1ECA /* BREddystoneUrlMessage.m in Sources */,
+				590B09B31D80071200CF1ECA /* BREddystoneUrlMessageGenerator.m in Sources */,
+				590B09B41D80071200CF1ECA /* BRRelutionTagMessage.m in Sources */,
+				590B09B51D80071200CF1ECA /* BRRelutionTagMessageGenerator.m in Sources */,
+				590B09B61D80071200CF1ECA /* BRRelutionTagMessageV1.m in Sources */,
+				590B09B71D80071200CF1ECA /* BRRelutionTagMessageGeneratorV1.m in Sources */,
+				590B09B81D80071200CF1ECA /* BRBeaconMessage.m in Sources */,
+				590B09B91D80071200CF1ECA /* BRBeaconMessageScanner.m in Sources */,
+				590B09BA1D80071200CF1ECA /* BRBeaconMessageScannerConfig.m in Sources */,
+				590B09BB1D80071200CF1ECA /* BRIBeaconMessageScanner.m in Sources */,
+				590B09BC1D80071200CF1ECA /* BRBeaconMessageScannerSimulator.m in Sources */,
+				590B09BD1D80071200CF1ECA /* BRBeaconContentAction.m in Sources */,
+				590B09BE1D80071200CF1ECA /* BRBeaconContentActionBuilder.m in Sources */,
+				590B09BF1D80071200CF1ECA /* BRBeaconContentActionExecutor.m in Sources */,
+				590B09C01D80071200CF1ECA /* BRBeaconNotificationAction.m in Sources */,
+				590B09C11D80071200CF1ECA /* BRBeaconNotificationActionBuilder.m in Sources */,
+				590B09C21D80071200CF1ECA /* BRBeaconNotificationExecutor.m in Sources */,
+				590B09C31D80071200CF1ECA /* BRBeaconTagAction.m in Sources */,
+				590B09C41D80071200CF1ECA /* BRBeaconTagActionBuilder.m in Sources */,
+				590B09C51D80071200CF1ECA /* BRBeaconTagActionExecutor.m in Sources */,
+				590B09C61D80071200CF1ECA /* BRBeaconTagVisit.m in Sources */,
+				590B09C71D80071200CF1ECA /* BRBeaconMessageActionMapperStub.m in Sources */,
+				590B09C81D80071200CF1ECA /* BRRelutionTagMessageActionMapperEmptyStub.m in Sources */,
+				590B09C91D80071200CF1ECA /* BRIBeaconMessageActionMapperStub.m in Sources */,
+				590B09CA1D80071200CF1ECA /* BRBeaconActionLocker.m in Sources */,
+				590B09CB1D80071200CF1ECA /* BRRunningFlag.m in Sources */,
+				590B09CC1D80071200CF1ECA /* BRBeaconAction.m in Sources */,
+				590B09CD1D80071200CF1ECA /* BRBeaconCampaign.m in Sources */,
+				590B09CE1D80071200CF1ECA /* BRRelutionActionInformation.m in Sources */,
+				590B09CF1D80071200CF1ECA /* BRBeaconActionBuilder.m in Sources */,
+				590B09D01D80071200CF1ECA /* BRBeaconActionExecutor.m in Sources */,
+				590B09D11D80071200CF1ECA /* BRBeaconActionRegistry.m in Sources */,
+				590B09D21D80071200CF1ECA /* BRBeaconMessageActionTrigger.m in Sources */,
+				590B09D31D80071200CF1ECA /* BRRelutionHeatmapReport.m in Sources */,
+				590B09D41D80071200CF1ECA /* BRRelutionHeatmapReportBuilder.m in Sources */,
+				590B09D51D80071200CF1ECA /* BRRelutionHeatmapSender.m in Sources */,
+				590B09D61D80071200CF1ECA /* BRRelutionHeatmapSenderStub.m in Sources */,
+				590B09D71D80071200CF1ECA /* BRRelutionHeatmapService.m in Sources */,
+				590B09D81D80071200CF1ECA /* BRRelutionIBeaconMessageActionMapper.m in Sources */,
+				590B09D91D80071200CF1ECA /* BRRelutionCampaignService.m in Sources */,
+				590B09DA1D80071200CF1ECA /* BRRelutionScanConfigLoaderImpl.m in Sources */,
+				590B09DB1D80071200CF1ECA /* BRRelutionScanConfigLoaderStub.m in Sources */,
+				590B09DC1D80071200CF1ECA /* BRFilter.m in Sources */,
+				590B09DD1D80071200CF1ECA /* BRLogOpFilter.m in Sources */,
+				590B09DE1D80071200CF1ECA /* BRLongFilter.m in Sources */,
+				590B09DF1D80071200CF1ECA /* BRStringFilter.m in Sources */,
+				590B09E01D80071200CF1ECA /* BRAdvertisingMessagesConfiguration.m in Sources */,
+				590B09E11D80071200CF1ECA /* BRDataObject.m in Sources */,
+				590B09E21D80071200CF1ECA /* BRDataArray.m in Sources */,
+				590B09E31D80071200CF1ECA /* BRRelutionTagInfos.m in Sources */,
+				590B09E41D80071200CF1ECA /* BRRelution.m in Sources */,
+				590B09E51D80071200CF1ECA /* BRRelutionTagInfo.m in Sources */,
+				590B09E61D80071200CF1ECA /* BRRelutionTagInfoRegistry.m in Sources */,
+				590B09E71D80071200CF1ECA /* BRRelutionTagInfoRegistryImpl.m in Sources */,
+				590B09E81D80071200CF1ECA /* BRRelutionTagInfoRegistryStub.m in Sources */,
+				590B09E91D80071200CF1ECA /* BRBeaconTrigger.m in Sources */,
+				590B09EA1D80071200CF1ECA /* BRRelutionIoTService.m in Sources */,
+				590B09EB1D80071200CF1ECA /* BRFileAccessorImpl.m in Sources */,
+				590B09EC1D80071200CF1ECA /* BRZipCompression.m in Sources */,
+				590B09ED1D80071200CF1ECA /* BRTimeFormatter.m in Sources */,
+				590B09EE1D80071200CF1ECA /* BRNetwork.m in Sources */,
+				590B09EF1D80071200CF1ECA /* BRHttpClient.m in Sources */,
+				590B09F01D80071200CF1ECA /* BRCoreMath.m in Sources */,
+				590B09F11D80071200CF1ECA /* BRTracer.m in Sources */,
+				590B09F21D80071200CF1ECA /* BRByteArrayParser.m in Sources */,
+				590B09F31D80071200CF1ECA /* BRJsonUtils.m in Sources */,
+				590B09F41D80071200CF1ECA /* BRLimitedSizeQueue.m in Sources */,
+				590B09F51D80071200CF1ECA /* BRByteArrayConverter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		594F54081F69869800DC5526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595E8E791F6BFD310061FF0B /* BRBeaconTriggerTest.m in Sources */,
+				597B56B61F6A908B003493C7 /* BRDummyBeaconMessagePersistorLogIterator.m in Sources */,
+				597B56B31F6A8F11003493C7 /* BRDummyBeaconMessagePersistor.m in Sources */,
+				597B56A51F6A8B95003493C7 /* BRSimpleMovingAverageFilterTest.m in Sources */,
+				597B56AB1F6A8D88003493C7 /* BRTestBlocker.m in Sources */,
+				597B56A71F6A8D02003493C7 /* BRBeaconMessageAggregatorTest.m in Sources */,
+				597B56B91F6A91F7003493C7 /* BRDummyFileAccessor.m in Sources */,
+				595E8E761F6BED850061FF0B /* BRRelutionHeatmapReportBuilderTest.m in Sources */,
+				597B56BC1F6A9A32003493C7 /* BRDummyTracer.m in Sources */,
+				597E0A111F6A94AC002A1779 /* BRBeaconMessageLoggerTest.m in Sources */,
+				597B56AE1F6A8E01003493C7 /* BRTestFailure.m in Sources */,
+				594F541D1F69954B00DC5526 /* BRLinearWeightedMovingAverageFilterTest.m in Sources */,
+				595E8E721F6BC8810061FF0B /* BRBeaconMessageQueuedStreamNodeTest.m in Sources */,
+				597B56C61F6A9DE0003493C7 /* BRIBeaconMessageFilterTest.m in Sources */,
+				597E0A131F6AAC24002A1779 /* BRBeaconMessagePersistorImplTest.m in Sources */,
+				597E0A171F6AB8BB002A1779 /* BRBeaconMessageScannerConfigTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		594F54131F69869800DC5526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 590B09671D8006A700CF1ECA /* BlueRangeSDK */;
+			targetProxy = 594F54121F69869800DC5526 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		590B09801D8006A800CF1ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D5AB1DAD08CD931D0C5E123 /* Pods-BlueRangeSDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9PXH6A2B2X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = BlueRangeSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+					"$(PROJECT_DIR)/build/Release-iphoneos/ASIHTTPRequest",
+					"$(PROJECT_DIR)/build/Release-iphoneos/Reachability",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mway.bluerange.ios.sdk.BlueRangeSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		590B09811D8006A800CF1ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED1DAFA0D9F22F7341C1339E /* Pods-BlueRangeSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9PXH6A2B2X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = BlueRangeSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+					"$(PROJECT_DIR)/build/Release-iphoneos/ASIHTTPRequest",
+					"$(PROJECT_DIR)/build/Release-iphoneos/Reachability",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mway.bluerange.ios.sdk.BlueRangeSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		594F54151F69869800DC5526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA3C33446E19EA3575939C3B /* Pods-BlueRangeSDKTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9PXH6A2B2X;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = BlueRangeSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mway.bluerange.ios.sdk.BlueRangeSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		594F54161F69869800DC5526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45AC3B8744C30C2441B58D1B /* Pods-BlueRangeSDKTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9PXH6A2B2X;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = BlueRangeSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mway.bluerange.ios.sdk.BlueRangeSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F4FFD31C153BF3E900759785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Debug;
+		};
+		F4FFD31D153BF3E900759785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		590B09841D8006A800CF1ECA /* Build configuration list for PBXNativeTarget "BlueRangeSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				590B09801D8006A800CF1ECA /* Debug */,
+				590B09811D8006A800CF1ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		594F54141F69869800DC5526 /* Build configuration list for PBXNativeTarget "BlueRangeSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				594F54151F69869800DC5526 /* Debug */,
+				594F54161F69869800DC5526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4FFD2FA153BF3E800759785 /* Build configuration list for PBXProject "BlueRangeSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4FFD31C153BF3E900759785 /* Debug */,
+				F4FFD31D153BF3E900759785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4FFD2F7153BF3E800759785 /* Project object */;
+}

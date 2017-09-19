@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BRBeaconMessageActionTrigger Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BlueRange SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">M-Way Solutions GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/aggregator">aggregator</option>
+		
+		<option value="//api/name/debugModeOn">debugModeOn</option>
+		
+		<option value="//api/name/distanceEstimator">distanceEstimator</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addActionExecutor:">- addActionExecutor:</option>
+		
+		<option value="//api/name/addActionListener:">- addActionListener:</option>
+		
+		<option value="//api/name/addActionToDelayedActionQueue:">- addActionToDelayedActionQueue:</option>
+		
+		<option value="//api/name/addDebugActionListener:">- addDebugActionListener:</option>
+		
+		<option value="//api/name/executeActions:">- executeActions:</option>
+		
+		<option value="//api/name/executeElapsedActions">- executeElapsedActions</option>
+		
+		<option value="//api/name/initActionDelaying">- initActionDelaying</option>
+		
+		<option value="//api/name/initActionDistancingWithDistanceEstimator:">- initActionDistancingWithDistanceEstimator:</option>
+		
+		<option value="//api/name/initActionExecution">- initActionExecution</option>
+		
+		<option value="//api/name/initActionLocking">- initActionLocking</option>
+		
+		<option value="//api/name/initActionRegistryWithIBeaconMapper:andRelutioTagMapper:">- initActionRegistryWithIBeaconMapper:andRelutioTagMapper:</option>
+		
+		<option value="//api/name/initDebugging">- initDebugging</option>
+		
+		<option value="//api/name/initMessageProcessing">- initMessageProcessing</option>
+		
+		<option value="//api/name/initSendersWithSenderNode:">- initSendersWithSenderNode:</option>
+		
+		<option value="//api/name/initTracer:">- initTracer:</option>
+		
+		<option value="//api/name/initWithSender:andIBeaconMessageActionMapper:andRelutionTagMessageActionMapper:">- initWithSender:andIBeaconMessageActionMapper:andRelutionTagMessageActionMapper:</option>
+		
+		<option value="//api/name/initWithTracer:andSender:andIBeaconMessageActionMapper:andRelutionTagMessageActionMapper:andDistanceEstimator:">- initWithTracer:andSender:andIBeaconMessageActionMapper:andRelutionTagMessageActionMapper:andDistanceEstimator:</option>
+		
+		<option value="//api/name/notifyDebugListeners:">- notifyDebugListeners:</option>
+		
+		<option value="//api/name/removeActionListener:">- removeActionListener:</option>
+		
+		<option value="//api/name/run:">- run:</option>
+		
+		<option value="//api/name/runDelayedActionExecutionThread:">- runDelayedActionExecutionThread:</option>
+		
+		<option value="//api/name/start">- start</option>
+		
+		<option value="//api/name/startDelayedActionExecutionThread">- startDelayedActionExecutionThread</option>
+		
+		<option value="//api/name/startMessageProcessingThread">- startMessageProcessingThread</option>
+		
+		<option value="//api/name/stop">- stop</option>
+		
+		<option value="//api/name/stopThread">- stopThread</option>
+		
+		<option value="//api/name/waitAWhile">- waitAWhile</option>
+		
+		<option value="//api/name/waitUntilActionRegistryIsAvailableForMessage:">- waitUntilActionRegistryIsAvailableForMessage:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BRBeaconMessageActionTrigger Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/BRBeaconMessagePassingStreamNode.html">BRBeaconMessagePassingStreamNode</a> : <a href="../Classes/BRBeaconMessageStreamNode.html">BRBeaconMessageStreamNode</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BRBeaconMessageActionTrigger.h<br />BRBeaconMessageActionTrigger.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A trigger instance is a node in a message processing graph that is able to trigger actions,
+whenever messages will be received, that an action registry is able to map to an action.<br>
+Before an action will be triggered, the message stream is filtered, so that only iBeacon
+and Relution Tag messages will be considered in the further steps. To stabilize the RSSI
+values of the incoming messages, a message <a href="#//api/name/aggregator">aggregator</a> aggregates equivalent messages and
+averages the RSSI values by using a linearly weighted moving average filter. The resulting
+stream of aggregated messages is then delivered to a message queue, which the trigger
+iteratively pulls messages out of. Each message is then mapped to an action using the
+action registry, which can e.g. call a remote webservice. If the registry is not currently
+available, the trigger mechanism waits until the registry has become available. In this
+time the message queue will in most cases accumulate a lot of messages. Since the queue,
+however, has a limited size, these situations will not result in a memory leak. The
+advantage of this strategy, however, is, that actions can be executed at a later time, e.g
+. when internet has become available.<br> Before an action will be executed, it has to
+pass a sequence of checks, since actions can be equipped with different time and location
+based parameters. One of these parameters is a distance threshold. The action executor
+first transforms the RSSI value of the action initiating message to a distance value and
+then checks whether this value is below a distance threshold being defined in the action&rsquo;s
+description. If this is not the case, the action will be discarded. In the other case the
+executor checks, whether the action validation period is expired. An expiration will also
+result in an action discard. Another situation, when an action will be discarded, occurs,
+when an equivalent action has set a lock to this action for a specific duration. As long
+as the lock is set, no actions with the same action ID will be executed. If the action
+should be executed with a delay, it will be added to an action delay queue and executed
+when the delay time has elapsed.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/debugModeOn" title="debugModeOn"></a>
+	<h3 class="method-title"><code><a href="#//api/name/debugModeOn">&nbsp;&nbsp;debugModeOn</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property BOOL debugModeOn</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/aggregator" title="aggregator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/aggregator">&nbsp;&nbsp;aggregator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) BRBeaconMessageAggregator *aggregator</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/distanceEstimator" title="distanceEstimator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/distanceEstimator">&nbsp;&nbsp;distanceEstimator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property id&lt;BRDistanceEstimator&gt; distanceEstimator</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithSender:andIBeaconMessageActionMapper:andRelutionTagMessageActionMapper:" title="initWithSender:andIBeaconMessageActionMapper:andRelutionTagMessageActionMapper:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithSender:andIBeaconMessageActionMapper:andRelutionTagMessageActionMapper:">&ndash;&nbsp;initWithSender:andIBeaconMessageActionMapper:andRelutionTagMessageActionMapper:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithSender:(BRBeaconMessageStreamNode *)<em>senderNode</em> andIBeaconMessageActionMapper:(id&lt;BRIBeaconMessageActionMapper&gt;)<em>iBeaconActionMapper</em> andRelutionTagMessageActionMapper:(id&lt;BRRelutionTagMessageActionMapper&gt;)<em>relutionTagMessageActionMapper</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithTracer:andSender:andIBeaconMessageActionMapper:andRelutionTagMessageActionMapper:andDistanceEstimator:" title="initWithTracer:andSender:andIBeaconMessageActionMapper:andRelutionTagMessageActionMapper:andDistanceEstimator:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithTracer:andSender:andIBeaconMessageActionMapper:andRelutionTagMessageActionMapper:andDistanceEstimator:">&ndash;&nbsp;initWithTracer:andSender:andIBeaconMessageActionMapper:andRelutionTagMessageActionMapper:andDistanceEstimator:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithTracer:(id&lt;BRITracer&gt;)<em>tracer</em> andSender:(BRBeaconMessageStreamNode *)<em>senderNode</em> andIBeaconMessageActionMapper:(id&lt;BRIBeaconMessageActionMapper&gt;)<em>iBeaconActionMapper</em> andRelutionTagMessageActionMapper:(id&lt;BRRelutionTagMessageActionMapper&gt;)<em>relutionTagMessageActionMapper</em> andDistanceEstimator:(id&lt;BRDistanceEstimator&gt;)<em>distanceEstimator</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="method-title"><code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)start</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addActionListener:" title="addActionListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addActionListener:">&ndash;&nbsp;addActionListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addActionListener:(NSObject&lt;BRBeaconActionListener&gt; *)<em>listener</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeActionListener:" title="removeActionListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeActionListener:">&ndash;&nbsp;removeActionListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)removeActionListener:(NSObject&lt;BRBeaconActionListener&gt; *)<em>listener</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addActionExecutor:" title="addActionExecutor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addActionExecutor:">&ndash;&nbsp;addActionExecutor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addActionExecutor:(BRBeaconActionExecutor *)<em>actionExecutor</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addDebugActionListener:" title="addDebugActionListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addDebugActionListener:">&ndash;&nbsp;addDebugActionListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addDebugActionListener:(id&lt;BRBeaconActionDebugListener&gt;)<em>listener</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initTracer:" title="initTracer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initTracer:">&ndash;&nbsp;initTracer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initTracer:(id&lt;BRITracer&gt;)<em>tracer</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initDebugging" title="initDebugging"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initDebugging">&ndash;&nbsp;initDebugging</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initDebugging</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initSendersWithSenderNode:" title="initSendersWithSenderNode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initSendersWithSenderNode:">&ndash;&nbsp;initSendersWithSenderNode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initSendersWithSenderNode:(BRBeaconMessageStreamNode *)<em>senderNode</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initMessageProcessing" title="initMessageProcessing"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initMessageProcessing">&ndash;&nbsp;initMessageProcessing</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initMessageProcessing</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initActionRegistryWithIBeaconMapper:andRelutioTagMapper:" title="initActionRegistryWithIBeaconMapper:andRelutioTagMapper:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initActionRegistryWithIBeaconMapper:andRelutioTagMapper:">&ndash;&nbsp;initActionRegistryWithIBeaconMapper:andRelutioTagMapper:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initActionRegistryWithIBeaconMapper:(id&lt;BRIBeaconMessageActionMapper&gt;)<em>iBeaconMessageActionMapper</em> andRelutioTagMapper:(id&lt;BRRelutionTagMessageActionMapper&gt;)<em>relutionTagMessageActionMapper</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initActionDistancingWithDistanceEstimator:" title="initActionDistancingWithDistanceEstimator:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initActionDistancingWithDistanceEstimator:">&ndash;&nbsp;initActionDistancingWithDistanceEstimator:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initActionDistancingWithDistanceEstimator:(id&lt;BRDistanceEstimator&gt;)<em>distanceEstimator</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initActionDelaying" title="initActionDelaying"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initActionDelaying">&ndash;&nbsp;initActionDelaying</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initActionDelaying</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initActionLocking" title="initActionLocking"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initActionLocking">&ndash;&nbsp;initActionLocking</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initActionLocking</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initActionExecution" title="initActionExecution"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initActionExecution">&ndash;&nbsp;initActionExecution</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)initActionExecution</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startMessageProcessingThread" title="startMessageProcessingThread"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startMessageProcessingThread">&ndash;&nbsp;startMessageProcessingThread</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startMessageProcessingThread</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/run:" title="run:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/run:">&ndash;&nbsp;run:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)run:(id)<em>object</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/waitUntilActionRegistryIsAvailableForMessage:" title="waitUntilActionRegistryIsAvailableForMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/waitUntilActionRegistryIsAvailableForMessage:">&ndash;&nbsp;waitUntilActionRegistryIsAvailableForMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)waitUntilActionRegistryIsAvailableForMessage:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/executeActions:" title="executeActions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/executeActions:">&ndash;&nbsp;executeActions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)executeActions:(NSMutableArray *)<em>actions</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifyDebugListeners:" title="notifyDebugListeners:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifyDebugListeners:">&ndash;&nbsp;notifyDebugListeners:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)notifyDebugListeners:(BRBeaconAction *)<em>action</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addActionToDelayedActionQueue:" title="addActionToDelayedActionQueue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addActionToDelayedActionQueue:">&ndash;&nbsp;addActionToDelayedActionQueue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addActionToDelayedActionQueue:(BRBeaconAction *)<em>action</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startDelayedActionExecutionThread" title="startDelayedActionExecutionThread"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startDelayedActionExecutionThread">&ndash;&nbsp;startDelayedActionExecutionThread</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startDelayedActionExecutionThread</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/runDelayedActionExecutionThread:" title="runDelayedActionExecutionThread:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/runDelayedActionExecutionThread:">&ndash;&nbsp;runDelayedActionExecutionThread:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)runDelayedActionExecutionThread:(id)<em>object</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/executeElapsedActions" title="executeElapsedActions"></a>
+	<h3 class="method-title"><code><a href="#//api/name/executeElapsedActions">&ndash;&nbsp;executeElapsedActions</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)executeElapsedActions</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/waitAWhile" title="waitAWhile"></a>
+	<h3 class="method-title"><code><a href="#//api/name/waitAWhile">&ndash;&nbsp;waitAWhile</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)waitAWhile</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopThread" title="stopThread"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopThread">&ndash;&nbsp;stopThread</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopThread</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 M-Way Solutions GmbH. All rights reserved. Updated: 2017-09-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

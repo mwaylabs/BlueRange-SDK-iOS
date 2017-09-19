@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BRBeaconMessageScanner Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BlueRange SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">M-Way Solutions GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/config">config</option>
+		
+		<option value="//api/name/running">running</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/handleMessages:">- handleMessages:</option>
+		
+		<option value="//api/name/initWithTracer:">- initWithTracer:</option>
+		
+		<option value="//api/name/meshInactivityTimeoutReached:">- meshInactivityTimeoutReached:</option>
+		
+		<option value="//api/name/onBeaconMessageUpdate:">- onBeaconMessageUpdate:</option>
+		
+		<option value="//api/name/onReceivedMessage:withMessage:">- onReceivedMessage:withMessage:</option>
+		
+		<option value="//api/name/restartMeshActivityTimer">- restartMeshActivityTimer</option>
+		
+		<option value="//api/name/runScanCycle">- runScanCycle</option>
+		
+		<option value="//api/name/startScanCycle">- startScanCycle</option>
+		
+		<option value="//api/name/startScannerImpls">- startScannerImpls</option>
+		
+		<option value="//api/name/startScanning">- startScanning</option>
+		
+		<option value="//api/name/stopScanCycle">- stopScanCycle</option>
+		
+		<option value="//api/name/stopScannerImpls">- stopScannerImpls</option>
+		
+		<option value="//api/name/stopScanning">- stopScanning</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BRBeaconMessageScanner Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/BRIBeaconMessageScanner.html">BRIBeaconMessageScanner</a> : <a href="../Classes/BRBeaconMessageStreamNode.html">BRBeaconMessageStreamNode</a> : NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/BRBeaconMessageScannerImplObserver.html">BRBeaconMessageScannerImplObserver</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BRBeaconMessageScanner.h<br />BRBeaconMessageScanner.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A beacon message scanner can be used to scan beacon messages. Before starting the scanner with
+the {@link #startScanning} method, you must call the {@link #getConfig} method to get access
+to the scanner&rsquo;s configuration. By using the configuration, you can specify which messages the
+scanner should scan for. The {@link #startScanning} and {@link #stopScanning} methods start
+and stop the scan procedure. If you change properties on the scanner&rsquo;s configuration, after
+the scanner has been started, the scanner will automatically be restarted. To further process
+incoming messages, register a {@link BRBeaconMessageStreamNodeReceiver} as a receiver.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/config" title="config"></a>
+	<h3 class="method-title"><code><a href="#//api/name/config">&nbsp;&nbsp;config</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The scanner&rsquo;s configuration. The configuration properties can be
+changed even when the scanner is <a href="#//api/name/running">running</a>. However, it should be
+mentioned that each configuration change at runtime will restart
+the scanner!</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property BRBeaconMessageScannerConfig *config</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The scanner&rsquo;s configuration. The configuration properties can be
+changed even when the scanner is <a href="#//api/name/running">running</a>. However, it should be
+mentioned that each configuration change at runtime will restart
+the scanner!</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScanner.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/running" title="running"></a>
+	<h3 class="method-title"><code><a href="#//api/name/running">&nbsp;&nbsp;running</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>True, when the scanner has been started and not stopped yet.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property BOOL running</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>True, when the scanner has been started and not stopped yet.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScanner.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithTracer:" title="initWithTracer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithTracer:">&ndash;&nbsp;initWithTracer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new scanner.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithTracer:(id&lt;BRITracer&gt;)<em>tracer</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tracer</code></th>
+						<td><p>The tracer used for logging incoming messages.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The new scanner</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a new scanner.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScanner.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startScanning" title="startScanning"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startScanning">&ndash;&nbsp;startScanning</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the scanner. The scanner will scan for all beacon message types
+as configured in its configuration. It used the CoreBluetooth and
+CoreLocation framework for beacon detection.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startScanning</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Starts the scanner. The scanner will scan for all beacon message types
+as configured in its configuration. It used the CoreBluetooth and
+CoreLocation framework for beacon detection.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScanner.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopScanning" title="stopScanning"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopScanning">&ndash;&nbsp;stopScanning</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stops the scanner.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopScanning</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Stops the scanner.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BRBeaconMessageScanner.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/startScanCycle" title="startScanCycle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startScanCycle">&ndash;&nbsp;startScanCycle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startScanCycle</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/runScanCycle" title="runScanCycle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/runScanCycle">&ndash;&nbsp;runScanCycle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)runScanCycle</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleMessages:" title="handleMessages:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleMessages:">&ndash;&nbsp;handleMessages:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)handleMessages:(BRBeaconMessage *)<em>beaconMessage</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startScannerImpls" title="startScannerImpls"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startScannerImpls">&ndash;&nbsp;startScannerImpls</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startScannerImpls</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopScanCycle" title="stopScanCycle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopScanCycle">&ndash;&nbsp;stopScanCycle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopScanCycle</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopScannerImpls" title="stopScannerImpls"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopScannerImpls">&ndash;&nbsp;stopScannerImpls</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopScannerImpls</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onBeaconMessageUpdate:" title="onBeaconMessageUpdate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onBeaconMessageUpdate:">&ndash;&nbsp;onBeaconMessageUpdate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onBeaconMessageUpdate:(BRBeaconMessage *)<em>beaconMessage</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/restartMeshActivityTimer" title="restartMeshActivityTimer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/restartMeshActivityTimer">&ndash;&nbsp;restartMeshActivityTimer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)restartMeshActivityTimer</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/meshInactivityTimeoutReached:" title="meshInactivityTimeoutReached:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/meshInactivityTimeoutReached:">&ndash;&nbsp;meshInactivityTimeoutReached:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)meshInactivityTimeoutReached:(NSTimer *)<em>timer</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onReceivedMessage:withMessage:" title="onReceivedMessage:withMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onReceivedMessage:withMessage:">&ndash;&nbsp;onReceivedMessage:withMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onReceivedMessage:(BRBeaconMessageStreamNode *)<em>senderNode</em> withMessage:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 M-Way Solutions GmbH. All rights reserved. Updated: 2017-09-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

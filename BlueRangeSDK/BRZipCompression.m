@@ -29,7 +29,7 @@
 //
 
 #import "BRZipCompression.h"
-#import "zlib.h"
+#import <zlib.h>
 
 // See: http://stackoverflow.com/questions/13831953/unzip-nsdata-using-objective-zip
 @implementation BRZipCompression

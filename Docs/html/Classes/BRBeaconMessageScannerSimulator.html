@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BRBeaconMessageScannerSimulator Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BlueRange SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">M-Way Solutions GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/beaconMessages">beaconMessages</option>
+		
+		<option value="//api/name/config">config</option>
+		
+		<option value="//api/name/repeat">repeat</option>
+		
+		<option value="//api/name/repeatInterval">repeatInterval</option>
+		
+		<option value="//api/name/running">running</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addRssiNoise">- addRssiNoise</option>
+		
+		<option value="//api/name/getClonedMessages">- getClonedMessages</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/onReceivedMessage:withMessage:">- onReceivedMessage:withMessage:</option>
+		
+		<option value="//api/name/resetSimulatedBeacons">- resetSimulatedBeacons</option>
+		
+		<option value="//api/name/simulateEddystoneUidWithNamespace:andInstanceId:">- simulateEddystoneUidWithNamespace:andInstanceId:</option>
+		
+		<option value="//api/name/simulateEddystoneUidWithNamespace:andInstanceId:andRssi:">- simulateEddystoneUidWithNamespace:andInstanceId:andRssi:</option>
+		
+		<option value="//api/name/simulateEddystoneUrl:">- simulateEddystoneUrl:</option>
+		
+		<option value="//api/name/simulateEddystoneUrl:andRssi:">- simulateEddystoneUrl:andRssi:</option>
+		
+		<option value="//api/name/simulateIBeacon:">- simulateIBeacon:</option>
+		
+		<option value="//api/name/simulateIBeaconWithUuid:andMajor:andMinor:">- simulateIBeaconWithUuid:andMajor:andMinor:</option>
+		
+		<option value="//api/name/simulateIBeaconWithUuid:andMajor:andMinor:andRssi:">- simulateIBeaconWithUuid:andMajor:andMinor:andRssi:</option>
+		
+		<option value="//api/name/simulateJoinMeWithNodeId:">- simulateJoinMeWithNodeId:</option>
+		
+		<option value="//api/name/simulateJoinMeWithNodeId:andRssi:">- simulateJoinMeWithNodeId:andRssi:</option>
+		
+		<option value="//api/name/simulateRelutionTagsV1:">- simulateRelutionTagsV1:</option>
+		
+		<option value="//api/name/simulateRelutionTagsV1WithRssi:andRssi:">- simulateRelutionTagsV1WithRssi:andRssi:</option>
+		
+		<option value="//api/name/simulateRelutionTagsWithNamespaceUid:andTags:">- simulateRelutionTagsWithNamespaceUid:andTags:</option>
+		
+		<option value="//api/name/simulateRelutionTagsWithNamespaceUid:andTags:andRssi:">- simulateRelutionTagsWithNamespaceUid:andTags:andRssi:</option>
+		
+		<option value="//api/name/startOneTimeScan">- startOneTimeScan</option>
+		
+		<option value="//api/name/startRepeatScan">- startRepeatScan</option>
+		
+		<option value="//api/name/startRepeatScanInParallel">- startRepeatScanInParallel</option>
+		
+		<option value="//api/name/startScanning">- startScanning</option>
+		
+		<option value="//api/name/stopScanning">- stopScanning</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BRBeaconMessageScannerSimulator Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/BRIBeaconMessageScanner.html">BRIBeaconMessageScanner</a> : <a href="../Classes/BRBeaconMessageStreamNode.html">BRBeaconMessageStreamNode</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BRBeaconMessageScannerSimulator.h<br />BRBeaconMessageScannerSimulator.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class implements the
+{@link BRIBeaconMessageScanner} interface and can be used to simulate incoming {@link BRBeaconMessage}s.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/beaconMessages" title="beaconMessages"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beaconMessages">&nbsp;&nbsp;beaconMessages</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) NSMutableArray *beaconMessages</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/repeat" title="repeat"></a>
+	<h3 class="method-title"><code><a href="#//api/name/repeat">&nbsp;&nbsp;repeat</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property BOOL repeat</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/repeatInterval" title="repeatInterval"></a>
+	<h3 class="method-title"><code><a href="#//api/name/repeatInterval">&nbsp;&nbsp;repeatInterval</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property long repeatInterval</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/config" title="config"></a>
+	<h3 class="method-title"><code><a href="#//api/name/config">&nbsp;&nbsp;config</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property BRBeaconMessageScannerConfig *config</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/running" title="running"></a>
+	<h3 class="method-title"><code><a href="#//api/name/running">&nbsp;&nbsp;running</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) BOOL running</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addRssiNoise" title="addRssiNoise"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addRssiNoise">&ndash;&nbsp;addRssiNoise</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addRssiNoise</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateIBeaconWithUuid:andMajor:andMinor:" title="simulateIBeaconWithUuid:andMajor:andMinor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateIBeaconWithUuid:andMajor:andMinor:">&ndash;&nbsp;simulateIBeaconWithUuid:andMajor:andMinor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateIBeaconWithUuid:(NSUUID *)<em>uuid</em> andMajor:(int)<em>major</em> andMinor:(int)<em>minor</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateIBeaconWithUuid:andMajor:andMinor:andRssi:" title="simulateIBeaconWithUuid:andMajor:andMinor:andRssi:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateIBeaconWithUuid:andMajor:andMinor:andRssi:">&ndash;&nbsp;simulateIBeaconWithUuid:andMajor:andMinor:andRssi:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateIBeaconWithUuid:(NSUUID *)<em>uuid</em> andMajor:(int)<em>major</em> andMinor:(int)<em>minor</em> andRssi:(int)<em>rssi</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateIBeacon:" title="simulateIBeacon:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateIBeacon:">&ndash;&nbsp;simulateIBeacon:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateIBeacon:(BRIBeacon *)<em>iBeacon</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateEddystoneUidWithNamespace:andInstanceId:" title="simulateEddystoneUidWithNamespace:andInstanceId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateEddystoneUidWithNamespace:andInstanceId:">&ndash;&nbsp;simulateEddystoneUidWithNamespace:andInstanceId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateEddystoneUidWithNamespace:(NSString *)<em>namespaceUid</em> andInstanceId:(NSString *)<em>instanceId</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateEddystoneUidWithNamespace:andInstanceId:andRssi:" title="simulateEddystoneUidWithNamespace:andInstanceId:andRssi:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateEddystoneUidWithNamespace:andInstanceId:andRssi:">&ndash;&nbsp;simulateEddystoneUidWithNamespace:andInstanceId:andRssi:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateEddystoneUidWithNamespace:(NSString *)<em>namespaceUid</em> andInstanceId:(NSString *)<em>instanceId</em> andRssi:(int)<em>rssi</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateEddystoneUrl:" title="simulateEddystoneUrl:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateEddystoneUrl:">&ndash;&nbsp;simulateEddystoneUrl:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateEddystoneUrl:(NSString *)<em>url</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateEddystoneUrl:andRssi:" title="simulateEddystoneUrl:andRssi:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateEddystoneUrl:andRssi:">&ndash;&nbsp;simulateEddystoneUrl:andRssi:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateEddystoneUrl:(NSString *)<em>url</em> andRssi:(int)<em>rssi</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateRelutionTagsV1:" title="simulateRelutionTagsV1:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateRelutionTagsV1:">&ndash;&nbsp;simulateRelutionTagsV1:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateRelutionTagsV1:(NSArray *)<em>tags</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateRelutionTagsV1WithRssi:andRssi:" title="simulateRelutionTagsV1WithRssi:andRssi:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateRelutionTagsV1WithRssi:andRssi:">&ndash;&nbsp;simulateRelutionTagsV1WithRssi:andRssi:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateRelutionTagsV1WithRssi:(NSArray *)<em>tags</em> andRssi:(int)<em>rssi</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateRelutionTagsWithNamespaceUid:andTags:" title="simulateRelutionTagsWithNamespaceUid:andTags:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateRelutionTagsWithNamespaceUid:andTags:">&ndash;&nbsp;simulateRelutionTagsWithNamespaceUid:andTags:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateRelutionTagsWithNamespaceUid:(NSString *)<em>namespaceUid</em> andTags:(NSArray *)<em>tags</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateRelutionTagsWithNamespaceUid:andTags:andRssi:" title="simulateRelutionTagsWithNamespaceUid:andTags:andRssi:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateRelutionTagsWithNamespaceUid:andTags:andRssi:">&ndash;&nbsp;simulateRelutionTagsWithNamespaceUid:andTags:andRssi:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateRelutionTagsWithNamespaceUid:(NSString *)<em>namespaceUid</em> andTags:(NSArray *)<em>tags</em> andRssi:(int)<em>rssi</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateJoinMeWithNodeId:" title="simulateJoinMeWithNodeId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateJoinMeWithNodeId:">&ndash;&nbsp;simulateJoinMeWithNodeId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateJoinMeWithNodeId:(int)<em>nodeId</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simulateJoinMeWithNodeId:andRssi:" title="simulateJoinMeWithNodeId:andRssi:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simulateJoinMeWithNodeId:andRssi:">&ndash;&nbsp;simulateJoinMeWithNodeId:andRssi:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)simulateJoinMeWithNodeId:(int)<em>nodeId</em> andRssi:(int)<em>rssi</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetSimulatedBeacons" title="resetSimulatedBeacons"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetSimulatedBeacons">&ndash;&nbsp;resetSimulatedBeacons</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)resetSimulatedBeacons</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startScanning" title="startScanning"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startScanning">&ndash;&nbsp;startScanning</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startScanning</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopScanning" title="stopScanning"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopScanning">&ndash;&nbsp;stopScanning</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopScanning</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onReceivedMessage:withMessage:" title="onReceivedMessage:withMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onReceivedMessage:withMessage:">&ndash;&nbsp;onReceivedMessage:withMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)onReceivedMessage:(BRBeaconMessageStreamNode *)<em>senderNode</em> withMessage:(BRBeaconMessage *)<em>message</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/startRepeatScanInParallel" title="startRepeatScanInParallel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startRepeatScanInParallel">&ndash;&nbsp;startRepeatScanInParallel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startRepeatScanInParallel</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startRepeatScan" title="startRepeatScan"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startRepeatScan">&ndash;&nbsp;startRepeatScan</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startRepeatScan</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startOneTimeScan" title="startOneTimeScan"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startOneTimeScan">&ndash;&nbsp;startOneTimeScan</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startOneTimeScan</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getClonedMessages" title="getClonedMessages"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getClonedMessages">&ndash;&nbsp;getClonedMessages</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)getClonedMessages</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 M-Way Solutions GmbH. All rights reserved. Updated: 2017-09-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

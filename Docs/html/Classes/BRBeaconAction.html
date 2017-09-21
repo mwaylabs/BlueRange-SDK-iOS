@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BRBeaconAction Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BlueRange SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">M-Way Solutions GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/actionId">actionId</option>
+		
+		<option value="//api/name/campaign">campaign</option>
+		
+		<option value="//api/name/creationDate">creationDate</option>
+		
+		<option value="//api/name/distanceThreshold">distanceThreshold</option>
+		
+		<option value="//api/name/isDelaying">isDelaying</option>
+		
+		<option value="//api/name/isLockingAction">isLockingAction</option>
+		
+		<option value="//api/name/lockReleaseDate">lockReleaseDate</option>
+		
+		<option value="//api/name/releaseLockAfterMs">releaseLockAfterMs</option>
+		
+		<option value="//api/name/sourceBeaconMessage">sourceBeaconMessage</option>
+		
+		<option value="//api/name/startLockDate">startLockDate</option>
+		
+		<option value="//api/name/validityBegins">validityBegins</option>
+		
+		<option value="//api/name/validityEnds">validityEnds</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/distanceEstimator">+ distanceEstimator</option>
+		
+		<option value="//api/name/setDistanceEstimator:">+ setDistanceEstimator:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/copyWithZone:">- copyWithZone:</option>
+		
+		<option value="//api/name/distanceEstimationInMetres">- distanceEstimationInMetres</option>
+		
+		<option value="//api/name/hash">- hash</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/isCampaignExpired">- isCampaignExpired</option>
+		
+		<option value="//api/name/isCampaignInactive">- isCampaignInactive</option>
+		
+		<option value="//api/name/isDelayed">- isDelayed</option>
+		
+		<option value="//api/name/isEqual:">- isEqual:</option>
+		
+		<option value="//api/name/isExpired">- isExpired</option>
+		
+		<option value="//api/name/isOutOfRange">- isOutOfRange</option>
+		
+		<option value="//api/name/lockExpired">- lockExpired</option>
+		
+		<option value="//api/name/newCopy">- newCopy</option>
+		
+		<option value="//api/name/type">- type</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BRBeaconAction Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>NSCopying</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BRBeaconAction.h<br />BRBeaconAction.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sourceBeaconMessage" title="sourceBeaconMessage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sourceBeaconMessage">&nbsp;&nbsp;sourceBeaconMessage</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property BRBeaconMessage *sourceBeaconMessage</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/creationDate" title="creationDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/creationDate">&nbsp;&nbsp;creationDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) NSDate *creationDate</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/campaign" title="campaign"></a>
+	<h3 class="method-title"><code><a href="#//api/name/campaign">&nbsp;&nbsp;campaign</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property BRBeaconCampaign *campaign</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/actionId" title="actionId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/actionId">&nbsp;&nbsp;actionId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property NSString *actionId</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/validityBegins" title="validityBegins"></a>
+	<h3 class="method-title"><code><a href="#//api/name/validityBegins">&nbsp;&nbsp;validityBegins</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property NSDate *validityBegins</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/validityEnds" title="validityEnds"></a>
+	<h3 class="method-title"><code><a href="#//api/name/validityEnds">&nbsp;&nbsp;validityEnds</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property NSDate *validityEnds</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDelaying" title="isDelaying"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDelaying">&nbsp;&nbsp;isDelaying</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property BOOL isDelaying</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLockingAction" title="isLockingAction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLockingAction">&nbsp;&nbsp;isLockingAction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property BOOL isLockingAction</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/releaseLockAfterMs" title="releaseLockAfterMs"></a>
+	<h3 class="method-title"><code><a href="#//api/name/releaseLockAfterMs">&nbsp;&nbsp;releaseLockAfterMs</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property long releaseLockAfterMs</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startLockDate" title="startLockDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startLockDate">&nbsp;&nbsp;startLockDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property NSDate *startLockDate</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lockReleaseDate" title="lockReleaseDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lockReleaseDate">&nbsp;&nbsp;lockReleaseDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property NSDate *lockReleaseDate</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/distanceThreshold" title="distanceThreshold"></a>
+	<h3 class="method-title"><code><a href="#//api/name/distanceThreshold">&nbsp;&nbsp;distanceThreshold</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property float distanceThreshold</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDistanceEstimator:" title="setDistanceEstimator:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDistanceEstimator:">+&nbsp;setDistanceEstimator:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)setDistanceEstimator:(id&lt;BRDistanceEstimator&gt;)<em>distanceEstimator</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/distanceEstimator" title="distanceEstimator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/distanceEstimator">+&nbsp;distanceEstimator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;BRDistanceEstimator&gt;)distanceEstimator</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/distanceEstimationInMetres" title="distanceEstimationInMetres"></a>
+	<h3 class="method-title"><code><a href="#//api/name/distanceEstimationInMetres">&ndash;&nbsp;distanceEstimationInMetres</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (float)distanceEstimationInMetres</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isExpired" title="isExpired"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isExpired">&ndash;&nbsp;isExpired</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isExpired</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDelayed" title="isDelayed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDelayed">&ndash;&nbsp;isDelayed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isDelayed</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lockExpired" title="lockExpired"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lockExpired">&ndash;&nbsp;lockExpired</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)lockExpired</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isOutOfRange" title="isOutOfRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isOutOfRange">&ndash;&nbsp;isOutOfRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isOutOfRange</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isCampaignExpired" title="isCampaignExpired"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isCampaignExpired">&ndash;&nbsp;isCampaignExpired</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isCampaignExpired</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isCampaignInactive" title="isCampaignInactive"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isCampaignInactive">&ndash;&nbsp;isCampaignInactive</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isCampaignInactive</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isEqual:" title="isEqual:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isEqual:">&ndash;&nbsp;isEqual:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isEqual:(id)<em>object</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="method-title"><code><a href="#//api/name/type">&ndash;&nbsp;type</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)type</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/newCopy" title="newCopy"></a>
+	<h3 class="method-title"><code><a href="#//api/name/newCopy">&ndash;&nbsp;newCopy</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BRBeaconAction *)newCopy</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/copyWithZone:" title="copyWithZone:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/copyWithZone:">&ndash;&nbsp;copyWithZone:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)copyWithZone:(struct _NSZone *)<em>zone</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hash" title="hash"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hash">&ndash;&nbsp;hash</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSUInteger)hash</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 M-Way Solutions GmbH. All rights reserved. Updated: 2017-09-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

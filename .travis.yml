@@ -1,0 +1,4 @@
+language: objective-c
+xcode_workspace: BlueRangeSDK.xcworkspace
+xcode_scheme: BlueRangeSDK
+script: xctool -workspace BlueRangeSDK.xcworkspace -scheme BlueRangeSDK clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO

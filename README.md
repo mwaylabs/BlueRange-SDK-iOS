@@ -2,7 +2,7 @@
 # BlueRange SDK
 
 
-[![CI Status](https://travis-ci.org/me-mway/BlueRange-SDK-iOS.svg?branch=master)](https://travis-ci.org/me-mway/BlueRange-SDK-iOS)
+[![CI Status](https://travis-ci.org/mwaylabs/BlueRange-SDK-iOS.svg?branch=master)](https://travis-ci.org/mwaylabs/BlueRange-SDK-iOS)
 
 
 ## Overview

@@ -2,10 +2,10 @@
 # BlueRange SDK
 
 <android>
-[![CI Status](https://travis-ci.org/me-mway/BlueRange-SDK-Android.svg?branch=master)](https://travis-ci.org/me-mway/BlueRange-SDK-Android)
+[![CI Status](https://travis-ci.org/mwaylabs/BlueRange-SDK-Android.svg?branch=master)](https://travis-ci.org/mwaylabs/BlueRange-SDK-Android)
 </android>
 <iOS>
-[![CI Status](https://travis-ci.org/me-mway/BlueRange-SDK-iOS.svg?branch=master)](https://travis-ci.org/me-mway/BlueRange-SDK-iOS)
+[![CI Status](https://travis-ci.org/mwaylabs/BlueRange-SDK-iOS.svg?branch=master)](https://travis-ci.org/mwaylabs/BlueRange-SDK-iOS)
 </iOS>
 
 ## Overview
@@ -34,7 +34,7 @@ More specifically, the following features are supported:
     - **Eddystone URL** message: Another Eddystone beacon format containing a URL.
     - **Join Me** message: Beacons based on FruityMesh broadcast these messages to establish a beacon network. Each packet holds the beacon ID, its connectivity and some more information that can be used to identify and analyze Relution SmartBeacons.
     - **Relution Tag** message: An advertising message format only supported by Relution IoT. It contains a list of tags used for offline proximity marketing scenarios.
-	- **Asset tracking** message: The advertising message format used by Relution AssetBeacons. Asset beacons can be used for asset localization and tracking.
+  - **Asset tracking** message: The advertising message format used by Relution AssetBeacons. Asset beacons can be used for asset localization and tracking.
 - Scanning will be continued when the app is running in **background**. This feature, however, is limited due to Apple restrictions.
 - **Energy efficiency**: can be controlled by changing the scan cycle duration and sleep interval.
 
@@ -75,7 +75,7 @@ More specifically, the following features are supported:
 The easiest way to import the BlueRangeSDK is to add a dependency to your project's ```build.gradle``` file:
 ```gradle
 dependencies {
-    compile 'com.mway.bluerange.android.sdk:bluerangesdk:1.1.11@aar'
+    compile 'com.mway.bluerange.android.sdk:bluerangesdk:1.1.13@aar'
 }
 ```
 </android>

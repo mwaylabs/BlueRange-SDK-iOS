@@ -34,7 +34,11 @@ More specifically, the following features are supported:
     - **Eddystone URL** message: Another Eddystone beacon format containing a URL.
     - **Join Me** message: Beacons based on FruityMesh broadcast these messages to establish a beacon network. Each packet holds the beacon ID, its connectivity and some more information that can be used to identify and analyze Relution SmartBeacons.
     - **Relution Tag** message: An advertising message format only supported by Relution IoT. It contains a list of tags used for offline proximity marketing scenarios.
+<<<<<<< HEAD
   - **Asset tracking** message: The advertising message format used by Relution AssetBeacons. Asset beacons can be used for asset localization and tracking.
+=======
+	- **Asset tracking** message: The advertising message format used by Relution AssetBeacons. Asset beacons can be used for asset localization and tracking.
+>>>>>>> master
 - Scanning will be continued when the app is running in **background**. This feature, however, is limited due to Apple restrictions.
 - **Energy efficiency**: can be controlled by changing the scan cycle duration and sleep interval.
 
@@ -707,4 +711,8 @@ public class AdvertisingService extends BlueRangeService {
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and
 * limitations under the License.
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> master
